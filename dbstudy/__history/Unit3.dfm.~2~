@@ -1,0 +1,74 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Align = alClient
+  BorderStyle = bsNone
+  Caption = #21830#21697#36164#26009
+  ClientHeight = 380
+  ClientWidth = 508
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Visible = True
+  WindowState = wsMaximized
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 13
+  object cxgrd1: TcxGrid
+    Left = 0
+    Top = 0
+    Width = 508
+    Height = 380
+    Align = alClient
+    TabOrder = 0
+    ExplicitWidth = 186
+    ExplicitHeight = 17
+    object cxgrdbtblvwGrid1DBTableView1: TcxGridDBTableView
+      Navigator.Buttons.CustomButtons = <>
+      DataController.DataSource = DataModule2.ds1
+      DataController.Summary.DefaultGroupSummaryItems = <>
+      DataController.Summary.FooterSummaryItems = <>
+      DataController.Summary.SummaryGroups = <>
+      object cxgrdbclmnGrid1DBTableView1ID: TcxGridDBColumn
+        DataBinding.FieldName = 'ID'
+        Width = 50
+      end
+      object cxgrdbclmnGrid1DBTableView1mingcheng: TcxGridDBColumn
+        DataBinding.FieldName = 'mingcheng'
+        Width = 100
+      end
+      object cxgrdbclmnGrid1DBTableView1guige: TcxGridDBColumn
+        DataBinding.FieldName = 'guige'
+        Width = 100
+      end
+      object cxgrdbclmnGrid1DBTableView1danwei: TcxGridDBColumn
+        DataBinding.FieldName = 'danwei'
+        Width = 50
+      end
+      object cxgrdbclmnGrid1DBTableView1beizhu: TcxGridDBColumn
+        DataBinding.FieldName = 'beizhu'
+        Width = 50
+      end
+      object cxgrdbclmnGrid1DBTableView1lingshoujia: TcxGridDBColumn
+        DataBinding.FieldName = 'lingshoujia'
+        Width = 50
+      end
+      object cxgrdbclmnGrid1DBTableView1tiaoma: TcxGridDBColumn
+        DataBinding.FieldName = 'tiaoma'
+        Width = 100
+      end
+      object cxgrdbclmnGrid1DBTableView1pinyinma: TcxGridDBColumn
+        DataBinding.FieldName = 'pinyinma'
+        Width = 100
+      end
+    end
+    object cxgrdlvlGrid1Level1: TcxGridLevel
+      GridView = cxgrdbtblvwGrid1DBTableView1
+    end
+  end
+end

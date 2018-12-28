@@ -1,0 +1,131 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 423
+  ClientWidth = 555
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbl1: TRzLabel
+    Left = 112
+    Top = 27
+    Width = 97
+    Height = 24
+    AutoSize = False
+    Caption = #26597#35810#25152#26377#29992#25143#20449#24687
+    Font.Charset = GB2312_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = #24494#36719#38597#40657
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object rzprgrsbr1: TRzProgressBar
+    Left = 32
+    Top = 351
+    Width = 489
+    Height = 25
+    BorderWidth = 0
+    InteriorOffset = 0
+    PartsComplete = 0
+    Percent = 0
+    TotalParts = 0
+  end
+  object dbgrd1: TDBGrid
+    Left = 32
+    Top = 80
+    Width = 489
+    Height = 265
+    DataSource = ds1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = #30331#38470#21495
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #37096#38376
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #29992#25143#21517
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #21475#20196
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #20351#29992#29366#24577
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #22791#27880
+        Width = 62
+        Visible = True
+      end>
+  end
+  object btn1: TButton
+    Left = 256
+    Top = 24
+    Width = 73
+    Height = 33
+    Caption = #26597#35810
+    TabOrder = 1
+    OnClick = btn1Click
+  end
+  object btn2: TButton
+    Left = 368
+    Top = 24
+    Width = 73
+    Height = 33
+    Caption = #23548#20986
+    TabOrder = 2
+    OnClick = btn2Click
+  end
+  object db1: TDatabase
+    AliasName = 'xhsd_jcd'
+    Connected = True
+    DatabaseName = 'tzsc'
+    LoginPrompt = False
+    Params.Strings = (
+      'USER NAME=xhsd_jcd'
+      'password=jcdtzsc')
+    SessionName = 'Default'
+    Left = 208
+    Top = 384
+  end
+  object qry1: TQuery
+    DatabaseName = 'tzsc'
+    SQL.Strings = (
+      
+        'Select y.dlh '#30331#38470#21495',y.bm '#37096#38376',y.Yhm '#29992#25143#21517',y.Kl '#21475#20196',y.Sybz '#20351#29992#29366#24577',y.Sm '#22791#27880' F' +
+        'rom Jcd_Pub_Yhbmb y'
+      'Order By y.dlh')
+    Left = 256
+    Top = 384
+  end
+  object ds1: TDataSource
+    DataSet = qry1
+    Left = 296
+    Top = 384
+  end
+end

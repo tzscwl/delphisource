@@ -1,0 +1,22 @@
+program tsjy;
+
+uses
+  Vcl.Forms,
+  udl in 'udl.pas' {fdl},
+  udm in 'udm.pas' {fdatam: TDataModule},
+  umain in 'umain.pas' {Fmain},
+  ubase in 'ubase.pas' {fbase},
+  utsxx in 'utsxx.pas' {ftsxx};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(Tfdl, fdl);
+  Application.CreateForm(Tfdatam, fdatam);
+  Application.CreateForm(TFmain, Fmain);
+  Application.CreateForm(Tfbase, fbase);
+  Application.CreateForm(Tftsxx, ftsxx);
+  Application.Run;
+end.

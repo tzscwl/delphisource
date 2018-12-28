@@ -1,0 +1,16 @@
+inherited fygdl: Tfygdl
+  Caption = #21592#24037#30331#24405
+  ExplicitWidth = 651
+  ExplicitHeight = 338
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited actlst1: TActionList
+    Left = 552
+    Top = 80
+  end
+  inherited dxbrmngr1: TdxBarManager
+    Left = 552
+    Top = 24
+    PixelsPerInch = 96
+  end
+end

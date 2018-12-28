@@ -1,0 +1,155 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.Mask, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error,
+  FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool,
+  FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef,
+  FireDAC.Stan.ExprFuncs, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
+  FireDAC.DApt, FireDAC.VCLUI.Wait, FireDAC.Comp.UI, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client;
+
+type
+  TForm1 = class(TForm)
+    ds1: TDataSource;
+    btn1: TButton;
+    btn2: TButton;
+    btn3: TButton;
+    dlgOpen1: TOpenDialog;
+    dlgSave1: TSaveDialog;
+    con1: TFDConnection;
+    fdqry1: TFDQuery;
+    fdgxwtcrsr1: TFDGUIxWaitCursor;
+    fdphysqltdrvrlnk1: TFDPhysSQLiteDriverLink;
+    dbgrd1: TDBGrid;
+    mmo1: TMemo;
+    fdqry2: TFDQuery;
+    procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+function GetFieldValue(separator:Char;strLine: string; nNum: Integer): string;
+var
+  Strs :TStrings;
+  ResultStr:string;
+begin
+  Strs := TStringList.Create;
+  strs.Delimiter := separator;
+  Strs.DelimitedText  := strLine;
+  if nNum > Strs.Count then
+     ResultStr := ''
+  else
+     ResultStr := Strs[nNum-1];
+
+  FreeAndNil(Strs);
+  Result := ResultStr;
+end;
+
+procedure TForm1.btn2Click(Sender: TObject);
+var
+  a, b, c, d, e, f: string;
+  i: Integer;
+  w: TextFile;
+begin
+ {if qry1.RecordCount<>0 then
+      begin
+        qry1.First;
+        rzprgrsbr1.Percent:=0;
+        AssignFile(w,'f:/1.txt');
+        Rewrite(w);
+        for i := 0 to qry1.RecordCount-1 do
+        begin
+        a:=qry1.FieldByName('登陆号').AsString;
+        b:=qry1.FieldByName('部门').AsString;
+        c:=qry1.FieldByName('用户名').AsString;
+        d:=qry1.FieldByName('口令').AsString;
+        e:=qry1.FieldByName('使用状态').AsString;
+        f:=qry1.FieldByName('备注').AsString;
+        writeln(w,a,',',b,',',c,',',d,',',e,',',f);
+        qry1.Next;
+        rzprgrsbr1.Percent:=trunc(i/qry1.RecordCount*100)+2;
+        end;
+        CloseFile(w);
+
+      end;   }
+
+end;
+
+procedure TForm1.btn3Click(Sender: TObject);
+var
+  z, a, b, yj: string;
+  w: TextFile;
+begin
+  if dlgOpen1.Execute() then
+  begin
+    AssignFile(w, dlgOpen1.FileName);
+    reset(w);
+    mmo1.Clear;
+          fdqry2.Close;
+      fdqry2.SQL.Clear;
+      fdqry2.SQL.Add('insert into test values(:name,:age)') ;
+      a:='小黑';
+      b:='100';
+        fdqry2.ParamByName('name').Value:=a;
+      fdqry2.ParamByName('age').Value:=b;
+      fdqry2.ExecSQL;
+    while not Eof(w) do
+    begin
+    Readln(w,z);
+      a:=GetFieldValue(',',z,1);
+      b:=GetFieldValue(',',z,2);
+      mmo1.Lines.Add('姓名是:'+a);
+      mmo1.Lines.Add('年龄是:'+b) ;
+
+      fdqry2.ParamByName('name').Value:=a;
+      fdqry2.ParamByName('age').Value:=b;
+      fdqry2.ExecSQL;
+      {
+      fdqry1.Append;
+      fdqry1.FieldByName('name').Value:=a;
+      fdqry1.FieldByName('age').Value:=StrToInt(b);
+      fdqry1.Post; }
+    end;
+    CloseFile(w);
+  end;
+ {if dlgOpen1.Execute()    then
+ begin
+    AssignFile(w,dlgOpen1.FileName);
+    reset(w);
+    edt1.Text:='' ;
+    while not Eof(w) do
+         begin
+           Readln(w,z);
+           a:=GetFieldValue(',',z,1);
+           b:=GetFieldValue(',',z,2);
+           c:=GetFieldValue(',',z,3);
+           d:=GetFieldValue(',',z,4);
+           e:=GetFieldValue(',',z,5);
+           f:=GetFieldValue(',',z,6);
+           edt1.Text:=a;
+           edt2.Text:=b;
+           edt3.Text:=c;
+           edt4.Text:=d;
+           edt5.Text:=e;
+           edt6.Text:=f;
+         end;
+    CloseFile(w);
+ end;     }
+
+end;
+
+end.
+

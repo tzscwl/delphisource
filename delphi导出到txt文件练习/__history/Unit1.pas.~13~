@@ -1,0 +1,121 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.Mask, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error,
+  FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool,
+  FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.SQLite, FireDAC.Phys.SQLiteDef,
+  FireDAC.Stan.ExprFuncs, FireDAC.Stan.Param, FireDAC.DatS, FireDAC.DApt.Intf,
+  FireDAC.DApt, FireDAC.VCLUI.Wait, FireDAC.Comp.UI, FireDAC.Comp.DataSet,
+  FireDAC.Comp.Client, FireDAC.Phys.MSAccDef, FireDAC.Phys.MSAcc, FireDAC.Phys.ODBCBase,
+  Vcl.ComCtrls;
+
+type
+  TForm1 = class(TForm)
+    ds1: TDataSource;
+    btn1: TButton;
+    btn2: TButton;
+    btn3: TButton;
+    dlgOpen1: TOpenDialog;
+    dlgSave1: TSaveDialog;
+    fdqry1: TFDQuery;
+    fdgxwtcrsr1: TFDGUIxWaitCursor;
+    dbgrd1: TDBGrid;
+    mmo1: TMemo;
+    fdqry2: TFDQuery;
+    fdphysmscsdrvrlnk1: TFDPhysMSAccessDriverLink;
+    con1: TFDConnection;
+    pb1: TProgressBar;
+    procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+function GetFieldValue(separator: Char; strLine: string; nNum: Integer): string;
+var
+  Strs: TStrings;
+  ResultStr: string;
+begin
+  Strs := TStringList.Create;
+  Strs.Delimiter := separator;
+  Strs.DelimitedText := strLine;
+  if nNum > Strs.Count then
+    ResultStr := ''
+  else
+    ResultStr := Strs[nNum - 1];
+
+  FreeAndNil(Strs);
+  Result := ResultStr;
+end;
+
+procedure TForm1.btn2Click(Sender: TObject);
+var
+  a, b, : string;
+  i: Integer;
+  w: TextFile;
+begin
+  if fdqry1.RecordCount <> 0 then
+  begin
+    if dlgSave1.Execute() then
+    begin
+      fdqry1.First;
+      pb1.Position := 0;
+      AssignFile(w, dlgSave1.FileName);
+      Rewrite(w);
+      for i := 0 to fdqry1.RecordCount - 1 do
+      begin
+        a := fdqry1.FieldByName('user').AsString;
+        b := fdqry1.FieldByName('age').AsString;
+        writeln(w, a, ',', b);
+        fdqry1.Next;
+        pb1.Position := trunc(i / fdqry1.RecordCount * 100);
+      end;
+      CloseFile(w);
+    end;
+
+  end;
+
+end;
+
+procedure TForm1.btn3Click(Sender: TObject);
+var
+  z, a, b, yj: string;
+  w: TextFile;
+begin
+  if dlgOpen1.Execute() then
+  begin
+    AssignFile(w, dlgOpen1.FileName);
+    reset(w);
+    mmo1.Clear;
+
+    while not Eof(w) do
+    begin
+      Readln(w, z);
+      a := GetFieldValue(',', z, 1);
+      b := GetFieldValue(',', z, 2);
+      mmo1.Lines.Add('姓名是:' + a);
+      mmo1.Lines.Add('年龄是:' + b);
+      fdqry1.Append;
+      fdqry1.FieldByName('user').Value := a;
+      fdqry1.FieldByName('age').Value := StrToInt(b);
+      fdqry1.Post;
+    end;
+    CloseFile(w);
+  end;
+
+end;
+
+end.
+

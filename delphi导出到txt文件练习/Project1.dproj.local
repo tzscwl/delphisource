@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.573,C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.dfm=F:\我的文档\易语言学习\delphi导出到txt文件练习\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.690,C:\Users\Administrator\Documents\RAD Studio\Projects\Project1.dproj=F:\我的文档\易语言学习\delphi导出到txt文件练习\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.573,C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.pas=F:\我的文档\易语言学习\delphi导出到txt文件练习\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.853,=C:\Users\Administrator\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

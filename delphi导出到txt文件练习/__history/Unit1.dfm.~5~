@@ -1,0 +1,95 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 422
+  ClientWidth = 772
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object dbgrd1: TDBGrid
+    Left = 8
+    Top = 80
+    Width = 409
+    Height = 265
+    DataSource = ds1
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+    Columns = <
+      item
+        Expanded = False
+        FieldName = #30331#38470#21495
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #37096#38376
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #29992#25143#21517
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #21475#20196
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #20351#29992#29366#24577
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = #22791#27880
+        Width = 62
+        Visible = True
+      end>
+  end
+  object btn1: TButton
+    Left = 160
+    Top = 24
+    Width = 73
+    Height = 33
+    Caption = #26597#35810
+    TabOrder = 1
+  end
+  object btn2: TButton
+    Left = 272
+    Top = 24
+    Width = 73
+    Height = 33
+    Caption = #23548#20986
+    TabOrder = 2
+    OnClick = btn2Click
+  end
+  object btn3: TButton
+    Left = 520
+    Top = 24
+    Width = 81
+    Height = 33
+    Caption = #23548#20837
+    TabOrder = 3
+    OnClick = btn3Click
+  end
+  object ds1: TDataSource
+    Left = 296
+    Top = 384
+  end
+  object dlgOpen1: TOpenDialog
+    Left = 648
+    Top = 24
+  end
+end
