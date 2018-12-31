@@ -1,0 +1,10 @@
+inherited Fjyts: TFjyts
+  Caption = #20511#38405#22270#20070
+  ExplicitWidth = 651
+  ExplicitHeight = 338
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited dxbrmngr1: TdxBarManager
+    PixelsPerInch = 96
+  end
+end
