@@ -55,6 +55,7 @@ type
     procedure act_closeExecute(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
+    procedure act_selectExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,7 +68,7 @@ var
 implementation
 
 uses
-  udm, umain, utsadd, utsedit;
+  udm, umain, utsadd, utsedit,Utsxxcx;
 {$R *.dfm}
 
 procedure Tftsxx.act_addExecute(Sender: TObject);
@@ -151,6 +152,14 @@ begin
   dlgSave1.Execute;
   ExportGridToXLSX(dlgSave1.FileName, cxgrd1);
 
+end;
+
+procedure Tftsxx.act_selectExecute(Sender: TObject);
+begin
+  inherited;
+  ftsxxcx:=Tftsxxcx.Create(self);
+  ftsxxcx.ShowModal;
+  ftsxxcx.Free;
 end;
 
 procedure Tftsxx.FormClose(Sender: TObject; var Action: TCloseAction);

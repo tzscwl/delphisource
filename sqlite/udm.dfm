@@ -9,9 +9,8 @@ object fdatam: Tfdatam
   end
   object con1: TFDConnection
     Params.Strings = (
-      'Database=G:\'#31243#24207#28304#25991#20214'\Delphi\delphisource\sqlite\xinhuadb.db'
+      'Database=G:\'#31243#24207#28304#25991#20214'\Delphi\sqlite\xinhuadb.db'
       'DriverID=SQLite')
-    Connected = True
     LoginPrompt = False
     Left = 16
     Top = 16

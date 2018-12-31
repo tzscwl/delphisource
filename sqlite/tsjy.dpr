@@ -8,7 +8,11 @@ uses
   utsxx in 'utsxx.pas' {ftsxx},
   Uygdl in 'Uygdl.pas' {fygdl},
   utsadd in 'utsadd.pas' {Ftsadd},
-  utsedit in 'utsedit.pas' {Ftsedit};
+  utsedit in 'utsedit.pas' {Ftsedit},
+  Utsxxcx in 'Utsxxcx.pas' {ftsxxcx},
+  ujyts in 'ujyts.pas' {Fjyts},
+  ughts in 'ughts.pas' {fghts},
+  utjfx in 'utjfx.pas' {ftjfx};
 
 {$R *.res}
 

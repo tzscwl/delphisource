@@ -9876,12 +9876,15 @@ object Fmain: TFmain
     end
     object act_jieyue: TAction
       Caption = #20511#38405#22270#20070
+      OnExecute = act_jieyueExecute
     end
     object act_guihuan: TAction
       Caption = #24402#36824#22270#20070
+      OnExecute = act_guihuanExecute
     end
     object act_tongji: TAction
       Caption = #32479#35745#20998#26512
+      OnExecute = act_tongjiExecute
     end
     object act_tuichu: TAction
       Caption = #36864#20986#31995#32479

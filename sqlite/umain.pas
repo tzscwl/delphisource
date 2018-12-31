@@ -41,6 +41,9 @@ type
     procedure act_tsxxExecute(Sender: TObject);
     procedure act_dlExecute(Sender: TObject);
     procedure act_tuichuExecute(Sender: TObject);
+    procedure act_jieyueExecute(Sender: TObject);
+    procedure act_guihuanExecute(Sender: TObject);
+    procedure act_tongjiExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -53,7 +56,7 @@ var
 implementation
 
 uses
-  utsxx, udm, Uygdl;
+  utsxx, udm, Uygdl,ujyts,ughts,utjfx;
 {$R *.dfm}
 
 procedure TFmain.act_dlExecute(Sender: TObject);
@@ -72,6 +75,73 @@ begin
 
   end;
 
+end;
+
+procedure TFmain.act_guihuanExecute(Sender: TObject);
+begin
+    if (Fmain.stat1.Panels[0].text = '') then
+  begin
+    Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
+    Exit;
+  end
+  else
+  begin
+    if not Assigned(fghts) then
+    begin
+      fghts := Tfghts.Create(self);
+      fghts.Show;
+    end
+    else
+    begin
+      Application.MessageBox('已经打开了借阅图书窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Exit;
+    end;
+  end;
+end;
+
+procedure TFmain.act_jieyueExecute(Sender: TObject);
+begin
+  if (Fmain.stat1.Panels[0].text = '') then
+  begin
+    Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
+    Exit;
+  end
+  else
+  begin
+    if not Assigned(fjyts) then
+    begin
+      fjyts := Tfjyts.Create(self);
+      fjyts.Show;
+    end
+    else
+    begin
+      Application.MessageBox('已经打开了借阅图书窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Exit;
+    end;
+  end;
+
+end;
+
+procedure TFmain.act_tongjiExecute(Sender: TObject);
+begin
+   if (Fmain.stat1.Panels[0].text = '') then
+  begin
+    Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
+    Exit;
+  end
+  else
+  begin
+    if not Assigned(ftjfx) then
+    begin
+      ftjfx := Tftjfx.Create(self);
+      ftjfx.Show;
+    end
+    else
+    begin
+      Application.MessageBox('已经打开了图书信息窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Exit;
+    end;
+  end;
 end;
 
 procedure TFmain.act_tsxxExecute(Sender: TObject);

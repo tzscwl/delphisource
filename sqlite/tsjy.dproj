@@ -133,6 +133,22 @@
             <Form>Ftsedit</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Utsxxcx.pas">
+            <Form>ftsxxcx</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="ujyts.pas">
+            <Form>Fjyts</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="ughts.pas">
+            <Form>fghts</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="utjfx.pas">
+            <Form>ftjfx</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
