@@ -14,7 +14,7 @@ uses
   cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, cxNavigator,
   cxDataControllerConditionalFormattingRulesManagerDialog, Data.DB, cxDBData,
   cxGridLevel, cxGridCustomView, cxGridCustomTableView, cxGridTableView,
-  cxGridDBTableView, cxGrid, cxTextEdit, cxGridExportLink, frxClass, frxDBSet;
+  cxGridDBTableView, cxGrid, cxTextEdit, cxGridExportLink;
 
 type
   Tftsxx = class(Tfbase)
@@ -49,8 +49,6 @@ type
     cxStyle1: TcxStyle;
     dxbrlrgbtn7: TdxBarLargeButton;
     act_print: TAction;
-    frxrprt1: TfrxReport;
-    frxdbdtst1: TfrxDBDataset;
     procedure FormCreate(Sender: TObject);
     procedure act_exportExecute(Sender: TObject);
     procedure act_addExecute(Sender: TObject);
@@ -60,7 +58,6 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
     procedure act_selectExecute(Sender: TObject);
-    procedure act_printExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -157,12 +154,6 @@ begin
   dlgSave1.Execute;
   ExportGridToXLSX(dlgSave1.FileName, cxgrd1);
 
-end;
-
-procedure Tftsxx.act_printExecute(Sender: TObject);
-begin
-  inherited;
- frxrprt1.ShowReport;
 end;
 
 procedure Tftsxx.act_selectExecute(Sender: TObject);
