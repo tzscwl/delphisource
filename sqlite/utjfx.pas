@@ -13,6 +13,8 @@ uses
 
 type
   Tftjfx = class(Tfbase)
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormDestroy(Sender: TObject);
   private
     { Private declarations }
   public
@@ -25,5 +27,17 @@ var
 implementation
     uses umain,udm;
 {$R *.dfm}
+
+procedure Tftjfx.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  inherited;
+Action:=caFree;
+end;
+
+procedure Tftjfx.FormDestroy(Sender: TObject);
+begin
+  inherited;
+  ftjfx:=nil;
+end;
 
 end.

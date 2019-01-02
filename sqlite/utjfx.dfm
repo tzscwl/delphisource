@@ -3,6 +3,8 @@ inherited ftjfx: Tftjfx
   ClientHeight = 389
   FormStyle = fsMDIChild
   Visible = True
+  OnClose = FormClose
+  OnDestroy = FormDestroy
   ExplicitWidth = 651
   ExplicitHeight = 428
   PixelsPerInch = 96

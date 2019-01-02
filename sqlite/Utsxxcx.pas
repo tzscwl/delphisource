@@ -58,14 +58,14 @@ begin
       0:
         begin
           fdatam.fdqry_tsxx.SQL.Clear;
-          fdatam.fdqry_tsxx.SQL.Add('select * from bm_jbxxk where isbn=' + tj);
-          fdatam.fdqry_tsxx.Prepare;
+         // fdatam.fdqry_tsxx.SQL.Add('select * from bm_jbxxk where isbn=' + tj);
+          fdatam.fdqry_tsxx.SQL.Add('select * from bm_jbxxk where isbn=' +QuotedStr(tj)) ;
           fdatam.fdqry_tsxx.Open;
         end;
       1:
         begin
           fdatam.fdqry_tsxx.SQL.Clear;
-          fdatam.fdqry_tsxx.SQL.Add('select * from bm_jbxxk where tm=' + tj);
+          fdatam.fdqry_tsxx.SQL.Add('select * from bm_jbxxk where tm=' + QuotedStr(tj));
           fdatam.fdqry_tsxx.Prepare;
           fdatam.fdqry_tsxx.Open;
         end;

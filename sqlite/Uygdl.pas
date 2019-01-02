@@ -39,7 +39,7 @@ var
 implementation
 
 uses
-  udm,umain;
+  udm, umain, ujyts;
 {$R *.dfm}
 
 procedure Tfygdl.act_closeExecute(Sender: TObject);
@@ -51,58 +51,57 @@ end;
 procedure Tfygdl.act_dlExecute(Sender: TObject);
 begin
   inherited;
-  if edt_gh.Text = '' then
+  if DateToStr(now) <= Fmain.stat1.Panels[4].Text then
   begin
-    Application.MessageBox('工号必须填写。', '警告', MB_OK + MB_ICONWARNING);
-    edt_gh.SetFocus;
-    Exit;
-  end;
-  if edt_mm.Text = '' then
-  begin
-    Application.MessageBox('密码必须填写。', '警告', MB_OK + MB_ICONWARNING);
-    edt_mm.SetFocus;
-    Exit;
-  end;
-  with fdatam.fdqry1 do
-  try
-    Close;
-    SQL.Clear;
-    SQL.Add('select * from pub_yhbmb where dlh=:gh and kl=:mm');
-    ParamByName('gh').Value := Trim(edt_gh.Text);
-    ParamByName('mm').Value := Trim(edt_mm.Text);
-    Open;
-  finally
+    //ShowMessage(DateToStr(now));
+    if edt_gh.Text = '' then
+    begin
+      Application.MessageBox('工号必须填写。', '警告', MB_OK + MB_ICONWARNING);
+      edt_gh.SetFocus;
+      Exit;
+    end;
+    if edt_mm.Text = '' then
+    begin
+      Application.MessageBox('密码必须填写。', '警告', MB_OK + MB_ICONWARNING);
+      edt_mm.SetFocus;
+      Exit;
+    end;
+    with fdatam.fdqry1 do
+    try
+      Close;
+      SQL.Clear;
+      SQL.Add('select * from pub_yhbmb where dlh=:gh and kl=:mm');
+      ParamByName('gh').Value := Trim(edt_gh.Text);
+      ParamByName('mm').Value := Trim(edt_mm.Text);
+      Open;
+    finally
 
-  end;
-  if fdatam.fdqry1.RecordCount > 0 then
+    end;
+    if fdatam.fdqry1.RecordCount > 0 then
+    begin
+      Fmain.stat1.Panels[0].Text := fdatam.fdqry1.FieldByName('dlh').AsString;
+      Fmain.stat1.Panels[1].Text := fdatam.fdqry1.FieldByName('yhm').AsString;
+      Fmain.dxlrtwndwmngr1.Show('提示', '登录成功！');
+      Close;
+    end;
+  end ;
+end;
+
+procedure Tfygdl.edt_ghKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  inherited;
+  if Key = VK_RETURN then
   begin
-     Fmain.stat1.Panels[0].Text:= fdatam.fdqry1.FieldByName('dlh').AsString;
-     Fmain.stat1.Panels[1].Text:= fdatam.fdqry1.FieldByName('yhm').AsString;
-     Fmain.dxlrtwndwmngr1.Show('提示','登录成功！') ;
-   //  Application.MessageBox('登录成功！', '提示', MB_OK + MB_ICONINFORMATION);
-     Close;
+    FindNextControl(ActiveControl, True, false, false).SetFocus;
   end;
 
 end;
 
-procedure Tfygdl.edt_ghKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
+procedure Tfygdl.edt_mmKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
 begin
   inherited;
-  if Key=VK_RETURN then
-      begin
-         FindNextControl(ActiveControl,True,false,false).SetFocus ;
-      end;
-
-
-end;
-
-procedure Tfygdl.edt_mmKeyDown(Sender: TObject; var Key: Word;
-  Shift: TShiftState);
-begin
-  inherited;
-  if Key=VK_RETURN then
-  btndl.Click;
+  if Key = VK_RETURN then
+    btndl.Click;
 end;
 
 end.

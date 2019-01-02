@@ -36,6 +36,11 @@ type
     act_tongji: TAction;
     act_tuichu: TAction;
     dxlrtwndwmngr1: TdxAlertWindowManager;
+    lbl1: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+    lbl4: TLabel;
+    lbl5: TLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tmr1Timer(Sender: TObject);
     procedure act_tsxxExecute(Sender: TObject);

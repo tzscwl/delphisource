@@ -51,6 +51,8 @@ type
     act_print: TAction;
     frxrprt1: TfrxReport;
     frxdbdtst1: TfrxDBDataset;
+    act_all: TAction;
+    dxbrlrgbtn8: TdxBarLargeButton;
     procedure FormCreate(Sender: TObject);
     procedure act_exportExecute(Sender: TObject);
     procedure act_addExecute(Sender: TObject);
@@ -61,6 +63,7 @@ type
     procedure FormDestroy(Sender: TObject);
     procedure act_selectExecute(Sender: TObject);
     procedure act_printExecute(Sender: TObject);
+    procedure act_allExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -73,7 +76,7 @@ var
 implementation
 
 uses
-  udm, umain, utsadd, utsedit,Utsxxcx;
+  udm, umain, utsadd, utsedit, Utsxxcx;
 {$R *.dfm}
 
 procedure Tftsxx.act_addExecute(Sender: TObject);
@@ -84,10 +87,33 @@ begin
   Ftsadd.Free;
 end;
 
+procedure Tftsxx.act_allExecute(Sender: TObject);
+begin
+
+  inherited;
+  if not fdatam.fdqry_tsxx.Active then
+  begin
+    fdatam.fdqry_tsxx.close;
+    fdatam.fdqry_tsxx.SQL.Clear;
+    fdatam.fdqry_tsxx.SQL.Add('select top 100 * from bm_jbxxk ');
+    fdatam.fdqry_tsxx.Prepare;
+    fdatam.fdqry_tsxx.Open;
+  end
+  else
+  begin
+    fdatam.fdqry_tsxx.close;
+    fdatam.fdqry_tsxx.SQL.Clear;
+    fdatam.fdqry_tsxx.SQL.Add('select top 100 * from bm_jbxxk ');
+    fdatam.fdqry_tsxx.Prepare;
+    fdatam.fdqry_tsxx.Open;
+  end;
+
+end;
+
 procedure Tftsxx.act_closeExecute(Sender: TObject);
 begin
   inherited;
-close;
+  close;
 end;
 
 procedure Tftsxx.act_deleteExecute(Sender: TObject);
@@ -110,7 +136,7 @@ begin
           end;
         IDCANCEL:
           begin
-            Fmain.dxlrtwndwmngr1.Show('提示','删除操作取消');
+            Fmain.dxlrtwndwmngr1.Show('提示', '删除操作取消');
           end;
       end;
 
@@ -133,7 +159,7 @@ begin
           end;
         IDCANCEL:
           begin
-            Fmain.dxlrtwndwmngr1.Show('提示','删除操作取消');
+            Fmain.dxlrtwndwmngr1.Show('提示', '删除操作取消');
           end;
       end;
 
@@ -162,13 +188,13 @@ end;
 procedure Tftsxx.act_printExecute(Sender: TObject);
 begin
   inherited;
- frxrprt1.ShowReport;
+  frxrprt1.ShowReport;
 end;
 
 procedure Tftsxx.act_selectExecute(Sender: TObject);
 begin
   inherited;
-  ftsxxcx:=Tftsxxcx.Create(self);
+  ftsxxcx := Tftsxxcx.Create(self);
   ftsxxcx.ShowModal;
   ftsxxcx.Free;
 end;
@@ -176,7 +202,7 @@ end;
 procedure Tftsxx.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   inherited;
-        Action := caFree;
+  Action := caFree;
 end;
 
 procedure Tftsxx.FormCreate(Sender: TObject);
@@ -197,7 +223,7 @@ end;
 procedure Tftsxx.FormDestroy(Sender: TObject);
 begin
   inherited;
-ftsxx:=nil;
+  ftsxx := nil;
 end;
 
 end.

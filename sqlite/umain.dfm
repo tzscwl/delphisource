@@ -9301,6 +9301,86 @@ object Fmain: TFmain
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
+  object lbl1: TLabel
+    Left = 472
+    Top = 144
+    Width = 120
+    Height = 31
+    AutoSize = False
+    Caption = #27880#24847#20107#39033#65306
+    Color = clRed
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = #24494#36719#38597#40657
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbl2: TLabel
+    Left = 472
+    Top = 195
+    Width = 399
+    Height = 31
+    AutoSize = False
+    Caption = '1'#65292#26412#31995#32479#26377#20219#20309#38382#39064#65292#35831#32852#31995#20316#32773#12290
+    Color = clRed
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = #24494#36719#38597#40657
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbl3: TLabel
+    Left = 472
+    Top = 246
+    Width = 327
+    Height = 31
+    AutoSize = False
+    Caption = '2'#65292#36827#34892#20219#20309#25805#20316#21069#65292#20808#30331#24405#12290
+    Color = clRed
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = #24494#36719#38597#40657
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbl4: TLabel
+    Left = 472
+    Top = 297
+    Width = 399
+    Height = 31
+    AutoSize = False
+    Caption = '3'#65292#22914#26377#26597#35810#19981#21040#30340#22270#20070#65292#35831#20808#28155#21152#12290
+    Color = clRed
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = #24494#36719#38597#40657
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object lbl5: TLabel
+    Left = 472
+    Top = 348
+    Width = 279
+    Height = 31
+    AutoSize = False
+    Caption = '4'#65292#29256#26435#25152#26377#65292#30772#35299#24517#31350#12290
+    Color = clRed
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clRed
+    Font.Height = -24
+    Font.Name = #24494#36719#38597#40657
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
   object stat1: TStatusBar
     Left = 0
     Top = 488
@@ -9308,24 +9388,28 @@ object Fmain: TFmain
     Height = 27
     Panels = <
       item
-        Width = 50
+        Width = 100
       end
       item
-        Width = 50
+        Width = 100
       end
       item
         Text = #21488#24030#20070#22478#22270#20070#20511#36824#31995#32479#27426#36814#20320#65281
         Width = 200
       end
       item
+        Width = 450
+      end
+      item
+        Text = '2019-12-31'
         Width = 50
       end>
   end
   object dxskncntrlr1: TdxSkinController
     NativeStyle = False
     SkinName = 'Office2007Green'
-    Left = 584
-    Top = 232
+    Left = 568
+    Top = 440
   end
   object dxbrmngr1: TdxBarManager
     AllowReset = False
@@ -9345,8 +9429,8 @@ object Fmain: TFmain
     DockColor = clBtnFace
     PopupMenuLinks = <>
     UseSystemFont = True
-    Left = 544
-    Top = 160
+    Left = 696
+    Top = 432
     PixelsPerInch = 96
     DockControlHeights = (
       0
@@ -9860,12 +9944,12 @@ object Fmain: TFmain
   end
   object tmr1: TTimer
     OnTimer = tmr1Timer
-    Left = 528
-    Top = 240
+    Left = 512
+    Top = 440
   end
   object actlst1: TActionList
-    Left = 496
-    Top = 160
+    Left = 752
+    Top = 440
     object act_tsxx: TAction
       Caption = #22270#20070#20449#24687
       OnExecute = act_tsxxExecute
@@ -9894,8 +9978,8 @@ object Fmain: TFmain
   object dxtbdmdmngr1: TdxTabbedMDIManager
     Active = True
     TabProperties.CustomButtons.Buttons = <>
-    Left = 648
-    Top = 160
+    Left = 624
+    Top = 432
     PixelsPerInch = 96
   end
   object dxlrtwndwmngr1: TdxAlertWindowManager
@@ -9915,8 +9999,8 @@ object Fmain: TFmain
     OptionsNavigationPanel.Font.Height = -11
     OptionsNavigationPanel.Font.Name = 'Tahoma'
     OptionsNavigationPanel.Font.Style = []
-    Left = 424
-    Top = 112
+    Left = 456
+    Top = 440
     PixelsPerInch = 96
   end
 end
