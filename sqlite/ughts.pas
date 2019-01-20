@@ -61,6 +61,8 @@ type
     cxgrdbclmnGrid1DBTableView1yc: TcxGridDBColumn;
     lbl10: TLabel;
     cxdbtxtdtjhrgh: TcxDBTextEdit;
+    cxStyleRepository1: TcxStyleRepository;
+    cxStyle1: TcxStyle;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
     procedure edt1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);

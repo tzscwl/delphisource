@@ -60,6 +60,7 @@ uses
 
 procedure TFtsadd.act_closeExecute(Sender: TObject);
 begin
+  fdatam.fdqry_tsxx.Cancel;//取消增加
   Close;
 end;
 

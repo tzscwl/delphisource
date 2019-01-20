@@ -147,7 +147,7 @@ begin
   begin
     if fdatam.fdqry_tsxx.RecordCount < 1 then
     begin
-      Application.MessageBox('没有品种可以编辑', '提示', MB_OK + MB_ICONINFORMATION);
+      Application.MessageBox('没有品种可以删除', '提示', MB_OK + MB_ICONINFORMATION);
       exit;
     end
     else

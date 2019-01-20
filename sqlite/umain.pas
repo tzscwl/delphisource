@@ -12,7 +12,7 @@ uses
   dxSkinOffice2016Colorful, dxSkinOffice2016Dark, cxClasses, cxLookAndFeels,
   dxSkinsForm, Vcl.ExtCtrls, dxBar, System.Actions, Vcl.ActnList, cxPC,
   dxBarBuiltInMenu, dxTabbedMDI, cxLookAndFeelPainters, cxGraphics,
-  dxAlertWindow;
+  dxAlertWindow, cxStyles;
 
 type
   TFmain = class(TForm)
@@ -41,6 +41,12 @@ type
     lbl3: TLabel;
     lbl4: TLabel;
     lbl5: TLabel;
+    cxstylrpstry1: TcxStyleRepository;
+    cxstyl_head: TcxStyle;
+    dxbrlrgbtn7: TdxBarLargeButton;
+    act_custom: TAction;
+    dxbrlrgbtn8: TdxBarLargeButton;
+    act_employee: TAction;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tmr1Timer(Sender: TObject);
     procedure act_tsxxExecute(Sender: TObject);
@@ -49,6 +55,8 @@ type
     procedure act_jieyueExecute(Sender: TObject);
     procedure act_guihuanExecute(Sender: TObject);
     procedure act_tongjiExecute(Sender: TObject);
+    procedure act_customExecute(Sender: TObject);
+    procedure act_employeeExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -61,8 +69,33 @@ var
 implementation
 
 uses
-  utsxx, udm, Uygdl,ujyts,ughts,utjfx;
+  utsxx, udm, Uygdl, ujyts, ughts, utjfx, ukh, Uygxx;
 {$R *.dfm}
+                       { TODO -o王亮 : 建立员工管理页面 }
+
+procedure TFmain.act_customExecute(Sender: TObject);
+begin
+
+  if (Fmain.stat1.Panels[0].text = '') then
+  begin
+    Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
+    Exit;
+  end
+  else
+  begin
+    if not Assigned(fghts) then
+    begin
+      fkh := Tfkh.Create(self);
+      fkh.Show;
+    end
+    else
+    begin
+      Application.MessageBox('已经打开了窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Exit;
+    end;
+  end;
+
+end;
 
 procedure TFmain.act_dlExecute(Sender: TObject);
 begin
@@ -73,7 +106,6 @@ begin
   end
   else
   begin
-
     fygdl := Tfygdl.Create(Self);
     fygdl.ShowModal;
     fygdl.Free;
@@ -82,9 +114,39 @@ begin
 
 end;
 
+procedure TFmain.act_employeeExecute(Sender: TObject);
+begin
+  if (Fmain.stat1.Panels[0].text = '') then
+  begin
+    Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
+    Exit;
+  end
+  else
+  begin
+    if (Fmain.stat1.Panels[0].text = '03029') then
+    begin
+      if not Assigned(fghts) then
+      begin
+        fygxx := Tfygxx.Create(self);
+        fygxx.Show;
+      end
+      else
+      begin
+        Application.MessageBox('已经打开了窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+        Exit;
+      end;
+    end
+    else
+    begin
+      Application.MessageBox('您没有权限进行操作！', '警告', MB_OK + MB_ICONWARNING);
+      Exit;
+    end;
+  end;
+end;
+
 procedure TFmain.act_guihuanExecute(Sender: TObject);
 begin
-    if (Fmain.stat1.Panels[0].text = '') then
+  if (Fmain.stat1.Panels[0].text = '') then
   begin
     Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
     Exit;
@@ -98,7 +160,7 @@ begin
     end
     else
     begin
-      Application.MessageBox('已经打开了借阅图书窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Application.MessageBox('已经打开了窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
       Exit;
     end;
   end;
@@ -120,7 +182,7 @@ begin
     end
     else
     begin
-      Application.MessageBox('已经打开了借阅图书窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Application.MessageBox('已经打开了窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
       Exit;
     end;
   end;
@@ -129,7 +191,7 @@ end;
 
 procedure TFmain.act_tongjiExecute(Sender: TObject);
 begin
-   if (Fmain.stat1.Panels[0].text = '') then
+  if (Fmain.stat1.Panels[0].text = '') then
   begin
     Application.MessageBox('没有员工登录，请先登录！', '警告', MB_OK + MB_ICONWARNING);
     Exit;
@@ -143,7 +205,7 @@ begin
     end
     else
     begin
-      Application.MessageBox('已经打开了图书信息窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Application.MessageBox('已经打开了窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
       Exit;
     end;
   end;
@@ -165,7 +227,7 @@ begin
     end
     else
     begin
-      Application.MessageBox('已经打开了图书信息窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
+      Application.MessageBox('已经打开了窗口，请勿重复操作！', '警告', MB_OK + MB_ICONWARNING);
       Exit;
     end;
   end;

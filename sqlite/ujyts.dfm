@@ -37,6 +37,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taLeftJustify
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1tm: TcxGridDBColumn
@@ -45,6 +46,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taLeftJustify
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1spbs: TcxGridDBColumn
@@ -53,6 +55,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taLeftJustify
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 100
       end
       object cxgrdbclmnGrid1DBTableView1sm: TcxGridDBColumn
@@ -61,6 +64,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 400
       end
       object cxgrdbclmnGrid1DBTableView1dj: TcxGridDBColumn
@@ -69,6 +73,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 80
       end
       object cxgrdbclmnGrid1DBTableView1cbsjc: TcxGridDBColumn
@@ -77,6 +82,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1ysny: TcxGridDBColumn
@@ -85,6 +91,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1bc: TcxGridDBColumn
@@ -93,7 +100,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
-        Styles.Header = cxstyl1
+        Styles.Header = Fmain.cxstyl_head
         Width = 50
       end
       object cxgrdbclmnGrid1DBTableView1yc: TcxGridDBColumn
@@ -102,6 +109,7 @@ inherited Fjyts: TFjyts
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 50
       end
     end
@@ -387,12 +395,13 @@ inherited Fjyts: TFjyts
       Left = 648
       Top = 127
       AutoSize = False
-      Properties.KeyFieldNames = 'dlh'
+      Properties.KeyFieldNames = 'xm'
       Properties.ListColumns = <
         item
-          FieldName = 'dlh'
+          FieldName = 'xm'
         end>
-      Properties.ListSource = fdatam.ds_ygxx
+      Properties.ListOptions.ShowHeader = False
+      Properties.ListSource = fdatam.ds_khxx
       TabOrder = 8
       Height = 30
       Width = 257

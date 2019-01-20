@@ -86,9 +86,9 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <Icon_MainIcon>tsjy_Icon1.ico</Icon_MainIcon>
-        <UWP_DelphiLogo44>G:\程序源文件\图标\进销存等\1200004.png</UWP_DelphiLogo44>
-        <UWP_DelphiLogo150>G:\程序源文件\图标\进销存等\1200004.png</UWP_DelphiLogo150>
+        <Icon_MainIcon>tsjy_Icon.ico</Icon_MainIcon>
+        <UWP_DelphiLogo44>G:\程序源文件\素材\进销存等\1200004.png</UWP_DelphiLogo44>
+        <UWP_DelphiLogo150>G:\程序源文件\素材\进销存等\1200004.png</UWP_DelphiLogo150>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -149,6 +149,34 @@
             <Form>ftjfx</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="Ukh.pas">
+            <Form>fkh</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Uzjkh.pas">
+            <Form>fzjkh</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Ukhbj.pas">
+            <Form>fkhbj</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Ukhcx.pas">
+            <Form>fkhcx</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Uygxx.pas">
+            <Form>fygxx</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Uygadd.pas">
+            <Form>fygadd</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="Uygedit.pas">
+            <Form>fygedit</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -175,6 +203,13 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
+                <DeployFile LocalName="..\..\素材\进销存等\1200004.png" Configuration="Debug" Class="UWP_DelphiLogo150">
+                    <Platform Name="Win32">
+                        <RemoteDir>Assets\</RemoteDir>
+                        <RemoteName>Logo150x150.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Win32\Debug\tsjy.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>tsjy.exe</RemoteName>

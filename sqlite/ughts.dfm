@@ -1,24 +1,23 @@
 inherited fghts: Tfghts
   Caption = #24402#36824#22270#20070
-  ClientHeight = 653
-  ClientWidth = 1104
+  ClientHeight = 669
+  ClientWidth = 1126
   FormStyle = fsMDIChild
   Visible = True
   OnClose = FormClose
   OnDestroy = FormDestroy
-  ExplicitWidth = 1120
-  ExplicitHeight = 692
+  ExplicitWidth = 1142
+  ExplicitHeight = 708
   PixelsPerInch = 96
   TextHeight = 13
   object pnl1: TPanel [0]
     Left = 0
     Top = 0
-    Width = 1104
+    Width = 1126
     Height = 193
     Align = alTop
-    TabOrder = 4
-    ExplicitLeft = -64
-    ExplicitWidth = 1134
+    TabOrder = 0
+    ExplicitWidth = 1104
     object lbl1: TLabel
       Left = 25
       Top = 7
@@ -356,14 +355,12 @@ inherited fghts: Tfghts
   object cxgrd1: TcxGrid [1]
     Left = 0
     Top = 193
-    Width = 1104
-    Height = 460
+    Width = 1126
+    Height = 476
     Align = alClient
-    TabOrder = 5
-    ExplicitLeft = -64
-    ExplicitTop = 101
-    ExplicitWidth = 1134
-    ExplicitHeight = 543
+    TabOrder = 1
+    ExplicitWidth = 1104
+    ExplicitHeight = 460
     object cxgrdbtblvwGrid1DBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
       DataController.DataSource = fdatam.ds_ghts
@@ -378,67 +375,119 @@ inherited fghts: Tfghts
       object cxgrdbclmnGrid1DBTableView1spbs: TcxGridDBColumn
         Caption = #21830#21697#26631#35782
         DataBinding.FieldName = 'spbs'
-        Width = 72
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 73
       end
       object cxgrdbclmnGrid1DBTableView1sl: TcxGridDBColumn
         Caption = #25968#37327
         DataBinding.FieldName = 'sl'
-        Width = 51
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 52
       end
       object cxgrdbclmnGrid1DBTableView1czy: TcxGridDBColumn
         Caption = #25805#20316#20154
         DataBinding.FieldName = 'czy'
-        Width = 56
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 58
       end
       object cxgrdbclmnGrid1DBTableView1jhrgh: TcxGridDBColumn
         Caption = #20511#20070#20154
         DataBinding.FieldName = 'jhrgh'
-        Width = 63
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 64
       end
       object cxgrdbclmnGrid1DBTableView1jssj: TcxGridDBColumn
         Caption = #20511#20070#26102#38388
         DataBinding.FieldName = 'jssj'
-        Width = 91
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 93
       end
       object cxgrdbclmnGrid1DBTableView1hssj: TcxGridDBColumn
         Caption = #36824#20070#26102#38388
         DataBinding.FieldName = 'hssj'
-        Width = 79
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 80
       end
       object cxgrdbclmnGrid1DBTableView1isbn: TcxGridDBColumn
         Caption = #20070#21495
         DataBinding.FieldName = 'isbn'
-        Width = 121
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 124
       end
       object cxgrdbclmnGrid1DBTableView1sm: TcxGridDBColumn
         Caption = #20070#21517
         DataBinding.FieldName = 'sm'
-        Width = 266
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 271
       end
       object cxgrdbclmnGrid1DBTableView1dj: TcxGridDBColumn
         Caption = #23450#20215
         DataBinding.FieldName = 'dj'
-        Width = 60
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 61
       end
       object cxgrdbclmnGrid1DBTableView1cbsjc: TcxGridDBColumn
         Caption = #20986#29256#31038
         DataBinding.FieldName = 'cbsjc'
-        Width = 116
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 60
       end
       object cxgrdbclmnGrid1DBTableView1ysny: TcxGridDBColumn
         Caption = #21360#21047#26102#38388
         DataBinding.FieldName = 'ysny'
-        Width = 67
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 99
       end
       object cxgrdbclmnGrid1DBTableView1bc: TcxGridDBColumn
         Caption = #29256#27425
         DataBinding.FieldName = 'bc'
-        Width = 30
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 48
       end
       object cxgrdbclmnGrid1DBTableView1yc: TcxGridDBColumn
         Caption = #21360#27425
         DataBinding.FieldName = 'yc'
-        Width = 30
+        PropertiesClassName = 'TcxTextEditProperties'
+        Properties.Alignment.Horz = taCenter
+        HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
+        Width = 41
       end
     end
     object cxgrdlvlGrid1Level1: TcxGridLevel
@@ -461,5 +510,10 @@ inherited fghts: Tfghts
     Left = 824
     Top = 456
     PixelsPerInch = 96
+  end
+  object cxStyleRepository1: TcxStyleRepository
+    PixelsPerInch = 96
+    object cxStyle1: TcxStyle
+    end
   end
 end

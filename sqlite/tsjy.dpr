@@ -12,7 +12,14 @@ uses
   Utsxxcx in 'Utsxxcx.pas' {ftsxxcx},
   ujyts in 'ujyts.pas' {Fjyts},
   ughts in 'ughts.pas' {fghts},
-  utjfx in 'utjfx.pas' {ftjfx};
+  utjfx in 'utjfx.pas' {ftjfx},
+  Ukh in 'Ukh.pas' {fkh},
+  Uzjkh in 'Uzjkh.pas' {fzjkh},
+  Ukhbj in 'Ukhbj.pas' {fkhbj},
+  Ukhcx in 'Ukhcx.pas' {fkhcx},
+  Uygxx in 'Uygxx.pas' {fygxx},
+  Uygadd in 'Uygadd.pas' {fygadd},
+  Uygedit in 'Uygedit.pas' {fygedit};
 
 {$R *.res}
 
@@ -22,6 +29,5 @@ begin
   Application.Title := '台州书城图书借还系统';
   Application.CreateForm(TFmain, Fmain);
   Application.CreateForm(Tfdatam, fdatam);
-  Application.CreateForm(Tfbase, fbase);
   Application.Run;
 end.

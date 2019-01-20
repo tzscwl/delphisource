@@ -25,6 +25,7 @@ inherited ftsxx: Tftsxx
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
       DataController.Summary.SummaryGroups = <>
+      OptionsSelection.CellSelect = False
       OptionsView.NoDataToDisplayInfoText = #24403#21069#26080#25968#25454#21487#26174#31034
       OptionsView.CellAutoHeight = True
       OptionsView.ColumnAutoWidth = True
@@ -38,24 +39,28 @@ inherited ftsxx: Tftsxx
         Caption = #20070#21495
         DataBinding.FieldName = 'isbn'
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1tm: TcxGridDBColumn
         Caption = #26465#30721
         DataBinding.FieldName = 'tm'
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1spbs: TcxGridDBColumn
         Caption = #21830#21697#26631#35782
         DataBinding.FieldName = 'spbs'
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 100
       end
       object cxgrdbclmnGrid1DBTableView1sm: TcxGridDBColumn
         Caption = #20070#21517
         DataBinding.FieldName = 'sm'
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 500
       end
       object cxgrdbclmnGrid1DBTableView1dj: TcxGridDBColumn
@@ -64,12 +69,14 @@ inherited ftsxx: Tftsxx
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taLeftJustify
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 80
       end
       object cxgrdbclmnGrid1DBTableView1cbsjc: TcxGridDBColumn
         Caption = #20986#29256#31038
         DataBinding.FieldName = 'cbsjc'
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 100
       end
       object cxgrdbclmnGrid1DBTableView1ysny: TcxGridDBColumn
@@ -78,6 +85,7 @@ inherited ftsxx: Tftsxx
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 150
       end
       object cxgrdbclmnGrid1DBTableView1bc: TcxGridDBColumn
@@ -86,6 +94,7 @@ inherited ftsxx: Tftsxx
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 50
       end
       object cxgrdbclmnGrid1DBTableView1yc: TcxGridDBColumn
@@ -94,6 +103,7 @@ inherited ftsxx: Tftsxx
         PropertiesClassName = 'TcxTextEditProperties'
         Properties.Alignment.Horz = taCenter
         HeaderAlignmentHorz = taCenter
+        Styles.Header = Fmain.cxstyl_head
         Width = 50
       end
     end

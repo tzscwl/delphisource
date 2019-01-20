@@ -143,9 +143,9 @@ end;
 procedure TFjyts.FormCreate(Sender: TObject);
 begin
   inherited;
-  if not fdatam.fdqry_ygxx.active then
+  if not fdatam.fdqry_khxx.active then
   begin
-    fdatam.fdqry_ygxx.active := True;
+    fdatam.fdqry_khxx.active := True;
     fdatam.fdqry_js.Append;
   end;
 end;

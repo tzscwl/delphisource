@@ -29,6 +29,16 @@ type
     ds_ghts: TDataSource;
     fdqry_ghts: TFDQuery;
     fdqry_hscz: TFDQuery;
+    ds_whts: TDataSource;
+    fdqry_whts: TFDQuery;
+    ds_khxx: TDataSource;
+    fdqry_khxx: TFDQuery;
+    ds4: TDataSource;
+    fdqry4: TFDQuery;
+    ds5: TDataSource;
+    fdqry5: TFDQuery;
+    ds6: TDataSource;
+    fdqry6: TFDQuery;
   private
     { Private declarations }
   public
