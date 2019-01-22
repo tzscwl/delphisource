@@ -242,6 +242,20 @@ inherited Fjyts: TFjyts
       Width = 87
       Height = 30
       AutoSize = False
+      Caption = #20511#20070#20154'ID'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      ParentFont = False
+    end
+    object lbl_jsr: TLabel
+      Left = 719
+      Top = 127
+      Width = 87
+      Height = 30
+      AutoSize = False
       Caption = #20511#20070#20154
       Font.Charset = ANSI_CHARSET
       Font.Color = clWindowText
@@ -391,28 +405,13 @@ inherited Fjyts: TFjyts
       Height = 30
       Width = 89
     end
-    object cbb1: TcxLookupComboBox
-      Left = 648
-      Top = 127
-      AutoSize = False
-      Properties.KeyFieldNames = 'xm'
-      Properties.ListColumns = <
-        item
-          FieldName = 'xm'
-        end>
-      Properties.ListOptions.ShowHeader = False
-      Properties.ListSource = fdatam.ds_khxx
-      TabOrder = 8
-      Height = 30
-      Width = 257
-    end
     object btnpost: TcxButton
       Left = 976
       Top = 47
       Width = 81
       Height = 47
       Action = act_post
-      TabOrder = 9
+      TabOrder = 8
     end
     object btnpost1: TcxButton
       Left = 976
@@ -420,7 +419,54 @@ inherited Fjyts: TFjyts
       Width = 81
       Height = 47
       Action = act_close
+      TabOrder = 9
+    end
+    object btn1: TcxButton
+      Left = 695
+      Top = 123
+      Width = 18
+      Height = 34
+      Caption = 'btn1'
+      OptionsImage.Glyph.SourceDPI = 96
+      OptionsImage.Glyph.Data = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        6100000026744558745469746C65005175657374696F6E3B48656C703B446F63
+        756D656E746174696F6E3B576861746DE9F9460000022649444154785EA5915F
+        48536114C0BF9BB9456414F4143DF4E2C3B096D5A215982F45D8266D7A6916AC
+        AD6C3D6881C1DA62A145A56DBEAC55776E6A7738B7D8166EB4B61EC664FD5BE1
+        9F4867593ED81F425A324B119B3D9DBECF2E62702F221DF8712F87737E9CEF1C
+        04008BC4DE7D478181AF0807C5B10A5340BE1C94BA318ED497E38B3DFF0802FD
+        7F9BADA1BEEDD6F0B0BFE5C1F00F67620C6E84DE4C9CB225DA0F9DF3141391D2
+        FC905F409AAFFB9ECB1DF1D1FCA34C16AC8101303A5390FE320D6C6A1CB4CD89
+        E9F2336E19A913121498D9977DA9F19F70ED7E3FD4DE8C455B23AF630D6D4FE1
+        45EE37F806B370B03EF80A0B0A850485A76DC97CF46D16AA2D11D84DB7D24626
+        C99A3AD290FC360FCCE02C9419FC792C100B4E506E602D52BA6D68077DC77E58
+        63D87CF462E473289383CE915FD0E0FB00722DDB8B0522C11D60569302CC1A73
+        C7335B4BCF2878866640618EC19EE3EDE1E203755BC9227905FBF45E24D775A1
+        C79FE6894C5C7FABF7FDEDD404284DF1FCB68A2B15444A9AF76ABDFC57909D60
+        D1AE9A7B68A7A69308449A4BC1A0B4DA8D77E1B0102186929FEC46187E819476
+        23A9DA854821F78C8D984D98B564ECFD7A3FE2E017482A192451DE5DB8466DA3
+        47D5E449674CAE2799AAF38C9AE496152C8975676D895C786C0E9AA31F4176CC
+        95C3B9A22505CB0A8A54C69EC90BF86C3AD7089428EC9338B77E25025169E555
+        5D6915332539629FDA22ABD39325AE44407127DB40E0FE2921C17FF107A751E7
+        8D9716647A0000000049454E44AE426082}
+      PaintStyle = bpsGlyph
       TabOrder = 10
+      OnClick = btn1Click
+    end
+    object edt_id: TEdit
+      Left = 648
+      Top = 128
+      Width = 41
+      Height = 30
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -16
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = [fsBold]
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 11
     end
   end
   inherited actlst1: TActionList

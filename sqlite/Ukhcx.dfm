@@ -11,6 +11,7 @@ object fkhcx: Tfkhcx
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
   PixelsPerInch = 96
   TextHeight = 13
   object cbb1: TcxComboBox
@@ -44,6 +45,7 @@ object fkhcx: Tfkhcx
     Style.Font.Style = []
     Style.IsFontAssigned = True
     TabOrder = 1
+    OnKeyDown = cxtxtdt1KeyDown
     Height = 33
     Width = 265
   end
@@ -71,6 +73,7 @@ object fkhcx: Tfkhcx
     Align = alBottom
     TabOrder = 4
     object cxgrdbtblvwGrid1DBTableView1: TcxGridDBTableView
+      OnDblClick = cxgrdbtblvwGrid1DBTableView1DblClick
       Navigator.Buttons.CustomButtons = <>
       DataController.DataSource = fdatam.ds1
       DataController.Summary.DefaultGroupSummaryItems = <>

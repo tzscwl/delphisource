@@ -71,7 +71,7 @@ implementation
 uses
   utsxx, udm, Uygdl, ujyts, ughts, utjfx, ukh, Uygxx;
 {$R *.dfm}
-                       { TODO -o王亮 : 建立员工管理页面 }
+
 
 procedure TFmain.act_customExecute(Sender: TObject);
 begin
@@ -109,7 +109,6 @@ begin
     fygdl := Tfygdl.Create(Self);
     fygdl.ShowModal;
     fygdl.Free;
-
   end;
 
 end;

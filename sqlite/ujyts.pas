@@ -41,7 +41,6 @@ type
     cxdbtxtdt7: TcxDBTextEdit;
     lbl8: TLabel;
     lbl9: TLabel;
-    cbb1: TcxLookupComboBox;
     btnpost: TcxButton;
     act_post: TAction;
     act_close: TAction;
@@ -57,12 +56,16 @@ type
     cxgrdbclmnGrid1DBTableView1yc: TcxGridDBColumn;
     cxstylrpstry1: TcxStyleRepository;
     cxstyl1: TcxStyle;
+    btn1: TcxButton;
+    lbl_jsr: TLabel;
+    edt_id: TEdit;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure FormDestroy(Sender: TObject);
     procedure edt1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormCreate(Sender: TObject);
     procedure act_closeExecute(Sender: TObject);
     procedure act_postExecute(Sender: TObject);
+    procedure btn1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -75,7 +78,7 @@ var
 implementation
 
 uses
-  umain, udm;
+  umain, udm, Ukhcx, utsadd;
 {$R *.dfm}
 
 procedure TFjyts.act_closeExecute(Sender: TObject);
@@ -86,32 +89,61 @@ end;
 
 procedure TFjyts.act_postExecute(Sender: TObject);
 begin
-  fdatam.fdqry_js.FieldByName('spbs').Value := cxdbtxtdt2.Text;
-  fdatam.fdqry_js.FieldByName('sl').Value := 1;
-  fdatam.fdqry_js.FieldByName('czy').Value := Fmain.stat1.Panels[0].Text;
-  fdatam.fdqry_js.FieldByName('jhrgh').Value := cbb1.Text;
-  fdatam.fdqry_js.FieldByName('jssj').Value := now;
-  fdatam.fdqry_js.Post;
-  case Application.MessageBox('操作成功，是否继续借书?', '提示', MB_OKCANCEL + MB_ICONQUESTION) of
-    IDOK:
-      begin
-        edt1.Text := string.Empty;
-        edt1.SetFocus;
-        cxdbtxtdt1.Text:=string.Empty;
-        cxdbtxtdt2.Text:=string.Empty;
-        cxdbtxtdt3.Text:=string.Empty;
-        cxdbtxtdt4.Text:=string.Empty;
-        cxdbtxtdt5.Text:=string.Empty;
-        cxdbtxtdt6.Text:=string.Empty;
-        cxdbtxtdt7.Text:=string.Empty;
-        fdatam.fdqry_js.Append;
+  if edt1.Text = '' then
+  begin
+    Application.MessageBox('必须输入书号！', '错误', MB_OK + MB_ICONSTOP);
+    edt1.Text := string.Empty;
+    edt1.SetFocus;
+    cxdbtxtdt1.Text := string.Empty;
+    cxdbtxtdt2.Text := string.Empty;
+    cxdbtxtdt3.Text := string.Empty;
+    cxdbtxtdt4.Text := string.Empty;
+    cxdbtxtdt5.Text := string.Empty;
+    cxdbtxtdt6.Text := string.Empty;
+    cxdbtxtdt7.Text := string.Empty;
+  end
+  else
+  begin
+    if fdatam.fdqry_tsxxj.RecordCount > 0 then
+    begin
+      fdatam.fdqry_js.FieldByName('spbs').Value := cxdbtxtdt2.Text;
+      fdatam.fdqry_js.FieldByName('sl').Value := 1;
+      fdatam.fdqry_js.FieldByName('czy').Value := Fmain.stat1.Panels[0].Text;
+      fdatam.fdqry_js.FieldByName('jhrgh').Value := edt_id.Text;
+      fdatam.fdqry_js.FieldByName('jssj').Value := now;
+      fdatam.fdqry_js.Post;
+      case Application.MessageBox('操作成功，是否继续借书?', '提示', MB_OKCANCEL + MB_ICONQUESTION) of
+        IDOK:
+          begin
+            edt1.Text := string.Empty;
+            edt1.SetFocus;
+            cxdbtxtdt1.Text := string.Empty;
+            cxdbtxtdt2.Text := string.Empty;
+            cxdbtxtdt3.Text := string.Empty;
+            cxdbtxtdt4.Text := string.Empty;
+            cxdbtxtdt5.Text := string.Empty;
+            cxdbtxtdt6.Text := string.Empty;
+            cxdbtxtdt7.Text := string.Empty;
+            fdatam.fdqry_js.Append;
+          end;
+        IDCANCEL:
+          begin
+            Close;
+          end;
       end;
-    IDCANCEL:
-      begin
-        Close;
-      end;
+    end
+
   end;
 
+end;
+
+procedure TFjyts.btn1Click(Sender: TObject);
+begin
+  inherited;
+  //显示客户查询窗口
+  fkhcx := Tfkhcx.Create(Self);
+  fkhcx.ShowModal;
+  fkhcx.Free;
 end;
 
 procedure TFjyts.edt1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
@@ -125,6 +157,36 @@ begin
       fdatam.fdqry_tsxxj.ParamByName('t').Value := Trim(edt1.text);
       fdatam.fdqry_tsxxj.Prepare;
       fdatam.fdqry_tsxxj.Open;
+      if fdatam.fdqry_tsxxj.RecordCount > 0 then
+      begin
+        fkhcx := Tfkhcx.Create(Self);
+        fkhcx.ShowModal;
+        fkhcx.Free;
+      end
+      else
+      begin
+        case Application.MessageBox('没有这个书号或条码，请增加图书信息。', '错误', MB_YESNO + MB_ICONQUESTION) of
+          IDYES:
+            begin
+              Ftsadd := TFtsadd.Create(Self);
+              Ftsadd.ShowModal;
+              Ftsadd.Free;
+            end;
+          IDNO:
+            begin
+              edt1.Text := string.Empty;
+              edt1.SetFocus;
+              cxdbtxtdt1.Text := string.Empty;
+              cxdbtxtdt2.Text := string.Empty;
+              cxdbtxtdt3.Text := string.Empty;
+              cxdbtxtdt4.Text := string.Empty;
+              cxdbtxtdt5.Text := string.Empty;
+              cxdbtxtdt6.Text := string.Empty;
+              cxdbtxtdt7.Text := string.Empty;
+            end;
+        end;
+
+      end;
     end
     else
     begin

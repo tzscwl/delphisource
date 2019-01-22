@@ -36,6 +36,8 @@ type
     cxgrdlvlGrid1Level1: TcxGridLevel;
     procedure act_cxExecute(Sender: TObject);
     procedure act_closeExecute(Sender: TObject);
+    procedure cxgrdbtblvwGrid1DBTableView1DblClick(Sender: TObject);
+    procedure cxtxtdt1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
   private
     { Private declarations }
   public
@@ -48,12 +50,12 @@ var
 implementation
 
 uses
-  umain, udm;
+  umain, udm, ujyts;
 {$R *.dfm}
 
 procedure Tfkhcx.act_closeExecute(Sender: TObject);
 begin
-Close;
+  Close;
 end;
 
 procedure Tfkhcx.act_cxExecute(Sender: TObject);
@@ -103,6 +105,35 @@ begin
     Application.MessageBox('条件不能为空！', '提示', MB_OK + MB_ICONWARNING);
     cxtxtdt1.SetFocus;
   end;
+end;
+
+procedure Tfkhcx.cxgrdbtblvwGrid1DBTableView1DblClick(Sender: TObject);
+begin
+
+  if not Assigned(fjyts) then
+  begin
+    fjyts := Tfjyts.Create(self);
+    fjyts.Show;
+    Fjyts.lbl_jsr.Caption := fdatam.fdqry1.FieldByName('xm').Value;
+    Fjyts.edt_id.text := fdatam.fdqry1.FieldByName('id').AsString;
+    Close;
+  end
+  else
+  begin
+    Fjyts.lbl_jsr.Caption := fdatam.fdqry1.FieldByName('xm').Value;
+    Fjyts.edt_id.text := fdatam.fdqry1.FieldByName('id').AsString;
+    Close;
+  end;
+
+end;
+
+procedure Tfkhcx.cxtxtdt1KeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  if Key = VK_RETURN then
+  begin
+    btncx.Click;
+  end;
+
 end;
 
 end.
