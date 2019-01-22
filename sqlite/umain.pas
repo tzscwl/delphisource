@@ -83,7 +83,7 @@ begin
   end
   else
   begin
-    if not Assigned(fghts) then
+    if not Assigned( fkh) then
     begin
       fkh := Tfkh.Create(self);
       fkh.Show;
@@ -124,7 +124,7 @@ begin
   begin
     if (Fmain.stat1.Panels[0].text = '03029') then
     begin
-      if not Assigned(fghts) then
+      if not Assigned(fygxx) then
       begin
         fygxx := Tfygxx.Create(self);
         fygxx.Show;
