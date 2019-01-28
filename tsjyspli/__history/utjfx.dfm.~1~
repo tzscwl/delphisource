@@ -1,0 +1,10 @@
+inherited ftjfx: Tftjfx
+  Caption = #32479#35745#20998#26512
+  ExplicitWidth = 651
+  ExplicitHeight = 338
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited dxbrmngr1: TdxBarManager
+    PixelsPerInch = 96
+  end
+end

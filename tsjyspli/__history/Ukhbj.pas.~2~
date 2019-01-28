@@ -1,0 +1,91 @@
+unit Ukhbj;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxGraphics, cxControls, cxLookAndFeels,
+  cxLookAndFeelPainters, cxContainer, cxEdit, dxSkinsCore,
+  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
+  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
+  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
+  dxSkinOffice2016Dark, System.Actions, Vcl.ActnList, Vcl.StdCtrls, cxMaskEdit,
+  cxDropDownEdit, cxDBEdit, cxTextEdit;
+
+type
+  Tfkhbj = class(TForm)
+    lbl1: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+    lbl4: TLabel;
+    cxdbtxtdt1: TcxDBTextEdit;
+    cxdbtxtdt2: TcxDBTextEdit;
+    cxdbtxtdt3: TcxDBTextEdit;
+    cbb1: TcxDBComboBox;
+    btn_post: TButton;
+    btn_close: TButton;
+    actlst_khbj: TActionList;
+    act_post: TAction;
+    act_close: TAction;
+    procedure act_closeExecute(Sender: TObject);
+    procedure act_postExecute(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fkhbj: Tfkhbj;
+
+implementation
+         uses umain,udm;
+{$R *.dfm}
+
+procedure Tfkhbj.act_closeExecute(Sender: TObject);
+begin
+Close;
+end;
+
+procedure Tfkhbj.act_postExecute(Sender: TObject);
+begin
+
+   fdatam.fdqry_khxx.Post;
+   Application.MessageBox('图书信息编辑成功！', '提示', MB_OK + MB_ICONINFORMATION);
+close;
+end;
+
+procedure Tfkhbj.FormCreate(Sender: TObject);
+begin
+  if fdatam.fdqry_khxx.Active = false then
+  begin
+    fdatam.fdqry_khxx.Active := True;
+    if fdatam.fdqry_khxx.RecordCount < 1 then
+    begin
+      Application.MessageBox('没有品种可以编辑', '提示', MB_OK + MB_ICONINFORMATION);
+      exit;
+    end
+    else
+    begin
+      fdatam.fdqry_khxx.Edit;
+    end;
+  end
+
+  else
+  begin
+    if fdatam.fdqry_khxx.RecordCount < 1 then
+    begin
+      Application.MessageBox('没有品种可以编辑', '提示', MB_OK + MB_ICONINFORMATION);
+      exit;
+    end
+    else
+    begin
+      fdatam.fdqry_khxx.Edit;
+    end;
+
+  end;
+end;
+
+end.

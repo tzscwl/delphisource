@@ -1,0 +1,67 @@
+unit Uygadd;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, cxGraphics, cxControls, cxLookAndFeels,
+  cxLookAndFeelPainters, cxContainer, cxEdit, dxSkinsCore,
+  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
+  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
+  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
+  dxSkinOffice2016Dark, Vcl.StdCtrls, System.Actions, Vcl.ActnList, cxTextEdit,
+  cxDBEdit;
+
+type
+  Tfygadd = class(TForm)
+    lbl1: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+    lbl4: TLabel;
+    cxdbtxtdt1: TcxDBTextEdit;
+    cxdbtxtdt2: TcxDBTextEdit;
+    cxdbtxtdt3: TcxDBTextEdit;
+    cxdbtxtdt4: TcxDBTextEdit;
+    actlst1: TActionList;
+    act_post: TAction;
+    act_cancel: TAction;
+    btn1: TButton;
+    btn2: TButton;
+    procedure FormCreate(Sender: TObject);
+    procedure act_postExecute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fygadd: Tfygadd;
+
+implementation
+uses
+ umain,udm;
+{$R *.dfm}
+
+procedure Tfygadd.act_postExecute(Sender: TObject);
+begin
+  fdatam.fdqry_ygxx.Post;
+  Application.MessageBox('增加成功！', '提示', MB_OK + MB_ICONINFORMATION);
+  close;
+end;
+
+procedure Tfygadd.FormCreate(Sender: TObject);
+begin
+  if fdatam.fdqry_ygxx.Active = false then
+  begin
+    fdatam.fdqry_ygxx.Active := True;
+    fdatam.fdqry_ygxx.Append;
+  end
+  else
+  begin
+    fdatam.fdqry_ygxx.Append;
+  end;
+end;
+
+end.

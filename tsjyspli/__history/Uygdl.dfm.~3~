@@ -1,0 +1,71 @@
+inherited fygdl: Tfygdl
+  Caption = #21592#24037#30331#24405
+  ClientHeight = 185
+  ClientWidth = 314
+  ExplicitWidth = 330
+  ExplicitHeight = 224
+  PixelsPerInch = 96
+  TextHeight = 13
+  object lbl1: TLabel [0]
+    Left = 48
+    Top = 48
+    Width = 24
+    Height = 13
+    Caption = #24037#21495
+  end
+  object lbl2: TLabel [1]
+    Left = 48
+    Top = 75
+    Width = 24
+    Height = 13
+    Caption = #23494#30721
+  end
+  object edt_gh: TEdit [2]
+    Left = 112
+    Top = 40
+    Width = 121
+    Height = 21
+    TabOrder = 1
+  end
+  object edt_mm: TEdit [3]
+    Left = 112
+    Top = 67
+    Width = 121
+    Height = 21
+    PasswordChar = '*'
+    TabOrder = 2
+  end
+  object btndl: TcxButton [4]
+    Left = 48
+    Top = 136
+    Width = 97
+    Height = 33
+    Action = act_dl
+    TabOrder = 6
+  end
+  object btnclose: TcxButton [5]
+    Left = 176
+    Top = 136
+    Width = 97
+    Height = 33
+    Action = act_close
+    TabOrder = 7
+  end
+  inherited actlst1: TActionList
+    Left = 264
+    Top = 72
+    object act_dl: TAction
+      Caption = #30331#24405
+      OnExecute = act_dlExecute
+    end
+    object act_close: TAction
+      Caption = #21462#28040
+      OnExecute = act_closeExecute
+    end
+  end
+  inherited dxbrmngr1: TdxBarManager
+    Left = 264
+    Top = 8
+    PixelsPerInch = 96
+  end
+end

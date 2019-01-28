@@ -1,0 +1,29 @@
+object fzjkh: Tfzjkh
+  Left = 0
+  Top = 0
+  Caption = #22686#21152#23458#25143
+  ClientHeight = 299
+  ClientWidth = 635
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object actlst_zjkh: TActionList
+    Left = 520
+    Top = 64
+    object act_post: TAction
+      Caption = #20445#23384
+      OnExecute = act_postExecute
+    end
+    object act_close: TAction
+      Caption = #20851#38381
+      OnExecute = act_closeExecute
+    end
+  end
+end

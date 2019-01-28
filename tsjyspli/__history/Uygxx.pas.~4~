@@ -1,0 +1,99 @@
+unit Uygxx;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ubase, dxSkinsCore,
+  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
+  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
+  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
+  dxSkinOffice2016Dark, cxClasses, dxBar, System.Actions, Vcl.ActnList,
+  cxGraphics, cxControls, cxLookAndFeels, cxLookAndFeelPainters, cxStyles,
+  cxCustomData, cxFilter, cxData, cxDataStorage, cxEdit, cxNavigator,
+  cxDataControllerConditionalFormattingRulesManagerDialog, Data.DB, cxDBData,
+  cxTextEdit, cxGridCustomTableView, cxGridTableView, cxGridDBTableView,
+  cxGridLevel, cxGridCustomView, cxGrid;
+
+type
+  Tfygxx = class(Tfbase)
+    dxbrmngr1Bar1: TdxBar;
+    dxbrlrgbtn1: TdxBarLargeButton;
+    act_all: TAction;
+    act_add: TAction;
+    act_close: TAction;
+    act_edit: TAction;
+    dxbrlrgbtn2: TdxBarLargeButton;
+    dxbrlrgbtn3: TdxBarLargeButton;
+    dxbrlrgbtn4: TdxBarLargeButton;
+    cxgrd1: TcxGrid;
+    cxgrdbtblvwGrid1DBTableView1: TcxGridDBTableView;
+    cxgrdlvlGrid1Level1: TcxGridLevel;
+    cxgrdbclmnGrid1DBTableView1dlh: TcxGridDBColumn;
+    cxgrdbclmnGrid1DBTableView1bm: TcxGridDBColumn;
+    cxgrdbclmnGrid1DBTableView1yhm: TcxGridDBColumn;
+    cxgrdbclmnGrid1DBTableView1kl: TcxGridDBColumn;
+    procedure FormCreate(Sender: TObject);
+    procedure act_allExecute(Sender: TObject);
+    procedure act_closeExecute(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormDestroy(Sender: TObject);
+    procedure act_addExecute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fygxx: Tfygxx;
+
+implementation
+
+uses
+  udm, umain, Uygxx;
+{$R *.dfm}
+
+procedure Tfygxx.act_addExecute(Sender: TObject);
+begin
+  inherited;
+  fygxx := Tfygxx.Create(self);
+  fygxx.ShowModal;
+  fygxx.Free;
+end;
+
+procedure Tfygxx.act_allExecute(Sender: TObject);
+begin
+  inherited;
+  fdatam.fdqry_ygxx.Close;
+  fdatam.fdqry_ygxx.Open;
+end;
+
+procedure Tfygxx.act_closeExecute(Sender: TObject);
+begin
+  inherited;
+  Close;
+end;
+
+procedure Tfygxx.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  inherited;
+  Action := caFree;
+end;
+
+procedure Tfygxx.FormCreate(Sender: TObject);
+begin
+  inherited;
+  fdatam.fdqry_ygxx.Close;
+  fdatam.fdqry_ygxx.Open;
+end;
+
+procedure Tfygxx.FormDestroy(Sender: TObject);
+begin
+  inherited;
+  fygxx := nil;
+end;
+
+end.
+

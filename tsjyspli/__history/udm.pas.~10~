@@ -1,0 +1,47 @@
+unit udm;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.SQLite,
+  FireDAC.Phys.SQLiteDef, FireDAC.Stan.ExprFuncs, FireDAC.Stan.Param,
+  FireDAC.DatS, FireDAC.DApt.Intf, FireDAC.DApt, FireDAC.VCLUI.Wait,
+  FireDAC.Comp.UI, Data.DB, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
+  FireDAC.Phys.MSAcc, FireDAC.Phys.MSAccDef;
+
+type
+  Tfdatam = class(TDataModule)
+    ds1: TDataSource;
+    fdqry1: TFDQuery;
+    fdgxwtcrsr1: TFDGUIxWaitCursor;
+    fdphysqltdrvrlnk1: TFDPhysSQLiteDriverLink;
+    fdqry_tsxx: TFDQuery;
+    ds_tsxx: TDataSource;
+    fdqry_tsxxj: TFDQuery;
+    ds_tsxxj: TDataSource;
+    ds_js: TDataSource;
+    fdqry_js: TFDQuery;
+    fdqry_ygxx: TFDQuery;
+    ds_ygxx: TDataSource;
+    con1: TFDConnection;
+    ds_ghts: TDataSource;
+    fdqry_ghts: TFDQuery;
+    fdqry_hscz: TFDQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fdatam: Tfdatam;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

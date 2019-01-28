@@ -1,0 +1,86 @@
+unit Uygdl;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, ubase, dxSkinsCore,
+  dxSkinOffice2007Black, dxSkinOffice2007Blue, dxSkinOffice2007Green,
+  dxSkinOffice2007Pink, dxSkinOffice2007Silver, dxSkinOffice2010Black,
+  dxSkinOffice2010Blue, dxSkinOffice2010Silver, dxSkinOffice2013DarkGray,
+  dxSkinOffice2013LightGray, dxSkinOffice2013White, dxSkinOffice2016Colorful,
+  dxSkinOffice2016Dark, cxClasses, dxBar, System.Actions, Vcl.ActnList,
+  cxGraphics, cxLookAndFeels, cxLookAndFeelPainters, Vcl.Menus, Vcl.StdCtrls,
+  cxButtons;
+
+type
+  Tfygdl = class(Tfbase)
+    lbl1: TLabel;
+    edt_gh: TEdit;
+    lbl2: TLabel;
+    edt_mm: TEdit;
+    btndl: TcxButton;
+    btnclose: TcxButton;
+    act_dl: TAction;
+    act_close: TAction;
+    procedure act_closeExecute(Sender: TObject);
+    procedure act_dlExecute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fygdl: Tfygdl;
+
+implementation
+
+uses
+  udm,umain;
+{$R *.dfm}
+
+procedure Tfygdl.act_closeExecute(Sender: TObject);
+begin
+  inherited;
+  Close;
+end;
+
+procedure Tfygdl.act_dlExecute(Sender: TObject);
+begin
+  inherited;
+  if edt_gh.Text = '' then
+  begin
+    Application.MessageBox('工号必须填写。', '警告', MB_OK + MB_ICONWARNING);
+    edt_gh.SetFocus;
+    Exit;
+  end;
+  if edt_mm.Text = '' then
+  begin
+    Application.MessageBox('密码必须填写。', '警告', MB_OK + MB_ICONWARNING);
+    edt_mm.SetFocus;
+    Exit;
+  end;
+  with fdatam.fdqry1 do
+  try
+    Close;
+    SQL.Clear;
+    SQL.Add('select * from pub_yhbmb where dlh=:gh and kl=:mm');
+    ParamByName('gh').Value := Trim(edt_gh.Text);
+    ParamByName('mm').Value := Trim(edt_mm.Text);
+    Open;
+  finally
+
+  end;
+  if fdatam.fdqry1.RecordCount > 0 then
+  begin
+     Fmain.stat1.Panels[0].Text:= fdatam.fdqry1.FieldByName('dlh').AsString;
+     Fmain.stat1.Panels[1].Text:= fdatam.fdqry1.FieldByName('yhm').AsString;
+     Application.MessageBox('登录成功！', '提示', MB_OK + MB_ICONINFORMATION);
+
+  end;
+
+end;
+
+end.
+

@@ -1,0 +1,24 @@
+unit utsadd;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
+
+type
+  TFtsadd = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Ftsadd: TFtsadd;
+
+implementation
+    uses umain,udm;
+{$R *.dfm}
+
+end.

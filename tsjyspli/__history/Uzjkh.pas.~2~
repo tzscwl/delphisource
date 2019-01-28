@@ -1,0 +1,60 @@
+unit Uzjkh;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
+  Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList;
+
+type
+  Tfzjkh = class(TForm)
+    actlst_zjkh: TActionList;
+    act_post: TAction;
+    act_close: TAction;
+    procedure act_closeExecute(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure act_postExecute(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  fzjkh: Tfzjkh;
+
+implementation
+
+uses
+  umain, udm;
+{$R *.dfm}
+
+procedure Tfzjkh.act_closeExecute(Sender: TObject);
+begin
+  fdatam.fdqry_khxx.Cancel; //取消增加
+  Close;
+end;
+
+procedure Tfzjkh.act_postExecute(Sender: TObject);
+begin
+  fdatam.fdqry_khxx.Post;
+  Application.MessageBox('图书信息增加成功！', '提示', MB_OK + MB_ICONINFORMATION);
+  close;
+end;
+
+procedure Tfzjkh.FormCreate(Sender: TObject);
+begin
+  if fdatam.fdqry_khxx.Active = false then
+  begin
+    fdatam.fdqry_khxx.Active := True;
+    fdatam.fdqry_khxx.Append;
+  end
+  else
+  begin
+    fdatam.fdqry_khxx.Append;
+  end;
+
+end;
+
+end.
+

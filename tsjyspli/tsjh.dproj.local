@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.232,G:\程序源文件\Delphi\delphisource\sqlite\Unit1.dfm=G:\程序源文件\Delphi\delphisource\sqlite\dl.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.296,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.dfm=G:\程序源文件\Delphi\delphisource\sqlite\main.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.686,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.434,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Project1.dproj=G:\程序源文件\Delphi\delphisource\sqlite\tsjh.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.619,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit2.pas=G:\程序源文件\Delphi\delphisource\sqlite\dm.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.020,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.279,=G:\程序源文件\Delphi\delphisource\sqlite\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.619,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit2.dfm=G:\程序源文件\Delphi\delphisource\sqlite\dm.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.232,G:\程序源文件\Delphi\delphisource\sqlite\Unit1.pas=G:\程序源文件\Delphi\delphisource\sqlite\dl.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.132,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.296,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas=G:\程序源文件\Delphi\delphisource\sqlite\main.pas</Transaction>
+  </Transactions>
+</BorlandProject>
