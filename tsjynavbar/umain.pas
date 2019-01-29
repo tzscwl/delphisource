@@ -13,7 +13,7 @@ uses
   dxSkinsForm, Vcl.ExtCtrls, dxBar, System.Actions, Vcl.ActnList, cxPC,
   dxBarBuiltInMenu, dxTabbedMDI, cxLookAndFeelPainters, cxGraphics,
   dxAlertWindow, cxStyles, cxControls, dxNavBar, dxNavBarCollns, dxNavBarBase,
-  System.ImageList, Vcl.ImgList, cxImageList;
+  System.ImageList, Vcl.ImgList, cxImageList, dxNavBarStyles;
 
 type
   TFmain = class(TForm)
@@ -69,6 +69,7 @@ type
     dxnvbrtmdxnvbr1Item10: TdxNavBarItem;
     lbl6: TLabel;
     cxmglst1: TcxImageList;
+    dxnvbrstyltmdxnvbr1StyleItem1: TdxNavBarStyleItem;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tmr1Timer(Sender: TObject);
     procedure act_tsxxExecute(Sender: TObject);

@@ -9565,6 +9565,15 @@ object Fmain: TFmain
     object dxnvbrtmdxnvbr1Item10: TdxNavBarItem
       Caption = 'dxnvbrtmdxnvbr1Item10'
     end
+    object dxnvbrstyltmdxnvbr1StyleItem1: TdxNavBarStyleItem
+      Style.BackColor = clWhite
+      Style.BackColor2 = clWhite
+      Style.Font.Charset = DEFAULT_CHARSET
+      Style.Font.Color = clWindowText
+      Style.Font.Height = -11
+      Style.Font.Name = 'Tahoma'
+      Style.Font.Style = []
+    end
   end
   object dxskncntrlr1: TdxSkinController
     NativeStyle = False

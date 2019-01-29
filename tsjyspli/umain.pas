@@ -14,7 +14,7 @@ uses
   dxBarBuiltInMenu, dxTabbedMDI, cxLookAndFeelPainters, cxGraphics,
   dxAlertWindow, cxStyles, cxControls, dxNavBar, dxNavBarCollns, dxNavBarBase,
   System.ImageList, Vcl.ImgList, cxImageList, scImageCollection, scGPImages,
-  scControls, scModernControls;
+  scControls, scModernControls, scGPControls, dxCalloutPopup;
 
 type
   TFmain = class(TForm)
@@ -22,7 +22,6 @@ type
     dxskncntrlr1: TdxSkinController;
     dxbrmngr1: TdxBarManager;
     tmr1: TTimer;
-    dxbrmngr1Bar1: TdxBar;
     dxbrlrgbtn1: TdxBarLargeButton;
     actlst1: TActionList;
     act_tsxx: TAction;
@@ -52,6 +51,25 @@ type
     cxmglst1: TcxImageList;
     scspltvw1: TscSplitView;
     scgpmgclctn1: TscGPImageCollection;
+    btntuichu: TscGPButton;
+    btnemployee: TscGPButton;
+    btncustom: TscGPButton;
+    btntongji: TscGPButton;
+    btnguihuan: TscGPButton;
+    btntsxx: TscGPButton;
+    btndl: TscGPButton;
+    btn9: TscGPButton;
+    btnjieyue: TscGPButton;
+    pnl1: TPanel;
+    call: TdxCalloutPopup;
+    btnactCnPrefixWizard: TscGPButton;
+    btnactCnPrefixWizard1: TscGPButton;
+    btnactCnPrefixWizard2: TscGPButton;
+    btnactCnPrefixWizard3: TscGPButton;
+    btnactCnPrefixWizard4: TscGPButton;
+    btnactCnPrefixWizard5: TscGPButton;
+    btnactCnPrefixWizard6: TscGPButton;
+    btnactCnPrefixWizard7: TscGPButton;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tmr1Timer(Sender: TObject);
     procedure act_tsxxExecute(Sender: TObject);
@@ -62,8 +80,7 @@ type
     procedure act_tongjiExecute(Sender: TObject);
     procedure act_customExecute(Sender: TObject);
     procedure act_employeeExecute(Sender: TObject);
-    procedure scspltvw1MouseMove(Sender: TObject; Shift: TShiftState; X,
-      Y: Integer);
+    procedure btn9Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -244,15 +261,15 @@ begin
   Application.Terminate;
 end;
 
+procedure TFmain.btn9Click(Sender: TObject);
+begin
+    scspltvw1.Opened:= not scspltvw1.Opened ;
+   call.Popup(btn9);
+end;
+
 procedure TFmain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
   Application.Terminate;
-end;
-
-procedure TFmain.scspltvw1MouseMove(Sender: TObject; Shift: TShiftState; X,
-  Y: Integer);
-begin
-//scspltvw1.Opened:= not scspltvw1.Opened ;
 end;
 
 procedure TFmain.tmr1Timer(Sender: TObject);

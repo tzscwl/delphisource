@@ -9410,12 +9410,11 @@ object Fmain: TFmain
   end
   object scspltvw1: TscSplitView
     Left = 0
-    Top = 59
+    Top = 0
     Width = 250
-    Height = 429
+    Height = 488
     Anchors = [akLeft, akTop, akBottom]
     TabOrder = 5
-    OnMouseMove = scspltvw1MouseMove
     CustomImageIndex = -1
     DragForm = False
     DragTopForm = True
@@ -9453,6 +9452,1836 @@ object Fmain: TFmain
     HideControls = False
     Animation = True
     DisplayMode = scsvmDocked
+    ExplicitHeight = 429
+    object btntuichu: TscGPButton
+      Left = 0
+      Top = 264
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 0
+      Action = act_tuichu
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = -1
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 7
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btnemployee: TscGPButton
+      Left = 0
+      Top = 231
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 1
+      Action = act_employee
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 6
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btncustom: TscGPButton
+      Left = 0
+      Top = 198
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 2
+      Action = act_custom
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 5
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btntongji: TscGPButton
+      Left = 0
+      Top = 165
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 3
+      Action = act_tongji
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 4
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btnguihuan: TscGPButton
+      Left = 0
+      Top = 132
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 4
+      Action = act_guihuan
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 3
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btntsxx: TscGPButton
+      Left = 0
+      Top = 99
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 5
+      Action = act_tsxx
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 2
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btndl: TscGPButton
+      Left = 0
+      Top = 33
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 6
+      Action = act_dl
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 1
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 0
+      ExplicitWidth = 145
+    end
+    object btn9: TscGPButton
+      Left = 0
+      Top = 0
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 7
+      OnClick = btn9Click
+      Animation = False
+      Caption = #23548#33322#33756#21333
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 0
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 0
+      AllowAllUp = False
+      ExplicitWidth = 145
+    end
+    object btnjieyue: TscGPButton
+      Left = 0
+      Top = 66
+      Width = 250
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 8
+      Action = act_jieyue
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 8
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 93
+    end
+  end
+  object pnl1: TPanel
+    Left = 464
+    Top = 48
+    Width = 153
+    Height = 280
+    BevelOuter = bvNone
+    Caption = 'pnl1'
+    ShowCaption = False
+    TabOrder = 7
+    Visible = False
+    object btnactCnPrefixWizard: TscGPButton
+      Left = 0
+      Top = 0
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 0
+      Action = act_custom
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 5
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 8
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard1: TscGPButton
+      Left = 0
+      Top = 33
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 1
+      Action = act_dl
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 1
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 41
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard2: TscGPButton
+      Left = 0
+      Top = 132
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 2
+      Action = act_employee
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 6
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 74
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard3: TscGPButton
+      Left = 0
+      Top = 165
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 3
+      Action = act_guihuan
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 3
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 107
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard4: TscGPButton
+      Left = 0
+      Top = 66
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 4
+      Action = act_jieyue
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 8
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 74
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard5: TscGPButton
+      Left = 0
+      Top = 198
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 5
+      Action = act_tongji
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 4
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 173
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard6: TscGPButton
+      Left = 0
+      Top = 99
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 6
+      Action = act_tsxx
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = 50
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 2
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 107
+      ExplicitWidth = 257
+    end
+    object btnactCnPrefixWizard7: TscGPButton
+      Left = 0
+      Top = 231
+      Width = 153
+      Height = 33
+      Align = alTop
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -19
+      Font.Name = #24494#36719#38597#40657
+      Font.Style = []
+      Font.Quality = fqClearTypeNatural
+      ParentFont = False
+      TabOrder = 7
+      Action = act_tuichu
+      Animation = False
+      CanFocused = False
+      CustomDropDown = False
+      Margin = -1
+      Spacing = 1
+      Layout = blGlyphLeft
+      Images = cxmglst1
+      ImageIndex = 7
+      ImageMargin = 50
+      TransparentBackground = True
+      Options.NormalColor = clBtnFace
+      Options.HotColor = clBtnFace
+      Options.PressedColor = clBtnShadow
+      Options.FocusedColor = clBtnFace
+      Options.DisabledColor = clBtnFace
+      Options.NormalColor2 = clNone
+      Options.HotColor2 = clNone
+      Options.PressedColor2 = clNone
+      Options.FocusedColor2 = clNone
+      Options.DisabledColor2 = clNone
+      Options.NormalColorAlpha = 0
+      Options.HotColorAlpha = 255
+      Options.PressedColorAlpha = 50
+      Options.FocusedColorAlpha = 255
+      Options.DisabledColorAlpha = 255
+      Options.NormalColor2Alpha = 255
+      Options.HotColor2Alpha = 255
+      Options.PressedColor2Alpha = 255
+      Options.FocusedColor2Alpha = 255
+      Options.DisabledColor2Alpha = 255
+      Options.FrameNormalColor = clBtnShadow
+      Options.FrameHotColor = clHighlight
+      Options.FramePressedColor = clHighlight
+      Options.FrameFocusedColor = clHighlight
+      Options.FrameDisabledColor = clBtnShadow
+      Options.FrameWidth = 1
+      Options.FrameNormalColorAlpha = 0
+      Options.FrameHotColorAlpha = 255
+      Options.FramePressedColorAlpha = 50
+      Options.FrameFocusedColorAlpha = 255
+      Options.FrameDisabledColorAlpha = 255
+      Options.FontNormalColor = clBlack
+      Options.FontHotColor = clBtnText
+      Options.FontPressedColor = clBtnText
+      Options.FontFocusedColor = clBtnText
+      Options.FontDisabledColor = clBtnShadow
+      Options.ShapeFillGradientAngle = 90
+      Options.ShapeFillGradientPressedAngle = -90
+      Options.ShapeFillGradientColorOffset = 25
+      Options.ShapeCornerRadius = 10
+      Options.ShapeStyle = scgpRoundedLeftRight
+      Options.ArrowSize = 9
+      Options.ArrowAreaSize = 0
+      Options.ArrowType = scgpatDefault
+      Options.ArrowThickness = 2
+      Options.ArrowThicknessScaled = False
+      Options.StyleColors = True
+      HotImageIndex = -1
+      FocusedImageIndex = -1
+      PressedImageIndex = -1
+      UseGalleryMenuImage = False
+      UseGalleryMenuCaption = False
+      ScaleMarginAndSpacing = False
+      WidthWithCaption = 0
+      WidthWithoutCaption = 0
+      SplitButton = False
+      RepeatClick = False
+      RepeatClickInterval = 100
+      GlowEffect.Enabled = False
+      GlowEffect.Color = clHighlight
+      GlowEffect.AlphaValue = 255
+      GlowEffect.GlowSize = 7
+      GlowEffect.Offset = 0
+      GlowEffect.Intensive = True
+      GlowEffect.StyleColors = True
+      GlowEffect.HotColor = clNone
+      GlowEffect.PressedColor = clNone
+      GlowEffect.FocusedColor = clNone
+      GlowEffect.PressedGlowSize = 7
+      GlowEffect.PressedAlphaValue = 255
+      GlowEffect.States = [scsHot, scsPressed, scsFocused]
+      ImageGlow = True
+      ShowGalleryMenuFromTop = False
+      ShowGalleryMenuFromRight = False
+      ShowMenuArrow = True
+      ShowFocusRect = True
+      Down = False
+      GroupIndex = 1
+      AllowAllUp = False
+      ExplicitTop = 239
+      ExplicitWidth = 257
+    end
   end
   object dxskncntrlr1: TdxSkinController
     NativeStyle = False
@@ -9481,65 +11310,6 @@ object Fmain: TFmain
     Left = 696
     Top = 432
     PixelsPerInch = 96
-    DockControlHeights = (
-      0
-      0
-      59
-      0)
-    object dxbrmngr1Bar1: TdxBar
-      AllowClose = False
-      AllowCustomizing = False
-      AllowQuickCustomizing = False
-      AllowReset = False
-      Caption = 'Custom 1'
-      CaptionButtons = <>
-      DockedDockingStyle = dsTop
-      DockedLeft = 0
-      DockedTop = 0
-      DockingStyle = dsTop
-      FloatLeft = 669
-      FloatTop = 8
-      FloatClientWidth = 0
-      FloatClientHeight = 0
-      ItemLinks = <
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn2'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn1'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn3'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn4'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn5'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn7'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn8'
-        end
-        item
-          Visible = True
-          ItemName = 'dxbrlrgbtn6'
-        end>
-      OneOnRow = True
-      Row = 0
-      UseOwnFont = False
-      Visible = True
-      WholeRow = True
-    end
     object dxbrlrgbtn1: TdxBarLargeButton
       Action = act_tsxx
       Category = 0
@@ -10246,110 +12016,443 @@ object Fmain: TFmain
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
           2000000000000004000000000000000000000000000000000000000000000000
-          0004000000150000002B00000033000000330000003400000035000000350000
-          0036000000360000003600000030000000180000000500000000000000000000
-          00143D322A9B947C67FF9F5632FF984F2CFF8F4626FF823E1FFF773419FF6D2C
-          13FF652710FF61240EFF533F2FFF1E1610A40000001800000000000000000000
-          0024927B67F8F4F3F1FFA15733FFC88B66FFC3845EFFBE7D55FFB9764EFFB46F
-          46FFB06841FF62250EFF9F9686FF4C3A2BFA0000002D00000000000000000000
-          0024937C67F8F5F3F2FFB37B60FFA15733FF9A522EFF904928FF854021FF7A36
-          1AFF6F2D14FF794834FFA49C8CFF513E30FB0000003100000000000000000000
-          001C7B6856E0E7E0DBFFF1EFEDFF8B563AFFDCD7D1FFD5D0C8FFCDC8BFFFC6C0
-          B4FF754328FFB6AEA1FF9E9384FF49392DE90000002700000000000000000000
-          000F4C4035A3CABDB1FFFBFAF9FF915C40FFC3BCB4FF8D8176FF7D6F62FFA399
-          8EFF7B482DFFBEB6AAFF988C7FFF2F261FB40000001700000000000000000000
-          00040A0807318D7867ECDBD1CBFF966144FFA0988EFF8DB2C7FF6184A7FF7161
-          54FF814F33FFC4BCB5FF68594CF2070604430000000600000000000000000000
-          0000000000070706052D665647C69A6548FF687487FF335990FF2B4E87FF4449
-          5DFF885538FF52453BD10504043F0000000B0000000100000000000000000000
-          000000000000000000040000001E2B3647A76484AFFF7FA3C6FF4B83B4FF234B
-          88FF151D32B50000002B00000007000000000000000000000000000000000000
-          0000000000000000000000000011314E72C4B0C1D8FF96CCECFF70AFD6FF4377
-          AAFF0A1F4ACD0000001B00000000000000000000000000000000000000000000
-          000000000000000000000814224D325D90F74C6D9AFF244C82FF1F447BFF264E
-          82FF12316AF8040B195600000000000000000000000000000000000000000000
-          000000000000000000001E5488F8459EC5FF55C0E0FF58D1EFFF4BC6EAFF36A1
-          CEFF2277ABFF113064F800000000000000000000000000000000000000000000
-          00000000000000000000145687E87B98B9FF3A6D9EFF1E4D84FF1B477FFF1B54
-          8AFF196196FF0F3463E900000000000000000000000000000000000000000000
-          000000000000000000000A3E5E9BA0C1D6FFD3F4FCFF91DDF3FF53C2E6FF48B7
-          DFFF5194BBFF0A27469D00000000000000000000000000000000000000000000
-          00000000000000000000041B28414B7F9DDAA0C0D5FFE2EBF2FFE2EBF1FF9FBA
-          CFFF4A6F8DDB04121F4100000000000000000000000000000000000000000000
-          0000000000000000000000000000041B28410B3E5E9B0F5684E10F5380E10A35
-          549B041522410000000000000000000000000000000000000000}
+          0003000000130000002000000022000000220000002300000024000000240000
+          0025000000250000002400000016000000080000000100000000000000010000
+          0011C07F4CFFBE7A45FFBC7136FFBB7035FFBA6D33FFB76B31FFB66B30FFB669
+          2FFFB4682EFFB3662CFFB1652AFF8A471AF90000001400000001000000000000
+          001AD69861FFCE8951FFC5783DFFC3773BFFC2753AFFC07338FFBE7236FFBD70
+          34FFBC6E33FFBA6D31FFB96B2FFF904A1CFFA05B2BFF00000007000000000000
+          0019D89B66FFD08D56FFC97D43FFC5783FFFE8DAD0FFC5916AFFC2763AFFC074
+          38FFBF7236FFBD7035FFBC6F33FF934D1FFFA45E2EFF00000009000000000000
+          0017DCA06CFFD69159FFCE8248FFBB713BFFB87E58FFE0C6B4FFC77B3FFFC479
+          3EFFC3763CFFC17439FFBF7237FF955021FFA66030FF00000008000000000000
+          0015DFA470FFD9975FFFCE854BFFF7F5F5FFF3ECE6FFCC8147FFC77B42FFC075
+          3CFFC67A3FFFC4793DFFC3763CFF995323FFA86534FF00000007000000000000
+          0013E2A976FFDD9A65FFC47B44FFF5F4F2FFFAF9F9FFCA8147FFDFCABDFFF7F6
+          F5FFC67C42FFCA7E43FFC77C41FF9E5627FFAB6736FF00000007000000000000
+          0010E5AC7CFFE0A06BFFC27844FFF8F7F6FFF8F7F6FFC98049FFC37842FFC47D
+          4AFFE6D0C1FFCD844AFFCC8146FFA15929FFAF6B39FF00000006000000000000
+          000EE8B080FFE3A571FFCF8650FFFBFAF9FFFAF9F8FFD08751FFD48C54FFF6F5
+          F4FFFBFAF9FFCC814AFFD0864BFFA55E2DFFB46E3DFF00000006000000000000
+          000CEBB486FFE7A875FFE29D65FFCB8C60FFE9D0C1FFDC955EFFCA804CFFF9F8
+          F7FFF9F8F7FFCB824BFFD58B52FFA96030FFB7723FFF00000005000000000000
+          000AEDB789FFE9AE7AFFE6A16AFFE39F69FFE29F67FFE19C64FFC67D49FFFBFB
+          FAFFFAFAF9FFD28A52FFD89157FFAC6333FFBA7644FF00000005000000000000
+          0009EFBB8EFFEBB07FFFE7A56FFFE7A46EFFE6A26CFFE4A169FFD18954FFFDFD
+          FDFFF1E2D9FFDE975EFFDC955CFFB06837FFBD7947FF00000004000000000000
+          0007F0BE91FFEEB382FFEAA973FFE9A872FFE9A771FFE7A56EFFE7A26CFFD089
+          54FFE09B65FFE19D65FFE19A62FFB36B39FFC17C49FF00000004000000000000
+          0005F1BE94FFEFB785FFEDAD78FFECAC76FFEBA976FFEAA874FFE9A772FFE7A5
+          6FFFE5A36DFFE4A169FFE39D66FFB76E3CFFC47F4DFF00000003000000000000
+          0003C27946FFC17846FFC17945FFC17946FFC17845FFC07845FFBF7744FFBE76
+          43FFBE7542FFBD7441FFBB7340FFB59E8BFFC68450FF00000002000000000000
+          000034231642B57A4EE1CE8B57FFCE8B58FFCE8B58FFCE8A58FFCE8A57FFCE8A
+          57FFCC8956FFCB8855FFCB8755FFCA8754FF0000000600000000}
       end
       item
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
-          2000000000000004000000000000000000000000000000000000000000040000
-          00150000002B0000003300000033000000410B245FFF071D55FF020E2EC10000
-          0144000000380000003000000018000000050000000000000000000000140302
-          319B07047AFF070377FF070374FF040165FF102C69FF7CCDFAFF4586BAFF0310
-          4EFF010057FF010057FF010023A4000000180000000000000000000000240804
-          75F86368C8FF2C33B9FF2830B6FF2128A5FF142B76FF558BBBFF7BCFF9FF4585
-          BBFF04175DFF051788FF01004EFA000000340000000400000001000000240705
-          76F86368C8FF363DBDFF2931B7FF2129AFFF182497FF122872FF558CBBFF7ACD
-          FAFF4586BAFF051950FF021042FF000A2BCE0004126C000000060000001C0504
-          62E05457BBFF4A50C3FF282FB8FF242BB4FF1D29AAFF152195FF112771FF548B
-          BCFF7ACDF9FF5CAEE1FF56B3EDFF3179B2FF0F3162FA000412690000000F0303
-          3CA33737A3FF666BCDFF3E44BFFF2B2F96FF31326CFF2D2F68FF1A2172FF1333
-          73FF75BAE4FF7BCDFAFF6AC4F8FF5BBDF6FF3079B2FF000A29BD000000040000
-          08310B0971EC484AB1FF696ECDFF403F73FF7EA6C7FF5B80AAFF27295BFF1B3D
-          7DFF89CFF4FF89D4FBFF4278ACFF3870A5FF55B3EDFF020F3FF6000000000000
-          00070000052D050252C618178AFF32437BFF305790FF294D88FF1F2B5FFF1C36
-          79FF68A1CDFF92D9FCFF4C81B2FF4379ACFF4587BBFF031036BB000000000000
-          0000000000040000001E182749A76483AFFF7FA3C6FF4B83B4FF204780FF1023
-          4FDC3A659EFC68A1CDFF89CFF4FF5C95C4FF23497FFA030B2064000000000000
-          000000000000000000112A466ECCB0C1D8FF96CCECFF70AFD6FF4275A8FF091C
-          44D10E1C358B183360C81A3C79F70F2754C10611286700000002000000000000
-          0000000000000001041E1A346EF9E8EDF4FFA7DDF6FF84C2E5FF6099C3FF102E
-          6AF10003073A0000000D0000000C000000070000000200000000000000000000
-          000000000000020D2E800B2162FEE4E9F1FFCAEBFBFF96D3F1FF689FC6FF1435
-          6FF102122CA10000000000000000000000000000000000000000000000000000
-          000000000000031444AE486C9EFF203570FF69789FFF97B9D4FF7298BEFF0B25
-          52EB041634B40000000000000000000000000000000000000000000000000000
-          00000000000003123B92446699FF5A82B0FF355990FF152D68FF2E497BFE0723
-          52FF031229880000000000000000000000000000000000000000000000000000
-          00000000000001051128173273F7597EACFF648DB8FF4E76A5FF0B2059FC0411
-          28810002040E0000000000000000000000000000000000000000000000000000
-          00000000000000000000020A214F04164CC1041A5BF303144DD901071C580000
-          0001000000000000000000000000000000000000000000000000}
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000010000000100000001000000000000000000000000000000000000
+          0000000000000000000100000002000000020000000000000000000000000000
+          00030000001C000000350000002A000000070000000200000002000000020000
+          00020000000300000019000000430000003C0000001100000001000000000000
+          0013131695FC090A9EFF0A0D82FF000000480000003D0000003F000000410000
+          00430000004701011BA206065FFF06055BFF00000D6E00000007000000010000
+          00263639C8FF0C0FBCFF090A9EFF090996FF08098FFF080989FF080881FF0707
+          78FF070671FF080872FF090868FF070661FF010150F700000010000000010000
+          00299A9BF6FF8284F2FF8283F1FF8284F0FF6364CCFF20217EFF16165DFF3838
+          97FF7474DBFF6F70D4FF6A6BCDFF6565C4FF020157FF00000012000000010000
+          001E6467DDFF575AE4FF5759E0FF282A99FF5F5F9BFFCFCFE1FF969699FF9B9C
+          BEFF21216BFF494AB8FF4646B0FF4243A8FF020249E90000000D000000000000
+          000B101496EF4448DBFF2B2FD3FF9FA0C6FFFFFFFFFFFDFDFDFFDFDFEAFFBABA
+          BAFFFFFFFFFF0C0D70FF222297FF1A1A83FF0000044E00000004000000010505
+          1C520607318B2C30C5FF1116CDFFA0A1C7FFC5C5C5FF43469BFF0D1178FFF9F9
+          F9FFFFFFFFFF05066EFF0A0A8FFF02033ED4000142E00000001A0000000E585C
+          CFFF171BA8FF04052B793A3ED7FF0C10ADFF6062A2FFD0D0E3FFF2F3F7FF9D9D
+          C2FF16177BFF0A0BA2FF0D0E6BFC0D0E5EF625248DFF01014DF30000000E656A
+          DFFF2429C8FF161999FF070847993A3FD9FF0D108BFF0C0F82FF0A0C79FF0A0B
+          72FF393BC2FF07097CFF04043DCB3B3BA9FF262695FF020259FF000000054D52
+          C7FF373CD7FF1F23B4FF0709399B323299FF0000002D0000000B0000000B0000
+          0017090B6EFF070969FF1C1C82FF3030A4FF1E1F92FF010129A4000000000505
+          0D215457CCFF5E61D8FF2123A5FF161881FF0607318F03031851000003260304
+          1E6E0B0E72FF0D0F7EFF0A0A95FF2D2B9CFF090A54E50000000A000000000000
+          0000000000071D1F55873F42B7FF4B4FBFFF5154BFFF595BC2FF5859C1FF4A4D
+          B6FF3F40ABFF2A2C94FF14176AE302020B3F0000000600000000000000000000
+          00000000000000000000000000020000000A0000000F00000015000000180000
+          0016000000140000000C00000001000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0001000000010000000100000001000000010000000100000001000000010000
+          0001000000010000000100000002000000020000000100000000000000020000
+          00170000002E0000003100000031000000320000003200000033000000340000
+          0035000000360000003700000038000000380000002C0000000A00000008A07B
+          60ECFBF7F3FFFAF5F2FFFAF5EFFFF9F3EEFFF8F2EBFFF8F0EAFFF7EFE8FFF7ED
+          E7FFF6ECE5FFF5ECE3FFF5EAE1FFF4E9DFFFDBC4B3FF0000002B0000000AB58D
+          6EFFFCF9F6FF99857FFF654A42FF4A251AFF4A2B24FF715953FFB5A59EFFF8EF
+          E9FFF7EEE7FFF6EDE5FFF6ECE3FFF5EAE2FFF5EAE0FF0000003400000009B78F
+          71FFFDFAF8FF7E5645FF8A5F4CFFDFD9D7FF542F22FF7B4B39FFA6958EFFF9F2
+          EBFFF8F0E9FFF8EFE7FFF6EDE6FFF5ECE4FFF5EBE2FF0000003100000007B992
+          75FFFDFCFBFFD9D0CCFF58382AFF4E5F7CFF39303AFF7F6860FFFAF5F0FFF9F3
+          EEFFF8F2ECFFF8F0EAFFF8EFE8FFF7EEE6FFF7EDE4FF0000002C00000006BB95
+          78FFFFFDFCFFFEFCFBFF72829AFF7CC0F5FF437CB2FFFBF8F4FFFBF6F2FFFAF5
+          F0FFB69174FFB28D6EFFAE8868FFAA8363FFF7EEE7FF0000002800000005BD98
+          7AFFFEFEFEFFFEFEFCFF3D5578FFA9DBFEFF68ABE2FFC2C7CEFFFBF8F5FFFBF7
+          F3FFFBF5F1FFFAF4F0FFF9F2EEFFF9F1EBFFF8F0E9FF0000002300000004BF9B
+          7DFFFFFFFFFFFFFFFEFF6AA8CBFF558BB0FF365574FF5E758DFFFCFAF8FFFCF8
+          F6FFFCF7F4FFFBF6F2FFFAF5F0FFF9F3EEFFF8F2ECFF0000001E00000003C19D
+          80FFFFFFFFFFFFFFFFFF9BABBAFF2D4D6CFF93A2B2FFFDFCFBFFFDFCFAFFFDFA
+          F8FFFDF9F6FFFCF8F5FFFBF6F3FFFAF5F1FFFAF4EFFF0000001A00000001B091
+          76E8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEFEFFFEFEFDFFFEFDFCFFFDFC
+          FAFFFDFBF8FFFDF9F7FFFCF8F5FFFCF7F3FFE5D6CBFF00000010000000000000
+          0002000000040000000400000004000000050000000600000006000000070000
+          0008000000090000000B0000000C0000000E0000000C00000003000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          00000000000000000000000000020000000E000000280000003F000000480000
+          003F0000002A0000001000000003000000000000000000000000000000000000
+          000000000000000000050000002C502C15C2A35627FFBB6532FFC56D3AFFB965
+          32FF965229FF3E2414C400000031000000070000000000000000000000000000
+          0000000000050302013CA55828FFC8662BFFCC7442FFC86733FFC67145FFC664
+          2DFFC66A37FFC86428FF8A4E27FF0503014A0000000700000000000000000000
+          000100000023AE5D2CFFD17F4EFFD0804DFFCC6C34FFCB6D32FFCC855FFFC865
+          2AFFC65F25FFC66936FFC76B37FF8A4F2AFF0000003000000003000000000000
+          00084A27119DD17A40FFD27D43FFDCA078FFDA9C76FFD58957FFD49B7DFFCF7E
+          4AFFCD7F54FFC87247FFC45D23FFC86428FF3E2515C20000000F000000000000
+          0015BD6630FFD68750FFDD9D6FFFD8915CFFD8905AFFD78D57FFDCB099FFD27F
+          46FFCF743BFFCA6A30FFC86E3DFFC55D23FF965329FF00000025000000000000
+          0020CF8149FFDB9864FFE8BE9DFFE0A474FFE0A474FFDEA06EFFE2C1AEFFD78D
+          57FFD48149FFCF743BFFCA7A4DFFC65F26FFB85F29FF00000038000000010000
+          0020E2AE82FFEAC2A2FFE5C9B2FFDECBBAFFF0DDCEFFEFDACDFFE9CEBFFFE3C1
+          ADFFDDAE95FFD59A77FFCD845AFFC87143FFC66C37FF0000003B000000000000
+          0014D18A56FFD8AC82FF324357FF3B4857FFE8C39EFFEAC197FFEFDACCFFE1A8
+          78FFDC9864FFD68650FFD38B60FFC96A2FFFBB602AFF00000030000000000000
+          0008BD6D37FF8A7867FF07284CFFD7BDA0FFF1D3B2FFEECBA7FFF3E2D5FFE5B1
+          83FFDE9F6CFFD78E57FFD48A58FFCC6F32FFA45729FF0000001C000000000000
+          000326150A63132F4DFFC8B094FFF8E9D8FFF9E9D7FFF3D9BDFFF6E8DAFFE8BE
+          98FFE6BB9AFFE0AB84FFD27F47FFCE7037FF502C15AE00000009000000000000
+          0006002247F30E439EFE989598FFD5C4B0FFDDC6ACFFEBCFAEFFF6E7D8FFE5B6
+          8AFFE0A573FFDD9E71FFD8905FFFA75C2EFE0000001900000001000000000016
+          2FA304398AE40054E4FF044EE8FF063DC2FF00359CFF253F7DFFE8D4C0FFE6B8
+          8DFFE3B087FFD88F58FFB0602CFE03020120000000030000000000060C2A043C
+          8BF71562E5FF024DE6FF0B52E6FF003EBAFF015AD9FFA07A65FFEBC7A8FFD799
+          68FFBE6B36FF492611800000000F000000020000000000000000000000000106
+          0E121159CAFF1F64D3FF0546AFFF377CE0FF01163C6D0000000A0000000C0000
+          000C000000080000000300000001000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0005191615BC312721FF2B231CFF271E18FF211914FF1D1410FF17100DFF120C
+          09FF0D0907FF090604FF050302FF020101FF0000002800000000000000000000
+          00267E7671FF544942FF4B3F37FF453931FF2A2421FF453932FF19181BFF4339
+          32FF1B1917FF271F1AFF271E19FF1F1814FF020101F100000000000000000000
+          001D706761FF61564FFF52443FFF433832FF5A4B46FF1C1B1BFF010163FF483D
+          35FF2B2725FF1D1A18FF271E19FF231B17FF010101CF00000000000000000000
+          0007483D37FF736963FF594D47FF574F4AFF685951FF313182FF000074FF312C
+          29FF4C4039FF181717FF271F1AFF231B18FF0000005B00000000000000000000
+          0000181615A0918884FF635951FF38322EFF393533FFC3C3E2FF000081FF8381
+          81FF514740FF191817FF1D1A18FF181311FF0000001700000000000000000000
+          000000000013695F59FF3E3E3EFF857A74FF4A4543FF4242A2FF000075FFFFFF
+          FFFF594E48FF5E524CFF2B2A28FF050403B00000000100000000000000000000
+          0000000000000202022E463C37FF7B7470FFD6DEE7FF73A3CBFF588EBDFF6786
+          AAFF5E5A58FF58504CFF0B0808D00000000A0000000000000000000000000000
+          00000000000000000000000000080000001A355E8DFF2C4F7DFF0F2C5CFF2045
+          75FF000000500000001800000003000000000000000000000000000000000000
+          000000000000000000000000000000000012576F92FF85BBE2FF63A2D1FF3F78
+          AAFF041126AB0000000200000000000000000000000000000000000000000000
+          0000000000000000000000000001081A31E2C1E0F4FF8AC3E8FF7CB9E3FF67A7
+          D6FF2D5786FF0000001300000000000000000000000000000000000000000000
+          0000000000000000000000010317061935FFB8DDF3FF97CBECFF8BC3E8FF7CB9
+          E3FF4F85B3FF010813A100000000000000000000000000000000000000000000
+          0000000000000000000003152DC4102643FFC7E4F6FFA0D1EFFF98CBEDFF8BC3
+          E8FF6293BBFF031329F900000000000000000000000000000000000000000000
+          00000000000000000000041D3DF61A395EFF021935FF041630FF3F5D79FF98CB
+          ECFF01142DFF03142BEB00000000000000000000000000000000000000000000
+          00000000000000000000020F1E7635587FFF06254CFF021A3BFF001127FF1D35
+          50FF011933FF0108115B00000000000000000000000000000000000000000000
+          000000000000000000000000000018375BFD345379FF1F3859FF182C48FF1224
+          3BFF000000040000000100000000000000000000000000000000000000000000
+          000000000000000000000000000000000000020E1E72031831CC0211249F0000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000005303135DD5A5B65FF2B3490FF242C85FF1F26
+          7BFF1A2072FF161B6BFF131864FF11155EFF363744FF0000002A000000000000
+          0000000000000000000000000021C6C6C8FFDADADAFF6D79DAFF313898FF3741
+          BAFF242CA8FF151E94FF161D79FF111661FF999999FF2A2B36FA000000000000
+          001B0000003500000036000000449C9DA2FFDFDFDFFF39419DFF2C3591FF252D
+          87FF1F267EFF1B2174FF161B6BFF808194FF9C9C9CFF18181DD000000015A89B
+          91FFDCD8D4FFDDAA85FF8A5D43FF56555AFFE4E4E4FF2C3592FF252D87FFCDCD
+          CDFFC3C3C3FFBABABAFF2C3B8CFFA9A9A9FF8A8A8DFF0000002C0000001DBFB5
+          ADFFE2DDDAFFD2A380FFDDA981FFB87F5AFFB6B6B9FF30399AFF2B3490FF7382
+          9AFF344C71FF949BA6FF3D499CFFAEAEAEFF282930ED0000000300000008907F
+          74FFE6E2DFFF8E6045FF885A3FFFCECAC5FFB2AEA8FF3D448CFF3B438AFF456D
+          95FF1C3D69FF102E5AFF191E71FF0C0C0E820000000800000000000000002621
+          1DA6EBE7E4FF94644AFF8D5F43FFD4D0CBFFCCC7C1FFBEBAB4FF384660FF80BB
+          E2FF66A7D4FF356998FF02060C52000000000000000000000000000000000000
+          00064D423AE6996A4EFF926348FF6592B7FF5085B2FF314665FF77A1C3FF8BC0
+          E5FF4B7EABFF3D75A4FF0D213FD5000000000000000000000000000000000000
+          000000000001000000140C1421994D79A3FF5491BEFF183A64FF4879ACFF1B45
+          81FF113472FF143670FF132F5FFE000000090000000000000000000000000000
+          0000000000000000000E567A9EFF88C0E6FF65A1CDFF2A5F97FF255993FF1E4E
+          8AFF16407DFF0E306BFF092561FF000000240000000000000000000000000000
+          000000000000000000198EBEDEFF5280AAFF42729FFF31689CFF94EEFFFF4CD7
+          FAFF37B9E9FF258EC8FF155795FF000000180000000000000000000000000000
+          0000000000002A6198FA41A9D3FF42C1EBFF35B7EDFF2482BFFF96CCE3FF91EA
+          FEFF4AC7EDFF46A1D0FF122C55CC000000050000000000000000000000000000
+          000000000000285B8FEF74E6FEFF47D1F8FF34B2E6FF2287C6FF1D64A0FF254E
+          77C7225389ED0B203B8300000006000000000000000000000000000000000000
+          00000000000019344C7DB7F4FFFF50DCFCFF3CBFECFF2892CBFF1C4C85FF0000
+          000D000000000000000000000000000000000000000000000000000000000000
+          000000000000000000023A6487BF98CCE3FFA5D7EBFF4B77A5FF030B19510000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000001000000040000000800000005000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          00000000001B0000003600000036000000360000003700000037000000390000
+          004E2F1408CC4D1F0BFB3C1507ED1407019A0000001000000000000000000000
+          00159C9A99FF8CA4BAFF1F78B9FF106BB2FF0A63AFFF075AAAFF0F427DFF8F4A
+          2DFFD55B27FFCA5322FFB4481BFF933812FF321409F10000000A000000000000
+          001CC7C7C7FFD7DCE0FF3C9DD7FF1A86CDFF127AC9FF0B6EBDFF7B432CFFEC68
+          30FF923B1BFFE9E1DFFFFFFFFFFFB94A1AFF963A14FF13060182000000000000
+          00079D9D9DFFDEE4E9FF59AFDEFF218ED0FF1677BAFF063659FFD6815DFFF16B
+          32FFC75627FFE9E1DFFF8F3919FFC65220FFB94C1DFF3A1305E8000000000000
+          00003F3F3F9EA2BDD3FF78C1E6FF2992D0FFC1C1C1FFC0C0C0FFF3966EFFF76F
+          34FF803319FFE0D5D2FF8A3719FFD55B25FFD25825FF4A1C0AF9000000000000
+          0000000000124C6E97FF87CAE9FF324650FFF6F6F6FF404040FFB36849FFFD79
+          41FFF66E34FFD5C4BFFF8A371AFFE3632CFFDC5F2AFF2E1307BD000000000000
+          0000000000000002042B1F5193FFA5A5A5FF616A72FF76ACD5FF5A5155FFF798
+          6FFFFD7A41FF88371BFF983F1EFFF16B31FF904A2CFF0000001C000000000000
+          0000000000000000000000000007353535AE355E8DFF2C4F7DFF0F2B5AFF4535
+          3AFFB36849FFF4956EFFD7815DFF7A4028FA0C06034300000001000000000000
+          000000000000000000000000000000000010576F92FF85BBE2FF63A2D1FF3F77
+          A9FF040F25AB0000001900000015000000080000000000000000000000000000
+          0000000000000000000000000001081931E0C1E0F4FF8AC3E8FF7CB9E3FF67A7
+          D6FF2D5786FF0000001200000000000000000000000000000000000000000000
+          0000000000000000000000010315061935FFB8DDF3FF97CBECFF8BC3E8FF7CB9
+          E3FF4F85B3FF0108139E00000000000000000000000000000000000000000000
+          0000000000000000000003152CC2102643FFC7E4F6FFA0D1EFFF98CBEDFF8BC3
+          E8FF6293BBFF031329F900000000000000000000000000000000000000000000
+          00000000000000000000041D3DF61A395EFF021935FF041630FF3F5D79FF98CB
+          ECFF01142DFF03142CEA00000000000000000000000000000000000000000000
+          00000000000000000000020F1E7535587FFF06254CFF021A3BFF001127FF1D35
+          50FF011933FF0108115600000000000000000000000000000000000000000000
+          000000000000000000000000000018375BFD345379FF1F3859FF182C48FF1224
+          3BFF000000020000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000020E1E72031831CC0211249F0000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          000542372EBC7D6957FF796352FF725D4CFF6D5745FF675240FF5F4A39FF5944
+          33FF533E2DFF4F3A2AFF4A3526FF453122FF0000002800000000000000000000
+          0026E8E5E1FFE4E0DBFFECC3A7FFDD9E77FFD39069FFC7815AFFBC734BFFAF65
+          3CFFA35932FF9A4E2AFF6E3D21FF8E867BFF3A2A1CF100000000000000000000
+          001DCAC1B9FFE7E2DFFFAD7252FF995031FFBE8764FFCF8C64FFC47E55FFB86F
+          46FF703D28FF8C4A2AFF776659FF968F84FF291D14CF00000000000000000000
+          000791806FFFECE9E6FFA26B50FFF0CCB5FFE9BCA1FFE0AF90FFD69F7EFFCA8D
+          6CFFC28564FFB57453FFA39B94FF8D857BFF0705045B00000000000000000000
+          0000362E27A0FAF9F8FFE7E2E0FFD09D80FFA29A90FFD7D0CCFFCFC7C2FFC4BE
+          B8FF7B482CFF6D3B20FFA8A297FF6B5A4CFF0000001700000000000000000000
+          000000000013B8ACA1FFEFECEAFFDDAB91FFBBB3ACFFDAD6D0FFD2CDC7FFCBC3
+          BEFF8F583BFF7C482CFFACA499FF241B13B00000000100000000000000000000
+          0000000000000504032E9D8C7FFFCDA38BFF7A797AFF6C9BC2FF588EBCFF415E
+          7FFF9B6649FF79533BFF392C21D00000000A0000000000000000000000000000
+          00000000000000000000000000080000001A355E8DFF2A4C7AFF0D2A5AFF2045
+          75FF000000500000001800000003000000000000000000000000000000000000
+          000000000000000000000000000000000012546D8FFF85BBE2FF63A2D1FF3F78
+          AAFF051127AB0000000200000000000000000000000000000000000000000000
+          0000000000000000000000000001111F349DC1E0F4FF8AC3E8FF7CB9E3FF548E
+          BDFF264E7DFF0000001300000000000000000000000000000000000000000000
+          000000000000000000000000000C263F66E9B8DDF3FF6A99BFFF426F9BFF3C6B
+          99FF2A5485FF0000004A00000000000000000000000000000000000000000000
+          00000000000000000000000000103790C3FF57BCE1FF49CDF3FF29C6F7FF21A4
+          DDFF2370A5FF04122CB300000000000000000000000000000000000000000000
+          000000000000000000000000000792B8D3FF1166A0FF0E6CACFF0C5E9EFF0B48
+          82FF0B396FFF0C3463F200000000000000000000000000000000000000000000
+          00000000000000000000000000017DB7D4FF65E4FCFF40D7FBFF2CC4F1FF1AA1
+          D7FF0D6BA6FF0720398B00000000000000000000000000000000000000000000
+          0000000000000000000000000000082F4567D4EEF6FF88EAFDFF3BCDF2FF37B1
+          DCFF3E7198FA0000000100000000000000000000000000000000000000000000
+          00000000000000000000000000000000000004182334106292E011699FFF0A3B
+          5B9A000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0003000000200000002E00000030000000300000003000000031000000310000
+          00320000003200000032000000330000002E0000001000000001000000000000
+          000AB1703DFFFFF1E1FFFFF1E2FFFFF2E3FFFFF2E4FFFFF3E5FFFFF3E6FFFFF3
+          E7FFFFF4E7FFFFF4E8FFFFF5E9FFFFF5EAFF0000002E00000001000000000000
+          000BB37440FFFFF2E4FFFFF2E5FFFFF3E6FFFFF3E6FFFFF3E7FFFFF4E8FFFFF4
+          E9FFFFF5EAFFFFF5EBFFFFF6EBFFFFF6ECFF0000003100000001000000000000
+          000AB67744FFFFF3E6FFFFF4E7FFFFF4E8FFFFF4E9FFFFF5E9FFFFF5EAFFFFF5
+          EBFFFFF6ECFFFFF6EDFFFFF7EEFFFFF7EEFF0000003000000001000000000000
+          0009B97A47FFFFF4E9FFFFF4E9FFFFF5EAFFFFF6EBFFFFF6ECFFFFF6EDFFFFF7
+          EDFFFFF7EEFFFFF7EFFFFFF7F0FFFFF8F1FF0000002F00000001000000000000
+          0009BC7F4DFFFFF5EBFFFFF6ECFFFFF6ECFFFFF7EDFFFFF7EEFFFFF7EFFFFFF7
+          F0FFFFF8F0FFFFF8F1FFFFF9F2FFFFF9F3FF0000002D00000001000000000000
+          0008BF8351FFFEF4EBFFFFF7EEFFFFF7EFFFFFF8EFFFFFF8F0FFFFF8F1FFFFF9
+          F2FFFFF9F3FFFFF9F3FFFFFAF4FFFFFAF5FF0000002C00000001000000000000
+          0007C28756FFFCF2E7FFFEF6EEFFFFF8F1FFFFF9F2FFFFF9F2FFFFF9F3FFFFFA
+          F4FFFFFAF5FFFFFAF5FFFFFBF6FFFFFBF6FF0000002900000001000000000000
+          0007C58B5AFFFAEEE2FFFCF3EAFFFEF7F1FFFFFAF4FFFFFAF4FFFFFAF5FFFFFB
+          F6FFFFFBF6FFFFFBF7FFFFFBF8FFFFFCF8FF0000002700000001000000000000
+          0006C8905FFFF7E9DBFFFAF0E4FFFCF4ECFFFEF8F4FFFFFBF6FFFFFBF7FFFFFB
+          F8FFF4F1EDFFFAF7F4FFFFFCF9FFFFFDFAFF0000002400000001000000000000
+          0005CB9465FFF5E3D3FFF7EADDFFFAF0E7FFFCF5EEFFFEFAF6FFFFFCF9FFC4B9
+          B2FF4A3629FFC1BFBDFFFFFDFBFFFFFDFCFF0000002200000001000000000000
+          0004CE9A6BFFF1DDCAFFF5E5D5FFF7EBE0FFFAF1E9FFFCF6F1FFFEFBF8FF5E34
+          1AFFF1EFEDFFB9B8B7FFFFFEFCFFFFFEFDFF0000001F00000001000000000000
+          00014B3B2E66FFFCF9FFFFFCF9FFF5E5D6FFF7ECE1FFFAF2EBFFFCF7F3FF6E41
+          1DFFF1F0EFFFC3C2C1FFFFFEFEFFFFFFFEFF0000001C00000001000000000000
+          0000000000034B3B2F65FFFDFBFFF1DECDFFF5E6D8FFF7EDE3FFFAF3ECFF7C4F
+          23FFF0EEEDFFFFFFFEFFFFFFFFFFFFFFFFFF0000001800000001000000000000
+          000000000000000000024B3B2F62DCAD80FFDDAE81FFDEAF83FFDFB185FF8C5D
+          2BFFC19B76FFE2B78BFFE4B88DFFE4B98EFF0000000E00000000000000000000
+          000000000000000000000000000100000002000000020000000300000003261B
+          0D41724E26CC0000000800000004000000040000000100000000}
       end
       item
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
           2000000000000004000000000000000000000000000000000000000000010000
-          00090000001B0000001F0000000F000000020000000000000000000000000000
-          000000000003000000140000002C0000002B0000001000000002000000060102
-          0F45090B67F9090A68FF02021E7C000000270000002100000024000000260000
-          00260000003001011A8F010258FF010154FC00000C630000000D0000000D0809
-          4CC2191CA7FF1B1EAFFF0D0E74F2050752E3050650E5050551E904054FEA0304
-          4BE903044AEB050458F8050567FF030360FF01023CDA000000200000000F0B0D
-          64E92023BFFF2024C2FF1B1DAFFF171AA2FF15179BFF131494FF10128CFF0E0E
-          82FF0B0B7AFF0A0A75FF080870FF060568FF02024EF50000002C050507130E0F
-          68EA5E60D6FF6668E1FF6264DCFF5F61D6FF5A5BD0FF5557C8FF4F51C0FF494A
-          B6FF4545AEFF3E3EA4FF38389AFF2C2C8BFF02034FF40000002B0404050C0E10
-          56C03436BBFF4447D9FF4144D4FF585CD5FFC0C1EDFFF6F6FCFFF5F5FCFFBDBD
-          E5FF4849B0FF26269AFF212190FF151579FF02033ED70000001F02020204090A
-          1F47131587FD272AD4FF2528CFFFD8D9F5FFBABAD5FF4B4B91FF4B4B91FFBABA
-          D5FFD9D9EFFF121495FF10118AFF060764FE0101116C0000000C000001010303
-          04090D0D42941B1EA7FF262AD5FFE0E1F8FFBDBDD7FF4B4B91FF4B4B91FFBDBD
-          D7FFDEDFF3FF15179EFF0D0E7BFF030331B20000001C00000002090A27480B0C
-          5ACC050511290E105EC92125BFFF4043D0FF9E9FE2FFE2E2F6FFE2E2F5FF9B9C
-          DAFF3839B4FF141596FF04064CDA00010B40020247CD0101194823268BF31B1E
-          B2FF090A57C705050E240F126DE3181A96F10B0D5DD80A0D5DDD090A5BDE090A
-          57DD111384F407095EEB01010841020247C9070772FF020254F32A2B95FC1D1F
-          C4FF1719A1FF070841990C0E57BC08093379010101110000000E000000100000
-          001A04052D8C06084CC9030337A0080873FF0A097FFF030258FC20226DB12124
-          BAFF1D20C2FF0E1073F40B0D59BF080833720000000400000000000000000000
-          000704052E7E07084EC806065FF50D0C87FF080976FF02023BA80506111B2829
-          8BDD2527AEFF1E21BEFF101272E80707429B0304225202021738020217380203
-          205304053C9F06065DE90E0F8DFF090974FF030452DD00000A1B000000000202
-          080C16164875252684DE252699FF1B1D96FF171990FF141585FF111480FF1011
-          81FF0C0D7CFF08096BFF050555DE02032C750000040C00000000000000000000
-          00000000000000000000050614210C0D2E510E0E38660C0D396D0B0B366D0809
-          30660506245101020E2100000000000000000000000000000000000000000000
+          000D0000001D0000000F00000004000000010000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000060C27
+          479E86AACFFF214277E50205094F0000001E0000000A00000002000000000000
+          00000000000000000000000000000000000000000000000000000000000A1D59
+          99FF5F8BBCFF61AFDFFF4A95CDFF265493FF0F1D3EB100000033000000140000
+          0006000000010000000000000000000000000000000000000000000000091F5F
+          A1FF3469A8FF97D7F7FF66BCEEFF53AAE3FF388ACBFF276BAFFF18336CF7060B
+          1875000000260000000E00000003000000010000000000000000000000072466
+          A9FF3A81B9FFC9ECFCFF75C9F4FF62B9EDFF4FAAE6FF3C99DFFF2984CFFF1B6D
+          BCFF14468CFF101E46D20000013F00000016000000020000000000000006256D
+          AEFF459FD1FFECF9FFFF81D3F8FF70C7F3FF5DB7EDFF4AA7E5FF3796DEFF2788
+          D7FF197CD0FF0E66BCFF0956AAFF122556EA0000001000000000000000042972
+          B5FF56B9E4FFB7D1E7FF8CDDFEFF7DD1F8FF6AC3F3FF57B4EDFF44A4E5FF3195
+          DEFF2287D7FF157AD1FF0B6EC9FF0F428AFF0000002300000001000000032E7B
+          BBFF68CEF2FF73A2CFFFE1F7FFFF94DFFEFF78CFF8FF66C0F3FF52B2ECFF3EA1
+          E4FF2D92DDFF1E84D6FF1277D0FF0B5CAFFF0000003300000002000000023382
+          C3FF78D9FAFF64CCF3FF4698CDFF618FC1FFD8EAF6FFB7E5FBFF60BEF2FF4CAE
+          EBFF399FE3FF288FDDFF1A82D6FF0E6ABEFF0810248600000005000000023988
+          C7FF86E1FDFF75DBFDFF63D5FBFF50CAF8FF3BB9EDFF789EC8FFB6E4FBFF5BBB
+          F1FF47ACEAFF349BE3FF238EDCFF1679CCFF132452DB0000000A000000013E8F
+          CDFF91E5FEFF82E0FEFF71DAFDFF5FD4FCFF4DCBFAFF39BDF3FF7BA0CAFFDBF1
+          FDFF7CC9F4FF41AAEAFF2F9AE2FF1F8BDCFF1A4281FF0000001200000000326D
+          9BBEEFF6FBFFDAF6FFFF7FDEFEFF6DD8FCFF66D4FBFFB8EAFDFF40C0F5FF2C94
+          D0FF3C6EA9FF9DBEDCFFB5DDF7FF51A9E7FF1C65ACFF0000001B000000000000
+          0001010202062E6490B38FBDE1FFB3D3EBFF13293D5B1D4162905F99C9FFACE2
+          F9FF67CBF9FF16A6EDFF1C75B8FF355A95F87DA3CBFF03060B30000000000000
+          0000000000000000000000000002000000030000000100000001000000050307
+          0B1C2A5A88CC66A7D4FF77C1EAFF0000001A0000001000000009000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0001000000030000000911223356000000070000000100000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000001000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          00000000000000000000000000050000001600000030000000440000004A0000
+          003E000000250000000C00000002000000000000000000000000000000000000
+          000000000001000000100D040055752401E4424203FF75380AFFA2300FFFAB2F
+          0FFF8A2A08FF300F01AE00000029000000050000000000000000000000000000
+          0001000000124515019CB73009FFAF2408FF0A4E00FF0B7D00FF0B7C00FF215E
+          01FFB3270BFFBC3112FF6D2106F3000000370000000500000000000000000000
+          000937110182CA3108FFC92303FF234A06FF0C6801FF0B7E00FF0A7500FF096A
+          00FF593301FFB62007FFBC2E10FF6B2205F20000002800000002000000010000
+          0024D43D06FFE43206FF723F09FF10710DFF118506FF107F05FF106D03FF4840
+          01FF882200FFB31801FFB72007FFBC3112FF300F01AB0000000C000000054215
+          0181EA4B15FFEA5317FF9D5216FF17860DFF178A0CFF1A7A0BFFA5400AFFDB2B
+          06FFCC2003FFBA1700FFB31902FFB3270CFF8A2A08FF0000002300000009A034
+          03D2EE6E28FFD5702EFFCF7A34FF4B7D1BFFC4732EFFE56E2BFFEB5B1DFFE742
+          11FFDE2D06FFCB2003FF9B1D01FF338311FF91300DFF0001003A0000000AD847
+          07F9D9873CFF2CA71EFFEAAB58FFF8B65EFFF6AC56FFF49848FFEF7D34FFEB5E
+          21FFE64010FFDA2706FF645317FF45963AFF449537FF0003004D00000008C442
+          08E9578E28FFD5AF65FFBFB569FFF4D07FFFFBCD79FFF8BC66FFF49D4DFFEF7B
+          32FFEB531BFFE43309FF6A753DFF5FB172FF5EB070FF0002004200000005792A
+          06A341982BFF4E9F44FF63C263FFC0BF83FFFEE696FFFBD37FFFF8B761FFF291
+          43FFED6726FFE64010FFA23710FF74C7A1FF6FB48CFF00000028000000010C04
+          0128638835FF59BD55FF72CA76FF88CC91FFC3C08EFFF8DD8CFFF9C46EFFF39E
+          4EFFEE702DFFE54714FF80895AFF6E8E5FFF60431AE800000011000000000000
+          0008853009C863C263FF7ED086FFA3E0AEFFC3EED0FFB3B998FFF4C471FFF5A4
+          51FFEF762FFFE14916FF72834EFF7E6B37FF0D04004000000003000000000000
+          00010000000F9B5826F48AD694FFAED4B6FFAFB196FFB1AE91FFE0B164FFEB99
+          49FFE6702BFF6F8E51FF59AA63FF3E1A01940000000A00000001000000000000
+          0000000000010000000C802E09C7D1ECD6FFF6FCF9FFFEFFFEFFD5D8D0FFC8C6
+          B1FFC06D2CFF618C42FF331501760000000A0000000000000000000000000000
+          00000000000000000000000000050C0401275F2308AFB38975F6C1A394FD9531
+          05C84016026C0001001300000004000000000000000000000000000000000000
+          0000000000000000000000000000000000010000000200000003000000040000
+          0003000000020000000100000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00030000001F0000001300000000000000000000000000000000000000000000
+          0000000000040000000E0000001000000010000000110000001A03060B4C1C40
+          77F242A1D2FF142E59D7000000140000000C0000000100000000000000000000
+          0001000000252D67A5FF2C62A1FF295A99FF255291FF306EA8FF54C7F1FF54C8
+          F3FF52C7F2FF3888BCFF1F4683FF1C3F7AF60000000C00000000000000000000
+          00010000003559AED6FF316AA6FF4BA3D2FF5FD0F4FF5BCDF4FF59CBF4FF56CA
+          F3FF54C9F3FF52C7F3FF3576ACFF1D417CF90000001200000000000000011023
+          355F3E84BEFF6CD1F1FF6ED8F6FF69D5F6FF64D2F6FF60D0F5FF5CCFF4FF5BCD
+          F4FF57CBF4FF55C9F4FF2A5F9BFF1E437EF90000001100000000000000012E5F
+          8BC57EDFF9FF7ADDF8FF75DCF8FF72D8F6FF6CD7F6FF4595BAFF59BEE3FF5FD0
+          F4FF5BCEF4FF4BAFD7FF54C4EFFF1F4682FB0000001100000000000000000102
+          02147ED7F4FF83E1F9FF72CCE8FF3F7FA4FF66C1E1FF70D8F7FF65CCEEFF397F
+          A6FF4FAFD4FF5CCFF4FF5ACDF4FF234E8CFF0000001200000000000000000000
+          00034C93CBFB8BE4FAFF86E1F8FF83DFF9FF61B2D2FF4589ADFF70D3F2FF6ED7
+          F6FF57B5D9FF377DA5FF59C2EAFF49A4D3FF0000002600000000000000000000
+          00011223316594E6FBFF5FA2C1FF66AFCCFF86E2F9FF81DFF9FF519ABCFF519F
+          C1FF6FD8F7FF509FCAFF5BBEE4FF5FD0F4FF122A48A600000000000000000000
+          0001000000246EB9E4FF98E8FBFF85D2E9FF4782A4FF78C8E2FF85E0F9FF7EDE
+          F9FF3E74A5FF509AC5FF60BDE2FF65D4F6FF397FB6FF0000000A000000000000
+          00010000001D5CA7D7FFA0EAFCFF9AE7FAFF97E6FBFF92E5FAFF8DE3F9FF0B0F
+          A4FF335DA2FF59A5CCFF69C3E6FF6CD6F6FF54B0DBFF060D163D000000000000
+          00010000001A7ED9EFFF94DAF5FFA3EBFCFF9EEAFCFF9AE7FBFF94E6FBFF2E2E
+          C4FF151BAAFF6AB9DCFF4C95C7FF2D62A0FD0000001F00000002000000000000
+          00010000001586E5F7FF60A9DFFFAAEDFDFFA5ECFCFFA1EAFCFF9BE8FBFF87D6
+          F2FF4A90C9FF60B2D8FF73D4EEFF2C629DF60000000C00000000000000000000
+          000000000006000000140A12183AAEEDFDFFACEDFDFF7DC4EBFF356388BA0000
+          0031000000290000002A0000002C0000001F0000000400000000000000000000
+          00000000000000000000000000036CB2E4FF1C31425800000006000000010000
+          0001000000010000000100000001000000010000000000000000000000000000
           0000000000000000000000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000000}
       end
@@ -10357,109 +12460,183 @@ object Fmain: TFmain
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
           2000000000000004000000000000000000000000000000000000000000000000
-          00000000000000000000000000020000000A000000150000001E000000230000
-          00220000001A0000000E00000003000000000000000000000000000000000000
-          000000000000000000040000001332170B745E2B15BB7F3B1CE8904222FC7B38
-          1CEA572714C52D140A8400000021000000080000000100000000000000000000
-          0000000000030F07042A592A15A5A95127FDB95D2CFFC6672FFFCF6C31FFC564
-          2CFFB45726FF9C4922FE4D2211B90D06033E0000000800000000000000000000
-          00010000000C5D2D179FB75B2DFFCC7039FFD57A41FFD57A42FFD47A40FFD476
-          3CFFD27236FFC6662DFFA54D23FF4D2211B90000002000000003000000000000
-          0004391C0E62B65A2FFDCF7641FFD8844CFFD98852FFDA8A54FFD98852FFD884
-          4DFFD67D45FFD3753BFFC6662FFF9C4922FE2D150A830000000E000000000000
-          00066F371CA8C76D3BFFDA8A54FFDC915EFFDC9562FFDE9867FFDE9865FFDC92
-          5EFFDA8A54FFD67F48FFD3753BFFB55929FF572814C300000019000000000000
-          00069D4C27DCD3804DFFDD9463FFD29568FFAD8063FFD29C70FFE1A576FFE2A0
-          6FFFDE9563FFDA8A54FFD57D45FFC66A32FF7A381BE900000020000000000000
-          0005B85A2DFADB915DFFD8986AFFA0795EFF2A335CFF9C7E6BFFE3AF85FFE5AC
-          7DFFE1A06FFFDD925EFFD8834CFFD2753CFF904222FC00000022000000000000
-          0003A35029D9D48A59FFBF8C65FF3D3E5AFF59515DFFD1AB87FFEABD93FFE8B4
-          87FFE4A677FFDF9765FFDA8852FFC9713BFF7F3B1DE60000001B000000000000
-          0001783B1E9FC27649FF61525AFF3B3D5BFFC09F7EFFEBC6A0FFEDC39AFFE9B7
-          8CFFE4A97AFFDF9968FFDA8954FFBC6435FF5E2B16B800000012000000000000
-          00003F1F10578C5441FE2C3661FF354D82FFBA9879FFD4AE89FFD4AB85FFDCAB
-          80FFE2A476FFDF9765FFD17F4CFFAB542BFD32170B7000000009000000000000
-          00000304091D272F5AF6344E8CFF185BDAFF20448DFF3F4F7BFF253F7CFF856D
-          66FFC1885FFFCB8152FFB86136FF592A15A10000001000000002000000000001
-          0103192245BE214281D91E5EDBFF0858F6FF0B58E9FF063CAEFF033CB6FF0233
-          98FF11317AFF8B4F3BFD5B2C169E0F0704260000000300000000000000001218
-          3084254681E3306AD7FF2569FAFF1A62F9FF1C55CEFF2155C7FF1253D7FF0D40
-          A6FF412C37C9361A0D650000000A00000002000000000000000005060D241F2A
-          54E71E3D6E9E3069CDFF316ADBFF2B5FC2FF2453AFFF2E60CAFF2257BEFF0319
-          448C0000000D0000000400000001000000000000000000000000000000000304
-          0815000000001125425D19386A99122C55810C1F4167103576C40924569A0000
-          0006000000010000000000000000000000000000000000000000}
-      end
-      item
-        Image.Data = {
-          36040000424D3604000000000000360000002800000010000000100000000100
-          2000000000000004000000000000000000000000000000000000000000000000
-          000000000000000000020000000C0000001B0000002900000031000000300000
-          00280000001B0000000C00000002000000000000000000000000000000000000
-          0000000000050000001B200D066D481F0BBE582B0DEC6A2E0FFB6F2F0FFB5F24
-          0AE8411707BE1A09036F0000001D000000050000000000000000000000000000
-          000400000021401B0BA289351AF291381CFF2A4704FF186101FF2E5407FF733B
-          16FF973319FF74270EF3321105A7000000240000000500000000000000020000
-          0019421D0D9FA43F21FCB0391EFF6A300AFF1D5702FF0D7200FF087A00FF0A77
-          00FF8B381AFFB23722FF8D2E13FD331205A70000001D0000000200000009220F
-          0765943C1DF0BE3F1DFF80340BFF225002FF116B00FF097900FF087B00FF106E
-          00FF3D5105FFC33422FFBB3824FF77280FF31B0A036F0000000C000000145626
-          12AFBE4A24FFC6461BFF4D4009FF1B5B01FF0C7400FF0A7800FF355405FFA22F
-          0DFFB9260BFFC12914FFC33826FFA2361CFF431908BE0000001B0000001B8138
-          1BDCC35624FF9D571FFF694F15FF1F5702FF255C04FF684F11FFBE4B1DFFD745
-          1BFFCC3613FF784107FF4A5E0AFF894120FF64270EE8000000270000001D9A47
-          21F59E6326FF526012FFBF7A39FFBE7A39FFC87738FFD87436FFE16B31FFE25C
-          28FFC6451AFF3F6004FF32982AFF5A8344FF773111FA0000002F0000001A9245
-          20F5546415FF9A7A37FFAB8B40FFDFA456FFEEA456FFED974DFFE98542FFE572
-          36FFC65523FF43761EFF4AB25BFF648856FF7A3312FA0000002F000000127139
-          18DB30670DFF3B7017FF2E7D12FFA4974AFFE7B564FFEFAE5EFFED9D50FFE985
-          43FFCD642DFF647433FF5FC886FF747D54FF692D11E7000000250000000A4F28
-          11A83B6A16FF298818FF28971CFF428726FFADA056FFE2B564FFEFAD5CFFEC95
-          4DFFD07134FF7B7C45FF7B794DFF954B2AFF4C210DB900000019000000032212
-          08545A551EF3388C26FF43A138FF5EB556FF78B96EFFA9A25EFFE5B162FFE59C
-          51FFAF6F2FFF407108FF7E5518FF883A1AF1210E06690000000B000000000000
-          000B40220E8F5B7434FD71AE65FF81AD78FF94AF85FFABB58EFFC09F57FFB98D
-          45FF3C7A0BFF536810FF984621FB411C0D9C0000001900000002000000000000
-          00010001000F3F220E9179764CF6A7B998FFA1A98BFFBCBFAAFFAEA988FF8185
-          49FF6F641BFF85411DEF421E0E990000001C0000000400000000000000000000
-          0000000000010001000D2214085C5E4A31C2A09581F4A59A84FDB1A894FD774E
-          31E5512711AD230F075F00000014000000040000000000000000000000000000
-          0000000000000000000000000005000200150104002901050033010400320002
-          0021000000120000000700000001000000000000000000000000}
+          0000000000000000000000000000000000030000001F00000029000000070000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000002000000090000001852402FF5958879FF000000290000
+          0001000000000000000000000000000000000000000000000000000000000000
+          0000000000010000001B4E3E2DEC0101015A584633FFD3CBC1FF0000003B0000
+          0002000000070000000900000001000000000000000000000000000000000000
+          0000000000041C16107B978F86FF515151FF4B4B4BFF302B24E8000000340000
+          00100B09066734291EC000000015000000000000000000000000000000000000
+          00000000000B5A5A5AFF9B9B9BFF838283FF606060FF4D4D4DFF333333FD0101
+          0161584633FFD6CEC4FF00000039000000020000000000000000000000000000
+          0000000000108D8D8DFF7F7E7FFF7B7B7BFF6E6E6EFF5B5B5BFF4C4C4CFF4E4E
+          4DFF332D27F85B4936FE0000002D000000010000000000000000000000000000
+          000122222263A8A8A7FF939393FFA4A5A5FF7D7D7DFF707070FF5B5B5BFF4D4C
+          4DFF525152FF313131FF0000001E000000000000000000000000000000000000
+          0000616161EDB1B1B0FFB4B4B5FFC4C4C4FFAEADAEFF9E9F9FFF7A7A79FF6162
+          62FF565656FF545353FF00000033000000020000000000000000000000000000
+          0000979797FFCACACAFF717171FF7B7B7BFF868686FF929191FFDBDBDBFF8080
+          80FF727272FF6C6C6CFF1111118B000000070000000000000000000000001919
+          1936737373F9989898FF959494FF7E7E7EFF757575FF7F7F7FFFDDDDDDFFE5E5
+          E5FFD2D2D2FF7A7A7AFF333333F30000000E0000000000000000000000000000
+          00000000000001010103565656C9898989FF959495FF807F80FFEFEFEFFFF6F6
+          F6FFFCFCFCFFDDDDDDFF575757FF000000130000000100000000000000000000
+          0000000000000000000000000000000000003232327B767676FFE2E2E2FF6F6F
+          6FFF272727860000000E02020228000000080000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000070707780000
+          000100000001000000000000000011112CA30000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000909
+          093C0202283C00008AE40C0C90FF3D3D89DB0000000000000000000000000000
+          00000000000000000000000000000000000000000000000000000A0A181E1F1F
+          B8FF3D3DA7DB0E0E202A00000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
       end
       item
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
           2000000000000004000000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000000000000000000
+          000063361CE71D10084800000000542A13E7190C064800000000000000000000
+          000000000000000000000000000402070E550C2853D300000015000000000000
+          0000D2AD92FF63361BE700000000C39E85FF532913E700000000000000000000
+          00000000000000000018163E70E13D95D6FF1A7AC6FF144C91FF0104094C0000
+          000800000016000000190000001C0000001E0000000A00000000000000000000
+          0005091928673684BDFF4CADE6FF45A7E3FF1D88D4FF187DCBFF1568B7FF352C
+          35E8D1976BFFC38556FFB97A4CFFB07144FF2512098D00000000000000092A6E
+          A4ED5CC5EBFF57C0ECFF50B7E8FF49AFE6FF1E8ED5FF1A84D3FF1679CDFF7F50
+          31FFD8996AFFD09062FFC68758FFBB7C4EFF5F3119F9000000030000000F6DD5
+          F2FF66CFF1FF5EC7EFFF57C0ECFF50B8E7FF2095D7FF1D88D4FF177DCAFFBF8D
+          68FFE5B591FFE3B38EFFDCAD89FFD5A581FFA37353FF0000000E0000000872DC
+          F4FF6DD6F1FF64CFF0FF5CC7EEFF56BFEAFF249BD9FF1E8ED5FF1A83D0FF1675
+          C7FF136BC0FF1162BAFF1055ACFF0D265DFF0D07043F0F08043E000000027AE1
+          F7FF72DBF4FF6CD4F1FF64CEF0FF5CC6EDFF27A1DAFF2097D7FF1D88D4FF187F
+          D0FF1475CBFF136DC8FF1064C4FF0F2B66FF0000000B6D3D21F50000000080E6
+          F9FF7AE0F6FF70DBF4FF6BD6F2FF62CBF0FF2AA6DCFF249BD9FF1E8ED5FF1B87
+          D3FF167BCEFF1471C9FF1167C5FF0F2D69FF000000010000000C0000000084E7
+          FAFF80E5F8FF79E0F6FF71D8F4FFB0E9F8FF99D0EAFF27A1DBFF2097D7FF1D88
+          D4FF1881D0FF1475CBFF126DC8FF0F2F6CFF00000000000000000000000089EA
+          FAFF84E8FAFFD3F6FDFFADE6FCFF4EB6E8FF73B1D5FF61C1E9FF6FC4EAFF1E90
+          D5FF1A86D3FF177ACEFF1471C9FF103270FF000000000000000000000000A1D5
+          E9FF8EC8E5FF6FB8DEFF5FAFD9FF3D92C9FF548AB7FF76CEEDFF5FC0E8FF51B7
+          E5FF61BCE7FF1881D0FF1575CDFF123677FF0000000000000000000000000000
+          000017374E685CA7D1FF83CDEAFF86CEE9FF71A5C8FFABE3F4FF8CD7F0FF6FC7
+          EBFF5EBCE7FF53B7E5FF57B3E3FF153B7AFF0000000000000000000000000000
+          0000000000000000000003070A0F266190CF75BEDFFF82C1DEFF3E91C7FF50B5
+          E4FF56BCE9FF3E8EC3FF12325FBA030810250000000000000000000000000000
+          00000000000000000000000000000000000000000001122E486E256097DF0C20
+          334E000000000000000000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000000000000000000
-          000000000000000000001511C6FF1511C6FF1511C5FE00000000AB6F4DFFAB6F
-          4DFFA76C4BF9000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          000000000000000000000C0CCDFF0C0CCDFF0C0CCDFF00000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          000000000000000000000C0CCDFF0C0CCDFF0C0CCDFF00000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          000000000000000000000C0CCDFF0C0CCDFF0C0CCDFF00000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          000000000000000000000C0CCDFF0C0CCDFF0C0CCDFF00000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          000000000000000000001511C6FF1511C6FF1511C5FE00000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          0000000000000000000000000000000000000000000000000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000001F24
-          BBFF181CB3FF1016ACFF0C11A8FF0C11A8FF0C11A8FF00000000B06F48FFB06F
-          48FFB06F48FF000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          00001F24BBFF0F1272A300000000000000000C11A8FF00000000AB6F4DFFAB6F
-          4DFFA76C4BF9000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          0000000000001C21ACEA0F1272A3000000000000000000000000000000000000
-          000000000000000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          000000000000262AB9F2141777A3000000000000000000000000000000000000
-          000000000000000000000070EEFF0070EEFF0070EEFF00000000000000000000
-          0000373CD3FF1F2282A30000000000000000171CB3FF00000000000000000000
-          000000000000000000000070EEFF0070EEFF0070EEFF00000000000000004347
-          DEFF3F43DAFF383CD3FF3034CBFF272CC3FF1F24BAFF00000000000000000000
-          0000000000000000000000000000000000000000000000000000000000000000
-          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          00010504040F0909091F0B0A0A220B0A0A230B0A0A240B0A0A240C0B0B250C0B
+          0B260C0B0B270D0B0B280D0C0B280A09091F0202020700000000000000000201
+          01053968A4F03BA5DDFF37A2DCFF339FDBFF319BD9FF2C98D7FF2994D5FF2691
+          D4FF248ED2FF218AD0FF1F88CEFF1F7EC5FF0909081E01010101000000000202
+          02074176B5FF46B1E3FF43AEE1FF40ABDFFF3CA7DFFF38A4DDFF6DC7EBFF64C2
+          E9FF2D9BD9FF2A97D8FF2694D7FF228BD0FF0B0A0A2401010101000000000202
+          0206427CBAFF57BDE8FF53BBE6FF4EB7E6FF4AB3E4FF2B4047FF3E3123FF60BD
+          E8FF3AA6DFFF35A1DCFF319EDBFF2C94D3FF0B0A0A2201010101000000000202
+          02064580C0FF69CBEEFF64C7EDFF60C4ECFF5CC0E9FF447C93FF463A2CFF5CBD
+          E6FF48B1E2FF43ACE1FF3EA8DFFF379ED7FF0A09092001010101000000000202
+          02054785C3FF7AD6F2FF77D3F1FF73D1EFFF6ECDEEFF51899DFF504435FF86D5
+          F0FF58BDE7FF53B9E6FF4DB3E5FF45A9DDFF0908081D01010101000000000101
+          01044A88C7FF8ADFF5FF87DDF5FF84D9F3FF80D7F2FF435355FF4F4236FF80D3
+          F0FF68C8ECFF62C3EAFF5CBFE8FF53B5E2FF0808081B00000000000000000101
+          01044B8BCBFF98E7F7FF96E5F8FF93E3F7FF90E0F5FF8CDDF4FF85DAF3FF7FD6
+          F1FF79D2F0FF70CEEEFF6AC9EDFF61BEE6FF0807071800000000000000000101
+          0102457FB9E9CCF5FDFFC9F4FCFFC6F3FCFFC2F1FAFFBDEFFAFFB8ECF9FFB1EA
+          F9FFA7E6F7FF9FE2F5FF95DEF5FF76BEE0FF0505051200000000000000000000
+          000002010109776B5DFD9F958CFF040404230404040F0504040F050505100505
+          05100505051881766AFF897C71FF040404240101010400000000000000000000
+          00000000000475695CF2AEA49CFF070605290000000100000000000000000000
+          000000000008807567FF8C8074FF000000160000000100000000000000000000
+          000000000003544D44AECCC7C2FF352E269C0000000500000000000000000000
+          000100000011A2998FFF7C6F63FF0000000F0000000100000000000000000000
+          00000000000103030312CAC6C0FF93897FFF201C185D00000008000000060000
+          000E5E5449D1BEB7B1FF594F40E1000000060000000000000000000000000000
+          00000000000000000003504B4592D7D3CFFFA89F97FF7F7467FF7B6E61FF8F84
+          78FFC9C4BFFF8E8277FF0000000C000000010000000000000000000000000000
+          000000000000000000000000000318161531B1AAA3FFDAD7D4FFE6E4E2FFBBB4
+          AEFF61584CD00000000900000001000000000000000000000000000000000000
+          0000000000000000000000000000000000010000000400000007000000090000
+          0007000000030000000100000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          000542372EBC7D6957FF796352FF725D4CFF6D5745FF675240FF5F4A39FF5944
+          33FF533E2DFF4F3A2AFF4A3526FF453122FF0000002800000000000000000000
+          0026E8E5E1FFE4E0DBFFDFD9D6FFD8D2CDFFA97460FFB47F71FFBCB6AEFF9959
+          42FFA06353FFA39A8FFF9B958AFF8E867BFF3A2A1CF100000000000000000000
+          001DCAC1B9FFE7E2DFFFE2DDD8FFCFB7AFFFC7B7ABFFCCC6C0FFB99A90FFAF9A
+          8CFFA9877CFFA6A095FFA0988DFF968F84FF291D14CF00000000000000000000
+          000791806FFFECE9E6FFE4E0DDFFB98272FFC19086FFB69183FFA75E4DFFBEB9
+          B1FF9D533EFFA26151FFA39B94FF8D857BFF0705045B00000000000000000000
+          0000362E27A0FAF9F8FFE7E2E0FFBC9584FFDCD2CCFFD4CBC5FFAD6F5EFFC4BE
+          B8FF9E6851FFAFA498FFA8A297FF6B5A4CFF0000001700000000000000000000
+          000000000013B8ACA1FFEFECEAFFE4E2DDFFE1DBD7FFDAD6D0FFD2CDC7FFCBC3
+          BEFFC0BBB2FFB6B1A6FFACA499FF241B13B00000000100000000000000000000
+          0000000000000504032E9D8C7FFFB6ACA3FF7A797AFF6C9BC2FF588EBCFF415E
+          7FFFA89F97FFADA299FF392C21D00000000A0000000000000000000000000000
+          00000000000000000000000000080000001A355E8DFF2C4F7DFF0F2C5CFF2045
+          75FF000000500000001800000003000000000000000000000000000000000000
+          000000000000000000000000000000000012576F92FF85BBE2FF63A2D1FF3F78
+          AAFF041126AB0000000200000000000000000000000000000000000000000000
+          00000000000000000000000000010D2C5DE2C1E0F4FF8AC3E8FF7CB9E3FF67A7
+          D6FF2D5786FF0000001300000000000000000000000000000000000000000000
+          00000000000000000000010306170F346FFFB8DDF3FF97CBECFF8BC3E8FF7CB9
+          E3FF4F85B3FF041028A100000000000000000000000000000000000000000000
+          00000000000000000000092958C41B4D88FFC7E4F6FFA0D1EFFF98CBEDFF8BC3
+          E8FF6293BBFF09204EF900000000000000000000000000000000000000000000
+          000000000000000000000D3571F63B79B2FF10407DFF0A2E68FF446892FF98CB
+          ECFF0C316EFF08204DEB00000000000000000000000000000000000000000000
+          00000000000000000000061A38768CBBDEFF3276B5FF2566AAFF1A5492FF2344
+          76FF1D5695FF030C1C5B00000000000000000000000000000000000000000000
+          00000000000000000000000000003D669BFD90C0E1FF66A4D2FF5A9BCFFF365D
+          8DFF000000040000000100000000000000000000000000000000000000000000
+          000000000000000000000000000000000000061937720A2B5ECC0722489F0000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          000100000014000000390000003E00000036000000250000003C0000003F0000
+          0036000000260000003D00000040000000370000001200000001000000000000
+          0001000000321F27B7FF1F26B5FF2128B6FF01023CC19C6022FF9C6122FF9C60
+          21FF2F1605C50E5DE1FF0E5DDFFF0E5CDFFF00133DAC00000009000000000000
+          0001000000282029BDFF1F28B9FF232BB8FF01047BFF9E6225FF9C6123FF9C60
+          21FF612F0CFF0E60E3FF0E5EE1FF0E5EE0FF00277BFF0000000D000000000000
+          0001000000162A35C5FF1F2BBFFF2732BEFF01047EFFA66F35FFA06629FF9F65
+          29FF66300DFF0E62E6FF0E61E4FF0E60E3FF00297EFF0000000B000000000000
+          0000000000093744CEFF1F2DC5FF2B37C5FF010481FFAF7E4AFFA56D32FFA56D
+          32FF6B330DFF0D64E9FF0E63E8FF0D61E6FF002A82FF00000008000000000000
+          0000000000064655D7FF2030CCFF2F3DCDFF020688FFBA8F62FFAA753CFFAB77
+          40FF72350EFF186EEDFF0E67EAFF1065E9FF002C86FF00000006000000000000
+          0000000000035868E0FF1F34D2FF3143D3FF050B93FFC6A079FFB17D47FFB281
+          4DFF783911FF277AF2FF0D6AEDFF136AECFF002F8CFF00000005000000000000
+          0000000000016979E6FF2036D7FF3547D9FF08119EFFD0B190FFB78654FFB98B
+          5BFF7D3F18FF3787F7FF0D6DF2FF176FF1FF013192FF00000003000000000000
+          0000000000000B13607E1322BBFF101CB2FF0C18AAFFD9BFA2FFBE9060FFC296
+          69FF86451CFF4A94F9FF0D70F6FF1A75F5FF01359AFF00000002000000000000
+          00000000000000000000000000000000000000000000E0C9B2FFC4996CFFC89F
+          76FF8F4B1EFF5DA0FBFF0D71F8FF1E7AF8FF02389FFF00000001000000000707
+          2633181CB6FF0000000003053C5C02079FFF000000005636197EA7632BFFA05C
+          27FF975223FF6EABFDFF0D74FAFF207FF9FF023DA7FF00000000000000000000
+          000007072633181DB6FF00000000000000000000000000000000000000000000
+          0000000000007CB3FDFF0D73FBFF2480FBFF0341ADFF00000000000000000000
+          0000000000002126BFFF00000000000000000000000000000000000000000000
+          000000000000042A647E0750C3FF054ABBFF0344B3FF00000000000000000000
+          00003135D1FF0F11485C00000000181CB6FF0000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000004347
+          DEFF3B40D8FF3136D0FF292FC8FF2126C0FF0000000000000000000000000000
           0000000000000000000000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000000000000000000
           0000000000000000000000000000000000000000000000000000}
@@ -10468,186 +12645,519 @@ object Fmain: TFmain
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
           2000000000000004000000000000000000000000000000000000000000000000
-          00020000000B000000160000001D0000001F0000002100000022000000230000
-          002400000025000000250000001F000000110000000400000000000000000000
-          000A452D1F8A8A5A3DEA9C6645FF9C6645FF9C6544FF9C6544FF9B6543FF9B64
-          43FF9B6443FF9B6342FF87573AEE442C1D990000001200000000000000000000
-          0010956244F3BE8E60FFD8AA6AFFD8AA68FFD7A966FFD7A764FFD5A561FFD5A3
-          60FFD5A25FFFD4A15BFFD3A15AFF925F40F60000001F00000000000000000000
-          0012A16D4CFFDDB377FFBD8B5CFFB07F56FFB07E55FFAF7D53FFAF7C53FFAE7A
-          51FFAD7A50FFB98655FFD6A660FF9E6848FF0000002400000000000000000000
-          0010A47050FFE1B983FFB4855CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFB07D54FFD8A967FFA06C4AFF0000002300000000000000000000
-          000EA67555FFE3C18FFFB78961FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFB28159FFDAAE6EFFA26F4EFF0000002100000000000000000000
-          000CA97959FFE7CA9DFFBA8D67FFFFFFFFFFD0A57EFFCC9F76FFC8996FFFC595
-          6AFFFFFFFFFFB5865FFFDDB274FFA57352FF0000002000000000000000000000
-          000AAC7D5DFFEBD0A9FFBD926CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-          FFFFFFFFFFFFB88B64FFDFB67BFFA87756FF0000001E00000000000000000000
-          0008AF8261FFEED8B6FFBF9771FFFFFFFFFFD5AB86FFD1A67FFFCEA179FFCC9F
-          76FFFDFDFDFFB88E69FFE0BB82FFAA7B5BFF0000001B00000000000000000000
-          0006B18566FFF0DEC1FFC19B76FFFFFFFFFFFFFFFFFFFFFFFFFFF9F9F9FFE9E9
-          E9FFE7E7E7FFB58F6EFFDEBB89FFAE7F5FFF0000001900000000000000000000
-          0004B38A69FFF3E4CAFFC49F7AFFFFFFFFFFF7F7F7FFDADADAFFC8C8C8FFCECE
-          CEFFDBDBDBFFB29070FFDCBE8CFFAF8363FF0000001600000000000000000000
-          0003B68D6DFFF6E9D4FFC6A27EFFD4D4D4FFAEAEAEFFAAAAAAFFB6B6B6FFC4C4
-          C4FFD2D2D2FFB09174FFD8BC90FFB08767FF0000001300000000000000000000
-          0001B89170FFF8EDDCFF9D866FFF9A816BFF967D65FF927961FF8F765DFF8D73
-          5AFF8B7158FF886E55FFDDC297FFB58B6BFF0000001000000000000000000000
-          0001A38165E0D9C2ABFFCEBEABFFC9B8A4FFC3B19CFFBEAB95FFBAA68FFFB6A0
-          89FFB29C84FF947B63FFD2AF89FFA27E60E50000000B00000000000000000000
-          000053423371A58367E0BB9574FFBC9576FFD8C8B7FFD6C8B6FFD1C2AFFFCBB9
-          A4FFBA9474FFBA9372FFA48164E45140327B0000000500000000000000000000
-          0000000000000000000000000001000000016A666073EAE1D3FFDDD3C6F76A61
-          598A000000050000000500000005000000030000000100000000}
-      end
-      item
-        Image.Data = {
-          36040000424D3604000000000000360000002800000010000000100000000100
-          200000000000000400000000000000000000000000000000000000000000A06D
-          4BFF9E6C49FF9E6A48FF9D6947FF9C6846FF9C6745FF9B6644FF9A6543FF9963
-          42FF996241FF986140FF97603FFF975F3EFF965E3DFF0000000000000000A271
-          4FFFF6EDE4FFF6EDE5FFF6EEE5FFF6EEE6FFF6EEE7FFF7EFE6FFF6EEE5FFF5ED
-          E4FFF5EAE0FFF4E8DEFFF3E6DBFFF0E3D5FF98603FFF0000000000000000A676
-          53FFF7EEE7FFF7EEE7FFF7EFE7FFF7EFE7FFF7EFE8FFF8F0E9FFF7F0E9FFF7EF
-          E9FFF7EFE6FFF5ECE3FFF3EBE1FFF3E8DDFF9A6442FF0000000000000000A97B
-          58FFF8F0EAFFF8F0EAFFF8F1EAFFF8F1EAFFA77D5DFFA67B5BFFA57959FFA377
-          57FFA17555FFF8F0E9FFF6EEE7FFF6ECE4FF9C6644FF0000000000000000AC80
-          5EFFF8F2ECFFF8F2ECFFF8F3ECFFF8F3EDFFFAF3EDFFF9F4EEFFF9F4EEFFF9F4
-          EFFFF9F4F0FFFAF4EEFFF9F2EDFFF8F0EAFF9D6947FF0000000000000000AF85
-          62FFF9F3EDFFF9F3EDFFF9F4EFFFF9F4EEFFC5A68AFFC3A387FFC1A084FFBF9D
-          80FFBD997CFFBB967AFFB89476FFF9F3EFFF9F6C49FF0000000000000000B28A
-          68FFFAF4EFFFFAF4EFFFFAF5F0FFFAF5F0FFFAF5F1FFFAF6F1FFFAF6F2FFFAF6
-          F2FFFBF6F3FFFBF7F3FFFBF7F3FFFBF7F3FFA06E4CFF0000000000000000B58E
-          6EFFFAF6F1FF8C6C65FF62372FFF62372FFF62372FFF8D6C66FFFBF8F4FFFBF8
-          F4FFFCF8F5FFFCF8F5FFFCF8F5FFFCF9F6FFA2714EFF0000000000000000B993
-          72FFFBF7F3FF8D6C66FF73473EFFC29284FF73473EFF8D6D66FFFCF9F5FFFCF9
-          F6FFFCF9F6FFFDF9F7FFFDF9F7FFFDFAF7FFA37450FF0000000000000000BC98
-          77FFFBF9F6FFD0C2BEFFBDA59EFFE5D2CBFFBEA59EFFD1C3BFFFFDFAF8FFFDFB
-          F8FFFCFBF8FFFDFBF9FFFDFBF9FFFDFBF9FFA67854FF0000000000000000BF9D
-          7DFFFCFAF8FFFCFAF8FFBDD0E1FF6A91B9FFB7C6D7FFFDFBF9FFFDFBFAFFFDFB
-          F9FFFDFBFAFFFDFCFAFFFDFCFAFFFDFCFAFFA97C58FF0000000000000000C2A0
-          81FFFDFAF8FF98ABC0FF33618FFF5891C0FF7397BBFFFAF9F8FFFDFCFAFFFDFC
-          FAFFFEFCFBFFFEFCFBFFFEFCFBFFFEFDFBFFAC805DFF0000000000000000C5A5
-          86FFFDFCFAFF91A6BDFF466B93FF38608BFF225080FFFEFDFCFFFEFDFCFFFEFD
-          FCFFFEFDFCFFFEFDFDFFFEFDFDFFFEFEFDFFAF8562FF0000000000000000C7A8
-          8BFFFEFDFBFFD8DFE5FF587EA4FF1E4C7EFF7293B4FFFEFEFDFFFFFEFEFFFFFE
-          FEFFFFFEFEFFFFFFFEFFFFFFFEFFFFFFFEFFB18967FF0000000000000000CAAC
-          8FFFFFFEFDFFFFFEFDFFFFFEFEFFFFFEFEFFFFFFFEFFFFFFFEFFFFFFFFFFFFFF
-          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB58E6CFF0000000000000000CCAF
-          93FFCBAD90FFC9AA8EFFC8A98BFFC6A689FFC4A486FFC3A283FFC1A081FFC09E
-          7EFFBE9B7BFFBD9979FFBB9776FFB99473FFB89271FF00000000}
-      end
-      item
-        Image.Data = {
-          36040000424D3604000000000000360000002800000010000000100000000100
-          2000000000000004000000000000000000000000000000000000000000000000
-          000000000000000000020000000B00000019000000260000002F0000002F0000
-          00260000001A0000000C00000002000000000000000000000000000000000000
-          0000000000040000001A02041F6A040849B9040B6AE5060B80F905097CF90306
-          62E6010340BB0001196D0000001C000000050000000000000000000000000000
-          00040000001F04073E9F070F7EEF080F91FF070D8CFF050B89FF040985FF0308
-          81FF02067EFF010467F1010231A4000000220000000500000000000000020000
-          00170509409C0A1392FA0A1396FF6066B9FFADAFD9FFE6E7F3FFE6E7F3FFACAE
-          D5FF5E60ADFF03067DFF020574FB010332A30000001B00000002000000090305
-          2161091384EC0B159CFF8489CBFFFFFFFFFFD3D3D3FF6E6E6EFF3B3A3BFF7B7B
-          7BFFF5F5F5FF8183BFFF03077FFF030569F000011A6A0000000B00000012070D
-          53AC0C17A1FF6269C0FFFFFFFFFFDDDDDCFF4D4D4DFF424141FF3B3A3BFF3535
-          35FF8E8E8EFFFFFFFFFF5E61AEFF040881FF020442B600000018000000190A14
-          7DDA0D17A3FFAFB2DFFFDFDFDFFF616060FF505051FF454545FF3F3F3FFF3B3B
-          3BFF595959FFFFFFFFFFACAED6FF040A85FF040865E1000000210000001C0E18
-          9DF50D18A4FFE7E8F6FFAAA9A9FFA5A5A5FF5C5C5CFF4A4A4AFF454545FF4241
-          41FF656565FFFFFFFFFFE6E7F3FF060B89FF060C81F700000027000000190E19
-          9EF40E19A6FFE7E8F6FFFFFFFFFFFFFFFFFF6B6B6BFF7F7F7FFF5E5E5EFF7F7F
-          80FF7F7F7FFFFFFFFFFFE7E7F4FF070D8DFF070D84F700000024000000120C15
-          81D30F1AA9FFAFB3E1FFFFFFFFFFFFFFFFFF717272FF909090FF747474FF9090
-          90FFA9AAA9FFFFFFFFFFAEB0DBFF071091FF060C6EDB0000001B0000000A080F
-          57990F1CABFF656DC7FFFFFFFFFFFFFFFFFF7D7E7EFF979697FF878787FF9999
-          99FFC9C9C9FFFFFFFFFF6268BBFF091196FF05094BA500000010000000040306
-          24480D1891E0101DAAFF878DD4FFFFFFFFFFF7F7F6FFA4A4A4FFA7A7A7FFCACA
-          CAFFF8F8F8FF858ACDFF0C159AFF081081E50204205400000006000000000000
-          0008070C47790F1CA5F4101DABFF656DC7FFB0B3E2FFE3E4F1FFE7E8F6FFAFB3
-          E0FF646AC2FF0D179FFF0B1496F6050840850000000D00000001000000000000
-          000100000008070C48760D1992DD0F1CACFF0E1BABFF0F1AA8FF0E19A6FF0D19
-          A5FF0D18A4FF0A1489E00509427F0000000E0000000200000000000000000000
-          000000000001000000050306243F080E588D0C1683C90E1AA0F00E199EF00B15
-          80CB070D55920305224600000009000000020000000000000000000000000000
-          0000000000000000000000000002000000040000000600000009000000090000
-          0008000000060000000300000000000000000000000000000000}
-      end
-      item
-        Image.Data = {
-          36040000424D3604000000000000360000002800000010000000100000000100
-          2000000000000004000000000000000000000000000000000000000000000000
-          0000000000000000000100000009000000160000001000000004000000000000
-          000000000000000000030000000B0000000B0000000400000000000000000000
-          000000000001000000090F0804485C3119ED2B160B9500000019000000030000
-          0000000000020305091F213B63D01A3153B40103041900000003000000000000
-          000100000007110A0541724427F0A96A3DFF844D29FF2B160B97000000190000
-          00030000000514243C86152741930F1D3177182F4CA80000000A000000000000
-          0005130B063B7A4D2CEEB17040FFB06F3EFFAD6C3DFF824D29FF2B170B960000
-          00180000000A203D65D4080E183F03050924254675EF0000000E00000004130C
-          073383532FECBD845AFFBE906FFFC09679FFAA6F45FFA9693BFF834D29FF2B16
-          0B9501020323264777FA0001010E0204071B274676F20000000D150D072D8C5C
-          35EAC67F4AFFC79B7CFFFCFBFAFFEFE7E1FFEDE4DDFFB3825EFFAB6C3BFF834D
-          29FF291A119C203F6BF20000000C09121D461F3A60C800000008825330DDD396
-          67FFD08F5CFFD5B8A3FFF0E7E2FF9F6035FFE5D8CFFFC9AA93FFA96A3AFFAC6D
-          3DFF7D4B2EFF22324DDE0000001D182D4CA0101E326E000000043A261564B178
-          4BFDD69869FFD0A788FFEDE0D7FFAE7045FFFCFAF9FFB68A69FFD7BFAEFFA768
-          3AFFAC6C3DFF824C29FF2A1C19A124446FE50102030F00000001000000013A26
-          1664AF774AFDD49767FFC78756FFCDA589FFF0E7E2FF9A5D33FFF7F4F1FFD0B4
-          A0FFB06E3DFFAD6D3DFF4F5161FF2C2D38BA0000001000000001000000000000
-          000139261563B0784BFDD99A6BFFC89168FFE8DBD1FFEFE7E1FFFDFCFCFFC296
-          7AFFB47B52FF957A6DFF606476FF6A3A1EFF0603022700000001000000000000
-          0000000000013A261562B0774AFDD59768FFC89369FFCA9E7EFFC49471FFAB76
-          51FF815234FF5F6880FFB78662FF6F3E20FF0603022700000001000000000000
-          000000000000000000003A261562B0774AFDD99B6CFFD4915EFFCC834BFF8D57
-          31FF281910677F5439FFC18252FF744223FF0603022300000001000000000000
-          00000000000000000000000000003A261561B0784BFDDD9E6EFFDB9762FFB271
-          40FF8E5730FFA8693BFFC27C46FF794726FF0503021900000001000000000000
-          0000000000000000000000000000000000003A261560B0784BFDDD9E6EFFDE9F
-          6FFFDB9E6EFFD69A6AFF9F6942FF2E1B0F6B0000000500000000000000000000
-          000000000000000000000000000000000000000000003A251560946036FC935E
-          35FF8E5A32FF88542EFC321F1166000000040000000100000000000000000000
           0000000000000000000000000000000000000000000000000000000000000000
-          0000000000010000000100000001000000000000000000000000}
+          0000000000000000000000000000000000000000000000000000000000023F3F
+          3F95777777FF727272FF6C6D6DFF676667FF626261FF5D5D5DFF4F4F50FF5353
+          53FF4F4F4FFF4A4A4AFF464747FF424342FF404040FF0000001F0000000DFCFC
+          FCFFF3F3F3FFF1F1F1FFEFEFEFFFEDEDEDFFEBEBEBFF7474A5FF0E0E70FFBEBE
+          BEFFE2E2E2FFE0E0E0FFDDDDDDFFDBDBDBFFC6C6C6FF3E3D3DFC0000000CF8F8
+          F8FFF5F5F5FFF3F3F3FFF1F1F1FFEFEFEFFF7878ABFF2727A9FF1E1E90FF0E0E
+          71FFCCCCCCFFE2E2E2FFE0E0E0FFDDDDDDFFDAD9DAFF3F3F3FFD00000008E0E0
+          E0FFF7F7F7FFF5F5F5FFF3F3F3FFF1F1F1FF4C4C95FF3838BCFF2323A4FF1414
+          7DFFC4C4C4FFE4E4E4FFE2E2E2FFE0E0E0FFD7D7D7FF333334FB00000005C8C8
+          C8FFF9F9F9FFF7F7F7FFF5F5F5FFF3F3F3FFADADCDFF4848CDFF2323B2FF0D0C
+          77FFDBDBDBFFE7E7E7FFE4E4E4FFE2E2E2FFD2D2D2FF252525E800000002B3B3
+          B3FFFAFAFAFFF9F9F9FFF7F7F7FFF5F5F5FFF3F3F3FF4646CEFF2323C0FF1314
+          74FFEAEAEAFFE9E9E9FFE7E7E7FFE4E4E4FFCCCCCCFF161616B200000000A1A1
+          A2FFFBFBFBFFFAFAFAFFF9F9F9FFF7F7F7FFF5F5F5FF2D2DAEFF2020C4FF5E5E
+          95FFEDEDEDFFEBEBEBFFE9E9E9FFE7E7E7FFC5C5C5FF0505054F000000007070
+          6FEEFEFEFEFFFBFBFBFFFAFAFAFF939393FFD9D9D9FF121286FF111083FFA1A1
+          BAFF5F5F5FFFDADADAFFEBEBEBFFE9E9E9FFA2A2A2FF00000011000000001111
+          1162FEFEFEFFFDFDFDFFEFEFEFFF939293FF777878FF3636C8FF1C1CA8FF2626
+          47FFC2C2C2FF515151FFECECECFFEBEBEBFF6E6E6EFF00000003000000000000
+          0001BEBEBEFFFEFEFEFF9D9E9DFFEFEFEFFFD8D8D8FF787877FF3F3F72FFEAEA
+          EAFFD9D9D9FF747574FFDFDFDFFFE3E3E3FF1D1D1DC300000000000000000000
+          0000222222CDFCFCFCFF949494FFFFFFFFFF989898FFEDEDEDFFEEEEEEFFB3B3
+          B3FFEAEAEAFFD9D9D9FF9F9F9FFF878787FF0000000500000000000000000000
+          000000000000797979FFEFEFEFFFDBDBDBFFCBCBCBFFCDCDCDFFCDCDCDFFCDCD
+          CDFF8C8C8CFFEAEAEAFF505050FF010101A20000000000000000000000000000
+          00000000000000000000737474E289898AFFAEAFAFFFB2B2B2FFB2B2B2FFACAC
+          ACFFA3A4A3FFB4B4B4FF0202022D000000000000000000000000000000000000
+          0000000000000000000000000000000000010000000200000003000000040000
+          0005000000040000000200000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
       end
       item
         Image.Data = {
           36040000424D3604000000000000360000002800000010000000100000000100
           2000000000000004000000000000000000000000000000000000000000000000
-          000000000000000000000000000000000000000000000000000000000000331A
-          0C963E200FB70302010900000000000000000000000000000000000000000000
-          0000000000000000000000000000000000000000000000000000371D0F969059
-          32FF975E34FF452412BA03020109000000000000000000000000000000000000
-          0000000000000000000002060B15102D58AE0E2952A83B22149C9D643BFFBC90
-          6FFFB58561FF985F34FF472613BA030201090000000000000000000000000000
-          0000000000000A1C30541D4E89EC4D8EC4FF4D505DFFA96D43FFC49875FFFFFF
-          FFFFFFFFFFFFDACDC3FF9A6035FF492914BA0302010900000000000000000308
-          0E1517416CAE2E72AFFF449BD5FF74B7E4FF575A60FFB5774BFFD1BBABFFE3D9
-          D2FFC19A7CFFF4F1EFFFB57544FF9A6036FF4D2B16BA040201090E273C57296A
-          A2EC4597CEFF4FAADFFF4BA6DDFF88C2E8FF2881C8FF5D5B60FFBE9D85FFD1BB
-          ABFFCFBAAAFFC5A892FFD3C2B6FFBD9B82FF9C6237FF4D2C17B72B76B4FF5BB6
-          E2FF5AB6E4FF54B0E2FF50ABDFFF9DCEEDFF2884CBFF267EC6FF605D61FFB97C
-          4DFFDCCEC5FFC8AA93FFE2D9D2FFEBE5E0FFB57545FF724324FF2D7BB9FF66C3
-          EBFF60BDE7FF5BB7E5FF56B1E2FFB1DAF1FF2986CCFF2782CAFF267CC6FF615F
-          62FFB98A67FFF5F2EFFFDBCEC4FFCEB9A9FFBC7C4AFF794827FF2F80BDFF6CCA
-          EEFF67C4EBFF61BEE8FF5CB8E5FFC3E4F5FF2A89CEFF2885CBFF2680C9FF247B
-          C4FF625F64FFBD7E4FFFD4915CFFCD8B56FFBA7A4AFF6B4024D53085C1FF72D0
-          F0FF6DCBEDFF67C5EBFF77C8EBFFF3FAFDFFBADAF0FF3E94D2FF2782CAFF247E
-          C8FF2379C3FF635F63FF87532FFF86532FFF6F4426D50C0804183288C5FF78D7
-          F2FF77D3F0FFADE2F4FFDBEFF7FF88CCE3FF81C8E3FFD1E9F5FF74B2DEFF2680
-          C9FF247CC6FF2177C4FF184483FF000000000000000000000000338DC7FF7FCE
-          EBFFC1E2F2FF8FC1E2FF4297CFFF3892CCFF3490CDFF3994CEFF97D0E8FFA3D0
-          EAFF3C8DCEFF237AC6FF1A4A88FF0000000000000000000000000C22303C2669
-          96C055ACD9FF7AD9F2FF7EDDF5FF7AD8F2FF78D3F0FF318FCCFF3CA8D5FF54B1
-          DAFF98CEE9FF60A6D9FF1C4F8EFF000000000000000000000000000000000000
-          00000C212F3C256693C050A8D5FF77D5F0FF7AD6F1FF318FCDFF3CA8D5FF35A3
-          D3FF309ED3FF4799CDFF1E5493FF000000000000000000000000000000000000
-          000000000000000000000C202E3C24628FC04198CEFF318FCCFF3AA2D2FF2D88
-          C3FF2467A3F514395F9906121F33000000000000000000000000000000000000
-          0000000000000000000000000000000000000B1E2D3C235D8CC0225E8FC9102C
-          44630205080C0000000000000000000000000000000000000000}
+          00080000001B000000210000002300000026000000260000000E000000020000
+          0001000000010000000200000012000000350000002900000005000000010000
+          0016A9CDE6FF5099CBFF4E97CBFF4A94C9FF4792C9FF000000400000002C0000
+          002D00000030000000330000005498C0E1FF003C79FF0000000D000000000000
+          0014BDE1F4FF76BDE7FF72BAE5FF6DB7E4FF4A94C9FF0D4A84FF114F8AFF1454
+          8FFF175895FF1A5D98FF1A5E9AFFA3CDECFF003C7AFF0000000E000000000000
+          0010BEE2F4FF7AC0E8FF73BAE5FF6CB5E1FF4993C7FF0B467FFF0F4C86FF1151
+          8BFF155691FF195A95FF195D99FF9DC8E8FF003C7BFF0000000D000000000000
+          000DBFE2F5FF75BBE3FF6BB2DDFF67AFDCFF4790C4FF09417BFF0C4781FF104D
+          87FF13528DFF155792FF185B96FF93BFE1FF013E7DFF0000000D000000000000
+          000BABD2EBFF65ABD8FF63AAD8FF61A8D6FF428CC0FF418AC0FF3D88BFFF3B86
+          BEFF3985BDFF3682BDFF3480BDFF4493CDFF023F7EFF0000000E000000000E5C
+          9FFF0E5C9FFF0E5C9FFF0E5C9FFF0E5C9FFF0D599CFF0C579AFF0B5596FF0B52
+          93FF084F90FF074B8CFF054788FF034483FF024080FF00000014000000000000
+          0001000000020000000236241B8CA98373FF8C5945FF6D4135FF935B53FF8F7C
+          79FF76382AFF6E2F1FFF54241CFF0000001A0000000900000003000000000000
+          0000000000000000000001010116B39082FF986751FF56322BFFA97973FFD8D1
+          D0FF7D4030FF743425FF47241EF3000000020000000000000000000000000000
+          0000000000000000000000000002754F3CEDB79585FF614643FF85483FFFFFFF
+          FFFF764030FF7C4234FF06030334000000000000000000000000000000000000
+          0000000000000000000000000000000000075F3C2ED36F483AFF2A508FFF1A41
+          7EFF61392DFF130B085300000002000000000000000000000000000000000000
+          00000000000000000000000000000000000000000005597AABFF73AAD5FF67A1
+          CEFF0A1B3B890000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000040C1736B6D0E6FF91C3E5FF7FB4
+          DAFF1A3E7CF90000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000143F74D92B558EFF6F9BC1FF89BD
+          E1FF1D487DFE0000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000C27477887AED2FF3B70AAFF254F
+          86FF1D3F64B50000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000E325A99164887F9050F
+          1D3E000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000003000000150000001F0000000A0000
+          0001000000000000000000000000000000000000000000000000000000000000
+          000000000000000000010000000A0000002E194B88F91765ADFF061328880000
+          0016000000030000000000000000000000000000000000000000000000000000
+          00000000000400000017102F50A43B90CBFF43A1E0FF1B86D3FF1772C2FF0F33
+          6FF3000000290000000900000001000000000000000000000000000000000000
+          000702070A35307AB6FF54BCEAFF4EB1E6FF47AAE5FF1D8ED5FF1881D0FF1571
+          C4FF1255A4FF0510248100000013000000030000000000000000000000010000
+          001960C1E3FF61CDF0FF5AC5EDFF53BBEAFF4DB3E6FF1E90D6FF1B87D3FF177E
+          CFFF1473C9FF1363BBFF0E2E67F2000000230000000700000001000000010000
+          001970D9F4FF67D3F1FF61CCF0FF59C3ECFF53BAE9FF2398D8FF1D8CD5FF1983
+          D1FF1577CDFF136DC8FF1263BCFF104B9DFF050E227500000004000000000000
+          001377DFF6FF70D8F4FF68D2F1FF60CBF0FF59C3ECFF269EDAFF1F94D6FF1C88
+          D4FF177ECEFF1470CAFF126AC7FF1063C2FF0F2A65FF00000008000000000000
+          000F7EE3F7FF76DEF6FF70D7F3FF67D3F1FF60CAF0FF28A2DCFF2398D8FF1D8E
+          D5FF1983D1FF1677CDFF146EC9FF1167C5FF0F2C69FF00000007000000000000
+          000B83E6F9FF7EE2F7FF75DDF5FF6FD8F3FF67D1F1FF2BACDDFF26A0DAFF1F94
+          D6FF1B87D4FF187ECFFF1474CBFF126AC7FF0F2E6AFF00000006000000000000
+          000788E9FAFF81E6F9FF7BE2F7FFC3F2FBFFBBE5F9FF82C2E0FF74C4E9FF239A
+          D8FF1D8ED5FF1983D1FF157ACDFF1370C8FF0F316EFF00000005000000000000
+          000488E6F5FFD1EBF4FF96D8F4FF58C6F2FF4AADE3FF649EC7FF6AC9EBFF57BB
+          E6FF68C0E9FF1C89D4FF1880CFFF1474CAFF103473FF00000004000000000000
+          0001255576997CC1E1FFB0E0F1FFB6E3F3FFAFD7EAFF729BBCFF83D4EFFF66C6
+          EAFF56BBE6FF4DB4E5FF5AB7E6FF167ACEFF133877FF00000003000000000000
+          000000000000000000000B1A27344187BAF57FC8E6FF7DC1DFFF679BC0FF407F
+          B2FF559FCBFF5AABD6FF59B0DCFF5DB3E0FF18407FFF00000002000000000000
+          000000000000000000000000000000000000000001021C476DA16BAFD2FF52AF
+          DEFF50AEDCFF194677C207142241000000050000000200000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0001000000010000000100000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000007061323740000001B000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          001617487DEA53AADEFF2064A5FF010203410000000200000000000000000000
+          0000000000000000000402080E570D2A56D40000001600000002040C14433485
+          BEFF46A9DEFF71BCE5FF2F94D5FF2A88CBFF0613289500000007000000000000
+          00000000001A164073E3379BD8FF2E91D4FF1B5598FF0104095A5ABCE5FF58BB
+          E5FF51B5E3FF90CDECFF319AD7FF2F94D5FF2B8DD2FF0D2C5AE0000000050919
+          28703589C2FF43ABE0FF40A6DFFF3197D7FF2C8DD2FF2477BFFF6ACDEEFF63C8
+          EBFF5EC1E8FFAADDF2FF349ED9FF3198D7FF2E93D4FF133C7CFF0000001F54BF
+          E8FF51BBE6FF4CB5E4FF48B1E3FF349DDAFF2F94D5FF2981C7FF75D8F3FF6FD3
+          EFFF6ACDEDFFB3C9E2FF4FB2E2FF339DD8FF3097D6FF143F80FF0000001E60CA
+          ECFF5CC5EAFF57C1E8FF52BCE7FF37A3DCFF339AD8FF2B87C8FF7EE1F6FFB5EC
+          F9FFADECFAFF7FBBDEFF51B7E5FF51B7E5FF40A6DDFF154282FF0000001A6BD4
+          EFFF66D0EEFF62CBECFF5DC7EBFF3AA9DFFF36A0DAFF3092D2FF2A7CBAFFC2E7
+          F5FF74C5EAFF6FBDE5FF7DBBDEFF7AB8DEFF346BA9FF051020680000001675DD
+          F3FF71D9F2FF6CD5F1FF83D9F2FF86CDECFF38A5DEFF349CD9FF2F91D4FF2981
+          C8FF2672B2FFC1E7F5FF4A91C3FF071524590000000800000000000000127FE4
+          F7FF80E1F5FFD7F7FDFF91D1E9FF81CBECFF51B7E5FF7BC6E9FF3299D7FF2D8F
+          D3FF2785CDFF0000002B000000030000000000000000000000000000000CB4E8
+          F4FF99CFE3FF8AC2DAFF6AA1C5FF97D4F0FF51B7E5FF51B7E5FF51B7E5FF64BA
+          E6FF2B8BD1FF0000002500000000000000000000000000000000000000010102
+          02103572A0DD83CAE6FF86CEE9FFABDCF2FF95D3EFFF7FCAECFF6EC3E9FF60BD
+          E7FF58B7E3FF0000001C00000000000000000000000000000000000000000000
+          000000000001000000081B405E9279BEDEFFA1D9EEFF67B7DBFF1E528CEE0612
+          205A0000000E0000000100000000000000000000000000000000000000000000
+          0000000000000000000000000000000000050A1928490000000B000000010000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000090000002A0000003C000000400000004300000046000000470000
+          00490000004A0000004B00000046000000230000000300000000000000000000
+          000100000025208EBDFF33BFE7FF2CB7E1FF24B0DCFF1CA9D7FF17A4D5FF11A1
+          D3FF0DA1D3FF0FA4D5FF11A8D9FF043C6AEA0000000E00000000000000000000
+          00010000002D44CBEFFF6E9CA8FF8C8C8CFF878787FF828282FF7D7D7DFF7A7A
+          7AFF787878FF787878FF13AEDDFF04487FFF0000001200000000000000000000
+          0001000000294ED0F1FF909090FFFFFCF8FFFFFAF5FFFFF8F1FFFFF7ECFFFFF5
+          E8FFFFF3E5FFFFF2E2FF15B3E1FF054A81FF0000001100000000000000000000
+          00010000002457D5F5FF909090FFFFFCF9FFFFFAF5FFFFF9F1FFFFF6EDFFFFF5
+          EAFFFFF3E7FFFFF3E5FF18B8E6FF044C83FF0000001000000000000000000000
+          00010000001F61DAF7FF939393FFFFFDF9FFDCB38DFFD0A277FFFFF7EFFFFFF6
+          ECFFFFF6EAFFFFF5E9FF1ABFEBFF054E85FF0000000F00000000000000000000
+          00010000001A73E1FAFF959595FFFFFDFBFFDAB08BFFD0A076FFC59163FFBD88
+          59FFB88354FFFFF6ECFF1DC5F0FF055188FF0000000E00000000000000000000
+          00000000001588E8FDFF979797FFFFFEFDFFDBB38DFFD5A77EFFCB9A6EFFC593
+          65FFC39163FFFFF8F1FF1FCCF4FF05558CFF0000000C00000000000000000000
+          00000000000F9BEDFEFF999999FFFFFEFEFFDFB894FFDBB08AFFD5A981FFD2A3
+          7BFFD0A27AFFFFFBF4FF22D1F9FF055990FF0000000B00000000000000000000
+          00000000000AAFF1FFFF9C9C9CFFFFFFFFFFE4BF9EFFE0B997FFDEB692FFDAB4
+          92FFD2AF8EFFF8F5F2FF24D5FCFF075D94FF0000000900000000000000000000
+          000000000007C1F4FFFFA0A0A0FFFFFFFFFFFFFFFFFFF7F7F7FFCCCCCBFFD8D7
+          D6FFE5E5E3FFF1F0EFFF26D7FCFF086399FF0000000800000000000000000000
+          000000000004D1F7FFFFA2A2A2FFF9F9F9FFAEAEAEFFB2B2B2FFBDBDBDFFCBCB
+          CBFFDBDBDBFFEAEAEAFF28D3F7FF08689EFF0000000600000000000000000000
+          000000000002DFFAFFFFAFB4A8FFBD885AFFE0B88FFFF0CEA6FFEEC18CFFE2A7
+          66FFC6874CFF9B5827FF2AD9FDFF096FA4FF0000000400000000000000000000
+          0000000000000F7EA1C15E969FFFB67D52FFB17549FFFDF4EAFFFBEBD6FFF1D7
+          B2FF9A562AFF9D5F34FF0B7AB0FF0427395D0000000100000000000000000000
+          00000000000000000000000000000000000000000001AB9584C3FBEFE0FFAD83
+          62DC000000010000000200000002000000010000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000070000001F0000002C000000300000003200000034000000350000
+          00370000003800000038000000340000001B0000000200000000000000000000
+          00010000001BBB8959FFD6A869FFD7A464FFD5A25FFFD4A05AFFD29E55FFD199
+          52FFCF984DFFCF964DFFCE954CFF805237E50000000A00000000000000000000
+          000100000022DDB279FFB78252FFAB774DFFAB764CFFAB754CFFAA744CFFAA73
+          4AFFAA7449FFAA7349FFD19951FF9C6645FF0000000E00000000000000000000
+          00000000001FE0BA87FFAF7C53FFFFFCF8FFFFFAF5FFFFF8F1FFFFF7ECFFFFF5
+          E8FFFFF3E5FFFFF2E2FFD39E57FF9F694AFF0000000D00000000000000000000
+          00000000001BE3C293FFB18058FFFFFCF9FFFFFAF5FFFFF9F1FFFFF6EDFFFFF5
+          EAFFFFF3E7FFFFF3E5FFD5A460FFA16E4EFF0000000C00000000000000000000
+          000000000018E7C99EFFB5865EFFFFFDF9FFDCB38DFFD0A277FFFFF7EFFFFFF6
+          ECFFFFF6EAFFFFF5E9FFD7A967FFA57252FF0000000B00000000000000000000
+          000000000014EAD0A9FFB88B65FFFFFDFBFFDAB08BFFD0A076FFC59163FFBD88
+          59FFB88354FFFFF6ECFFDCAE71FFA87858FF0000000A00000000000000000000
+          000000000010EDD7B4FFBB906AFFFFFEFDFFDBB38DFFD5A77EFFCB9A6EFFC593
+          65FFC39163FFFFF8F1FFDEB479FFAB7D5CFF0000000900000000000000000000
+          00000000000BF0DCBEFFBE9571FFFFFEFEFFDFB894FFDBB08AFFD5A981FFD2A3
+          7BFFD0A27AFFFFFBF4FFE1BA83FFAF8161FF0000000800000000000000000000
+          000000000008F2E0C6FFC19A77FFFFFFFFFFE4BF9EFFE0B997FFDEB692FFD9B3
+          91FFCEAC8CFFF6F3F0FFE4C18DFFB28767FF0000000700000000000000000000
+          000000000005F5E5CDFFC4A07CFFFFFFFFFFFFFFFFFFF4F4F4FFBBBBBAFFCBCA
+          C9FFDCDCDAFFECEBEAFFE2C394FFB58B6BFF0000000600000000000000000000
+          000000000003F6E9D3FFC7A481FFF7F7F7FF939393FF989898FFA7A7A7FFBABA
+          BAFFCFCFCFFFE3E3E3FFE1C49AFFB79170FF0000000400000000000000000000
+          000000000002F7ECD8FFC0A789FF9E8876FFC7B8A7FFD9CCBCFFD0BEAAFFBDA5
+          8CFFA18871FF785D4AFFE8CFA4FFBA9474FF0000000300000000000000000000
+          00000000000090755DC0B1937AFF978170FF917968FFF7F4F0FFEFE9E1FFDDD3
+          C5FF785D4CFF7E6553FFBD9878FF3F33285B0000000100000000000000000000
+          000000000000000000000000000000000000000000019E968FC3F2EDE8FF9585
+          78DC000000010000000100000001000000010000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000200000014000000270000002A0000002B0000002C0000
+          002D0000002E0000002F0000002F000000220000000400000000000000000000
+          00000000000200000019CFA582FBE1CAB5FFE6D1BDFFEAD8C6FFEDDDCDFFF0E1
+          D3FFF1E3D6FFF2E5D8FFF2E6D9FF97603FFF0000000A00000000000000000000
+          000000000010CCA380F8FFFFFFFFE7D5C2FFECDBCAFFEFE1D3FFF1E4D7FFF2E6
+          DAFFF3E7DCFFF4E9DEFFF4E9DEFF996341FF0000000B00000000000000000000
+          00010000001BE5D0BCFFE9D7C5FFEEDFCFFFB38D6FFFAF8869FFAB8263FFA77E
+          5FFFF5ECE2FFF5EBE2FFF5EBE1FF9B6644FF0000000A00000000000000000000
+          000100000019ECDACBFFEFE1D3FFF2E7DBFFB79376FFB38D6FFFAF8869FFAB83
+          63FFA87E5EFFA47A5AFFF6EDE4FF9D6947FF0000000900000000000000000000
+          000100000016F1E5D9FFF4E9DEFFF5ECE3FFBB987BFFB79476FFB38E70FFAF88
+          6AFFAB8364FFA87E5EFFF7EFE8FF9F6C4AFF0000000800000000000000000000
+          000000000013F5EBE3FFF7EEE7FFF8F1EBFFF9F2EDFFF9F3EEFFF9F3EDFFF9F3
+          EDFFF8F2ECFFF8F2EBFFF8F1EBFFA16F4CFF0000000700000000000000000000
+          000000000010F8F2EBFF604237FF795040FF663E30FFA5948EFF714433FF5930
+          23FFF9F4EFFFF9F4EEFFF9F3EEFFA3734FFF0000000700000000000000000000
+          00000000000DFBF6F2FFE9E3DDFF7D5544FF5A6779FF66A3D1FF663D2EFF7B61
+          58FFFAF6F2FFFAF6F1FFFAF5F0FFA57653FF0000000600000000000000000000
+          00000000000AFCFAF8FFFCFAF7FFFCF9F6FF4F6889FF4987C0FFAEB3BFFFFBF8
+          F5FFFBF8F4FFFBF8F4FFFBF7F3FFA97C58FF0000000500000000000000000000
+          000000000008FDFBFAFFFDFBF9FFFDFBF9FFC1D9EBFF73BDF4FF374C6EFFFCFA
+          F7FFFCF9F7FFFCF9F6FFFCF9F6FFAC815DFF0000000400000000000000000000
+          000000000006FEFDFCFFFEFDFBFF2D4C6DFF254365FF618AADFF385D7DFFFDFB
+          F9FFFDFBF9FFFDFBF9FFFDFAF8FFAF8663FF0000000300000000000000000000
+          000000000003FFFEFEFFFEFEFDFF9BAAB9FF6AA8CBFF548CAFFF3A5A79FFFEFD
+          FCFFFEFCFBFFFEFCFBFFFDFCFAFFB38B69FF0000000300000000000000000000
+          000000000002FFFFFFFFFFFFFFFFFFFFFEFFFFFEFEFFFFFEFEFFFFFEFEFFFEFE
+          FDFFFEFEFDFFFEFDFDFFFEFDFCFFB6906EFF0000000200000000000000000000
+          000000000000CCAF93FFCAAC90FFC8AA8DFFC7A78AFFC5A587FFC3A384FFC1A0
+          81FFC09D7DFFBD9A7AFFBC9877FFB99573FF0000000100000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000010000000100000001000000010000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          000000000006000000300000003602091FA7051443FF00000047000000370000
+          0037000000370000003700000037000000370000001C00000000000000000000
+          0000353535A2BBB7B3FF642B19FF0B1A52FF061C51FFA23C12FF9E380FFF9633
+          0AFF8E2E06FF882B03FF842801FFA39896FF807F7FFF00000016000000000000
+          0000545454C9ECECECFF682D20FF2B639BFF40273BFFC84F1BFFBD4816FFB341
+          10FFA93B0BFFA13507FF9A3004FFD4D2D2FF959493FF0000001F000000000000
+          000010101053D8D8D8FF342635FF294C68FFA94924FFD35721FF818181FF5E24
+          0BFF8E340EFFA93B0CFFA23607FFD9D7D7FF696969FF00000008000000000000
+          0002051122831087BBFF02B4E8FF03A0DDFF0D5492FF333333FFFFFFFFFFC2C2
+          C2FF9E9E9DFF93360FFFAC3C0CFFA59A98FF282828AB00000000000000000103
+          062F66D4EDFF35BBDFFF165281FF132B5AFF02A5E2FF2A426EFF818281FF4746
+          47FFC3C3C3FF21120CFFB64717FF693728FF0000001900000000000000021748
+          7FF4A8F2FEFF74E8FDFF3CDCFCFF0FD0FCFF02B3E7FF0D5594FF6196BFFF4673
+          A0FF4B5059FF717172FF763724FF0402013C00000000000000000000000977A5
+          C7FF7A9FB9FF264571FF70E8FDFF3ADBFDFF0FCFFBFF0B6CA7FF112D57FF1738
+          68FF223B68FF141414B20000000B00000000000000000000000000000009A2CC
+          E1FFD5FAFFFFC9F8FEFFA4F1FEFF6BDBF2FF22769FFF125A94FF6DA9D2FF5593
+          C5FF214576FF0000001800000000000000000000000000000000000000040E2B
+          4A8E040C163C05101C50123B6CDD83CBE3FF71E6FCFF284E80FF84BEE5FF74B4
+          E1FF528FC0FF08162CA400000000000000000000000000000000000000000000
+          000000000000000000000000000205172CE85894BBFF8EBAD5FF91C8EAFF83BE
+          E5FF6BA9D5FF162E57F00000000F000000000000000000000000000000000000
+          00000000000000000000000000022B435FFF44556AFFA7D4EFFF9CCEEEFF91C7
+          EAFF83BDE5FF0B203EFA00000019000000000000000000000000000000000000
+          000000000000000000000000000139597FFF051D3CFF041832FF031630FF97C7
+          E7FF4A6D8DFF000B1FFF00000010000000000000000000000000000000000000
+          0000000000000000000000000000224066FF173964FF031E42FF011530FF0212
+          2AFF031F3FFF031936FF00000003000000000000000000000000000000000000
+          0000000000000000000000000000020A154E406087FF274467FF19304EFF1E2E
+          47FF010913670000000100000000000000000000000000000000000000000000
+          00000000000000000000000000000000000001040921031329A5031630CC0107
+          0E42000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000005000000160000003100000044000000490000
+          003D000000240000000C00000002000000000000000000000000000000000000
+          0000000000010000001000010B55040866E410179BFF161EA7FF161EAAFF1016
+          9DFF070C88FF010234AD00000028000000050000000000000000000000000000
+          0001000000130205369F1D26A8FF0E1598FF5D60A5FFB1B1C5FFC8C8CDFF8889
+          B3FF24278CFF0F159DFF040770F2000000360000000500000000000000000000
+          000A03052A862932B4FF3C3F9EFFDCDBDCFFDBDCDBFF807F80FF343535FF7676
+          76FFD1D2D1FF9091B5FF0C1093FF040770F20000002700000002000000010000
+          0028232DABFF262C9FFFE1E2E1FFD6D6D6FF595958FF424141FF3A3939FF3131
+          31FF474747FFD2D2D1FF9091B5FF0F159CFF010234AA0000000B000000060306
+          3088333FC0FFC6C7DAFFDEDEDDFF626161FF565656FF4D4B4DFF434343FF3A3A
+          3CFF333332FFD6D7D7FFD1D2D1FF24278CFF070C87FF000000220000000B0810
+          74D6151FA7FFE7E8E7FF7C7C7CFF868684FF636362FF595959FF4E4E4EFF4446
+          44FF3D3D3DFFDADADAFFD4D4D4FF8789B3FF10179CFF000000370000000C0D18
+          9EFA0A149BFFE2E2E2FFB2B2B2FFF4F3F4FF727171FF656565FF5B5B5BFF5151
+          4FFF464647FFDDDDDEFFD8D8D8FFC8C8CDFF161EAAFF000000400000000B0B17
+          91EB111BA3FFF4F4F4FFF7F6F7FFF8F8F8FF7F807FFF727472FFB5B5B5FF5C5C
+          5DFF525252FFE0E0E0FFDADAD9FFB1B2C5FF151EA8FF0000003800000006080F
+          5AA92F3BBDFFF7F7F7FFFBFAFAFFFCFCFCFF8E8E8EFF828283FFC4C5C5FF6969
+          69FF5F5F5FFFE1E1E1FFDBDBDCFF5D5FA6FF0F169BFF00000025000000020101
+          092F4551CCFF8186CBFFFBFCFCFFFFFFFFFF9C9C9CFF908F8FFFD0D0D0FF7778
+          78FF6C6C6CFFE2E2E2FFDCDBDCFF0E1598FF030967D900000010000000000000
+          000A0B1376C23845C2FFC3C6E5FFFCFCFCFFFAFBFAFF9E9E9EFFD7D8D7FF8587
+          85FFE7E7E8FFE2E1E1FF3B3F9EFF1D26A7FF00010B3C00000003000000000000
+          0001000000121D28A7EF3845C3FF8286CBFFF7F7F7FFD1D1D2FFF0F0F0FFECEC
+          EBFFC6C7DAFF262C9EFF2932B4FF030636800000000900000001000000000000
+          0000000000020000000E0A1376BB4451CCFF303BBCFF111BA4FF0A139AFF161F
+          A7FF333FBFFF242DABFF03052960000000080000000000000000000000000000
+          00000000000000000001000000050102091C080E5A940C1691E20D179EF70810
+          74C10307305E0000000C00000003000000000000000000000000000000000000
+          0000000000000000000000000000000000010000000200000002000000030000
+          0002000000010000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000001000000080000000800000001000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          00000000000000000001000000142E170BAB2C1309AB00000014000000010000
+          00000000000000000000000000050000001F0000000800000000000000000000
+          00000000000100000013371F10ADAA6C3CFF975D33FF2B1409AF000000140000
+          00010000000000000000132237860000002C213F6CE70000000B000000000000
+          000100000011412715A9B67440FFB06E3DFFAA6D3CFF975D33FF2B1409AD0000
+          00130000000100000006284369D000000001000000150E1A2D7B000000010000
+          000E492E1AA3C57E46FFBC7743FFB67340FFB06E3DFFAA6C3CFF975D33FF2B14
+          09AB00000012000000100E17245A00000000000000081C3459C20000000A4F33
+          1D9ED3874CFFCC8249FFB07347FFEFE1D7FFFFFFFFFFFAF5F2FFAA6C3CFF975D
+          33FF2B1409A80000001F00000014000000000000000A182C479E00000015E5A9
+          7AFFD98B4DFFD3874BFFBE8257FFD6BDAAFFE6CFBEFFCEB29FFFC08B64FFAA6C
+          3CFF975C33FF2A1309A80000001A000000010203051B0203051C000000074E34
+          1D91E5A97AFFD98B4DFFCBAB96FFC98049FFB07347FFFDFDFDFFB67441FFB06E
+          3EFFAA6C3CFF975C34FF2C1409A10000000E38557CDA00000003000000000000
+          00064F331D8DE5A97AFFD98B4DFFD3874CFFB97340FFF3EDEAFFE8D1BFFFD7B9
+          A3FFBF8B64FFAA6C3CFF975D33FF1E100A810B10163200000000000000000000
+          0000000000054F331D89E5A97AFFD88B4EFFA76537FFECE2DAFFAF7347FFFDFD
+          FDFFB67440FFB06E3EFFA5673AFF647189FF0000000900000000000000000000
+          000000000000000000034E331D87E5A97AFFC67D46FFBB8B67FFD2B8A6FFB375
+          48FFBD7843FFBE8355FF918B92FF63351BFF0000000700000000000000000000
+          00000000000000000000000000034F331D86E5A979FFD98B4DFFD3874BFFCC82
+          49FFA56839FF1009052EA3714EFF6E3D1FFF0000000500000000000000000000
+          0000000000000000000000000000000000024F331D85E5A97AFFD98A4DFFD387
+          4BFFA5683AFF110A0632A26A41FF29180D660000000200000000000000000000
+          000000000000000000000000000000000000000000024F331D84D09567FFE2A7
+          78FFD39A6EFFBB855CFF43291787000000040000000000000000000000000000
+          0000000000000000000000000000000000000000000000000001000000050000
+          0007000000070000000600000002000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000010000000700000004000000010000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000100000006000000230D2B57C701050A49000000100000
+          00020F0804482B160B9500000003000000000000000000000000000000000000
+          00000000000200000010050E195A286BAAFF55A2DDFF1871BCFF0C244ECA130B
+          0653B17040FFAD6C3DFF2B170B96000000030000000000000000000000000000
+          0006000000201F558EE54BACE1FF48A9E4FF64B1E6FF1A84D3FF276AA6FFC67F
+          4AFFFCFBFAFFEDE4DDFFAB6C3BFF2A170B940000000300000000000000040E26
+          3A6D469DCDFF59C3EDFF53BCE9FF4DB1E7FF74C0EBFF1D88D4FF487393FFD698
+          69FFEDE0D7FFFCFAF9FFD7BFAEFFAC6C3DFF2B170B920000000300000007307C
+          BAFF6AD3F1FF61CCF0FF5AC4ECFF54BAE9FF86CBEEFF1E8ED5FF1A84D3FF4770
+          93FFD99A6BFFE8DBD1FFFDFCFCFFBA7C4EFFB4794DFF06030227000000063380
+          BEFF70DAF4FF67D3F1FF60CBF0FF59C4ECFF99D6F2FF2196D7FF1C89D4FF187F
+          D0FF466D92FFD99B6CFFCC834BFF2F4771FF9D6D4AFF06040224000000043585
+          C1FF76DFF5FF6FD9F3FF67D1F1FF5FCCF0FFADE1F6FF249BD9FF1E90D5FF1A87
+          D1FF177BCDFF466B93FFDD9E6EFFD99D6DFF4F5466FF00000014000000033988
+          C4FF7EE3F7FF75DDF5FF6FD9F3FF67D1F1FFBEEAF9FF27A1DBFF2097D7FF1D88
+          D4FF1881D0FF1475CBFF126DC8FF125FB7FF00000025101E327F000000023A8C
+          C6FF83E6F8FF7BE2F7FF74DDF5FF74D9F3FFD9E8EFFF6FC4E9FF249BDAFF1E8E
+          D5FF1B86D1FF177ACEFF1470CAFF1261B9FF0001011B274676F2000000013E8F
+          C8FF85E8FAFF96EAFAFFF0FBFFFF65C8F3FF3D97CFFF81D0EEFF57BBE7FF4BAF
+          E2FF1D88D4FF1881D0FF1575CBFF1367BCFF1427418D182E4DA0000000013F90
+          C9FFB6DBECFF76BDE1FF60B2DBFF4DA2D2FF317DB9FF9FDFF2FF69C9EBFF57BB
+          E6FF4DB4E5FF3197D9FF177BCFFF1568BDFF0000000D00000000000000000000
+          000003070B0F2C6998CE73BFDFFF86D0EBFF87C7E3FFB5E8F6FF9CDDF3FF80CF
+          EEFF66C1E9FF57B8E6FF4DB3E5FF227DC7FF0000000A00000000000000000000
+          000000000000000000000000000015334C6A5BA6CFFF84CAE5FF87B0CEFF4AAB
+          DDFF54BBE9FF51B0DEFF20548DF40A1E3B7D0000000300000000000000000000
+          0000000000000000000000000000000000000000000003070B13215789CD183E
+          639402060A120000000200000001000000010000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          000000000017424342F70000002900000003000000090000000F000000100000
+          000D000000070000000B151515AF0C0C0C8D0000000300000000000000000000
+          000017171772ECECECFF838383FF10100F961B1B1BB22E2C2EED303030FB2323
+          23D80D0D0D8E3B3B3BF9AEAFAFFF4E4E4EFF0000000B00000000000000000000
+          000000000006454545EA545454FF979594FFC1B5A3FFB3A082FFB09D7BFFBCAE
+          95FFBDB7AEFF545351FF757474FF010101450000000000000000000000000000
+          0001000000112D2D2DC8C8C0B3FFCCB38BFFFFE2B3FFFFDEABFFFFDEA9FFFFDF
+          ADFFEED2A5FFBCAD96FF797774FF0606065F0000000700000000000000000000
+          00041A1A1975CAC7C1FFD8BF98FFFFE6BDFFFFE2B6FFFFE2B3FFFFE1B0FFFFDE
+          AAFFFFDDA5FFFFE2B0FFBCAC96FF535250FD0000002200000001000000000000
+          000D767676FFBAA484FFFFF7EBFFFFE8C2FFFFE7C1FFFFE5BEFFFFE4B9FFFFE1
+          B1FFFFE0ABFFFFDDA3FFEDD2A5FFBDB7ADFF0D0D0D7B00000006000000000000
+          0013C8C8C8FFDFCAA7FFFFFFFFFFFFECCEFFFFEBCDFF6E685DFF5B554BFFCFB9
+          98FFC0A985FFD4B98CFFE7CA9CFFB6AA92FF212221D00000000A000000010000
+          0013F9F8F9FFFBE9CEFFFFFFFFFFFFF0DAFFFFEFD7FFB4B4B4FF616160FFAFAF
+          AFFFB0B0AFFF757474FF515151FFAC9879FF302F30F90000000B000000000000
+          000DE6E6E6FFF0DFC6FFFFFFFFFFFFF4E6FFFFF3E0FF8E8880FF6E6962FFFFE8
+          C6FFFFE5BBFFFFE1B0FFFFDDA7FFB29F81FF2C2C2EE600000009000000000000
+          0006ACACAAFFCBB799FFFFFFFFFFFFFEFCFFFFF4E5FF666561FF494844FFFFE9
+          C9FFFFE5BCFFFFE1B3FFFFE0AEFFC1B6A3FF1B1B1B9700000005000000000000
+          0001505051CDD0C4B2FFFFF7ECFFFFFFFFFFFFFDFCFF9C978FFF746E67FFFFE9
+          C9FFFFE5BCFFFFE3B7FFCCB28AFF969593FF0000001500000001000000000000
+          00009E9E9EFFA6A4A6FFBFAD91FFFFF6EAFFFFFFFFFFCFCFCFFF979797FFFFFF
+          FFFFFFF6E9FFD8BE95FFC8C0B4FF4B4A4BFF1616169100000000000000000000
+          0000FAFAFAFF989898FFA6A4A6FFD0C4B2FFCBB696FFE8D7BCFFF3DEC2FFDFC7
+          A0FFBAA484FFCAC7C1FF59595AFF8F8F8FFF242424F900000000000000000000
+          0000A1A1A1FFD2D2D2FFA6A6A6FF767676FFAAAAAAFFE6E6E6FFF8F8F8FFC8C8
+          C8FF737673FF8B8B8BFFB4B4B4FF989898FF2525258E00000000000000000000
+          00002525255CA1A1A1FFFAFAFAFFA1A1A1FF2424245D666666C0D4D4D4FF0000
+          0001A0A0A0DCE6E6E6FFDFDFDFFF6D6D6DDC0000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          00000000000800000025000000320000003400000036000000380000003A0000
+          003C0000003D0000003F0000003D0000001F0000000300000000000000000000
+          000100000021C49A69FFCEA86DFFCCA368FFCAA063FFC79C61FFC6995CFFC496
+          59FFC29456FFC19254FFC19254FF7D462AF00000000C00000000000000000000
+          000100000027D3AF78FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF98603FFF8E5032FF0000001000000000000000000000
+          000100000024D6B47EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF996241FF8F5233FF0000000F00000000000000000000
+          000100000020D9B885FFFFFFFFFFFDFDFEFF1716A7FFFDFDFEFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFF9D6747FF915535FF0000000E00000000000000000000
+          00010000001DDCBD8CFFE2E2F5FF2828B3FF1F1EACFF2D2CAEFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFA16C4DFF935938FF0000000D00000000000000000000
+          00010000001ADEC192FF3F3FC0FF7A7AD2FFFFFFFFFF2727AFFFDEDEF3FFFFFF
+          FFFFFFFFFFFFFFFFFFFFA57354FF965C3BFF0000000C00000000000000000000
+          000100000017E1C69AFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F1EACFFFFFF
+          FFFFFFFFFFFFFFFFFFFFAA7A5BFF98603EFF0000000C00000000000000000000
+          000000000013E4CBA2FFFFFFFFFFB9B8B9FFFFFFFFFFFFFFFFFF9797A5FF6F6F
+          A2FF949494FFFFFFFFFFAF8163FF9B6342FF0000000B00000000000000000000
+          000000000010E6CFA8FFFFFFFFFFBDBEBDFFB8B8B8FFFFFFFFFFABABABFF7E7E
+          A8FF9C9C9BFFF3F3F3FFB3896BFF9E6745FF0000000A00000000000000000000
+          00000000000DE9D4B0FFFFFFFFFFFFFFFFFFFFFFFFFFD0D0D0FFD0D0D0FFD0D0
+          D0FFBCBCCDFFD0D0D0FFB99173FFA06B4AFF0000000900000000000000000000
+          00000000000BEBD9B9FFFFFFFFFFFFFFFFFFA4A4A4FFA4A4A4FFA4A4A4FFA4A4
+          A4FFA4A4A4FFA4A4A4FFBD987BFFA36E4DFF0000000800000000000000000000
+          000000000008EDDEC0FFCAAD91FF968779FF9E9F9FFF959595FF8A8B8BFF8181
+          81FF616161FFC29F83FFC29F83FFA67352FF0000000600000000000000000000
+          0000000000039A7F66CCC09D7DFF6D6D6DFFDFDFDFFFD0D0D0FFD2D1D2FFC7C6
+          C6FFD0D0D0FFB0815FFFAD7D5BFF2A1E15530000000300000000000000000000
+          00000000000000000001000000020000000200000002BEBEBEFF848383FF6262
+          63FF000000040000000400000004000000020000000000000000000000000000
+          00000000000000000000000000000000000000000000727272FF6F6F6FFF2525
+          2558000000000000000000000000000000000000000000000000}
+      end
+      item
+        Image.Data = {
+          36040000424D3604000000000000360000002800000010000000100000000100
+          2000000000000004000000000000000000000000000000000000000000000000
+          00000000001B000000360000003600000036000000370000003A0D2850FF0A23
+          49FF000000440000003700000037000000310000000600000000000000000000
+          00159C9A99FF9293B2FF282AA4FF1E1F99FF1B1B93FF1A1987FFF7F8F9FF56A9
+          DDFF091249FF09095FFF060747FFBBB9B7FF242424A600000000000000000000
+          001CC7C7C7FFD8D8DEFF403FBEFF2728B2FF2222AAFF21209FFF17207EFFD1E8
+          F5FF61BAEDFF0A2349FF02063CFFD5D5D5FF373737CF00000000000000000000
+          00079D9D9DFFE0E0E7FF5152C7FF2A2BB5FF2524A0FF111153FF636363FF1920
+          7BFFD1E8F5FF5AACDEFF0A2349FF0F2344FF070D1BBC00000006000000000000
+          00003F3F3F9EA7A9CBFF6263CEFF2D2DB6FFC1C1C1FFD4D4D4FF8E8E8EFF3435
+          35FF10192DFFD4EBF7FF65BDEEFF53B2EBFF3F9CD9FF0209168E000000000000
+          00000000001253558EFF6162CFFF32324CFFF6F6F6FF434343FF858585FFC4C4
+          C4FF979797FFE8EBEFFF73BDE7FF365B89FF9DD3F1FF071B3DEE000000000000
+          0000000000000101042B222689FFA5A5A5FF616A72FF6B9BC3FF588EBCFF3B5B
+          7FFFD2D2D2FFB3BFCCFF87C8EBFF305180FFA3D2EDFF071731B3000000000000
+          0000000000000000000000000007353535AE355E8DFF2C4F7DFF0F2C5CFF2045
+          75FF2D2D2DF51021358D9BB4C8FF89C1E0FF3E6286FF00000003000000000000
+          000000000000000000000000000000000010576F92FF85BBE2FF63A2D1FF3F78
+          AAFF041027A70000000200000000000000000000000000000000000000000000
+          00000000000000000000000000010D2D5DE0C1E0F4FF8AC3E8FF7CB9E3FF67A7
+          D6FF2D5786FF0000001200000000000000000000000000000000000000000000
+          00000000000000000000010305150F346FFFB8DDF3FF97CBECFF8BC3E8FF7CB9
+          E3FF4F85B3FF0410289E00000000000000000000000000000000000000000000
+          00000000000000000000092857C21B4D88FFC7E4F6FFA0D1EFFF98CBEDFF8BC3
+          E8FF6293BBFF09204EF900000000000000000000000000000000000000000000
+          000000000000000000000D3571F63B79B2FF10407DFF0A2E68FF446892FF98CB
+          ECFF0C316EFF08204EEA00000000000000000000000000000000000000000000
+          00000000000000000000061A38758CBBDEFF3276B5FF2566AAFF1A5492FF2344
+          76FF1D5695FF030C1C5600000000000000000000000000000000000000000000
+          00000000000000000000000000003D669BFD90C0E1FF66A4D2FF5A9BCFFF365D
+          8DFF000000020000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000061937720A2B5ECC0722489F0000
+          0000000000000000000000000000000000000000000000000000}
       end>
   end
   object scgpmgclctn1: TscGPImageCollection
@@ -16644,7 +19154,7 @@ object Fmain: TFmain
         Options.RightMargin = 0
         Options.BottomMargin = 0
         Options.Stretch = True
-        Options.StretchBorder = False
+        Options.StretchBorder = True
         Options.DrawOnlyBorder = False
         Options.DrawOnlyClient = False
         DrawStyle = idsBottomTile
@@ -16655,7 +19165,13 @@ object Fmain: TFmain
         Proportional = False
         Scaled = True
       end>
-    Left = 464
-    Top = 184
+    Left = 344
+    Top = 256
+  end
+  object call: TdxCalloutPopup
+    PopupControl = pnl1
+    Alignment = cpaLeftCenter
+    Left = 264
+    Top = 32
   end
 end

@@ -81,7 +81,7 @@ object fdatam: Tfdatam
   end
   object con1: TFDConnection
     Params.Strings = (
-      'Database=G:\'#31243#24207#28304#25991#20214'\Delphi\delphisource\tsjynavbar\tsjy.mdb'
+      'Database=G:\'#31243#24207#28304#25991#20214'\Delphi\tsjy.mdb'
       'DriverID=MSAcc')
     LoginPrompt = False
     Left = 14
