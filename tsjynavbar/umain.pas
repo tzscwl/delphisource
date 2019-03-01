@@ -12,8 +12,7 @@ uses
   dxSkinOffice2016Colorful, dxSkinOffice2016Dark, cxClasses, cxLookAndFeels,
   dxSkinsForm, Vcl.ExtCtrls, dxBar, System.Actions, Vcl.ActnList, cxPC,
   dxBarBuiltInMenu, dxTabbedMDI, cxLookAndFeelPainters, cxGraphics,
-  dxAlertWindow, cxStyles, cxControls, dxNavBar, dxNavBarCollns, dxNavBarBase,
-  System.ImageList, Vcl.ImgList, cxImageList, dxNavBarStyles;
+  dxAlertWindow, cxStyles, cxControls;
 
 type
   TFmain = class(TForm)
@@ -37,39 +36,29 @@ type
     act_tongji: TAction;
     act_tuichu: TAction;
     dxlrtwndwmngr1: TdxAlertWindowManager;
-    lbl1: TLabel;
-    lbl2: TLabel;
-    lbl3: TLabel;
-    lbl4: TLabel;
-    lbl5: TLabel;
     cxstylrpstry1: TcxStyleRepository;
     cxstyl_head: TcxStyle;
     dxbrlrgbtn7: TdxBarLargeButton;
     act_custom: TAction;
     dxbrlrgbtn8: TdxBarLargeButton;
     act_employee: TAction;
-    dxnvbr1: TdxNavBar;
-    dxnvbrgrpdxnvbr1Group1: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group2: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group3: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group4: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group5: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group6: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group7: TdxNavBarGroup;
-    dxnvbrgrpdxnvbr1Group8: TdxNavBarGroup;
-    dxnvbrtmdxnvbr1Item1: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item2: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item3: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item4: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item5: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item6: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item7: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item8: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item9: TdxNavBarItem;
-    dxnvbrtmdxnvbr1Item10: TdxNavBarItem;
-    lbl6: TLabel;
-    cxmglst1: TcxImageList;
-    dxnvbrstyltmdxnvbr1StyleItem1: TdxNavBarStyleItem;
+    dxbrmngr1Bar2: TdxBar;
+    dxbrsbtm1: TdxBarSubItem;
+    dxbrsbtm2: TdxBarSubItem;
+    dxbrbtn1: TdxBarButton;
+    dxbrbtn2: TdxBarButton;
+    dxbrbtn3: TdxBarButton;
+    dxbrbtn4: TdxBarButton;
+    dxbrbtn5: TdxBarButton;
+    dxbrbtn6: TdxBarButton;
+    dxbrbtn7: TdxBarButton;
+    dxbrbtn8: TdxBarButton;
+    pnl1: TPanel;
+    lbl1: TLabel;
+    lbl2: TLabel;
+    lbl3: TLabel;
+    lbl4: TLabel;
+    lbl5: TLabel;
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure tmr1Timer(Sender: TObject);
     procedure act_tsxxExecute(Sender: TObject);

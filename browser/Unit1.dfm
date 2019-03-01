@@ -9321,7 +9321,6 @@ object Form1: TForm1
     Color = clInfoBk
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 684
     object img1: TImage
       Left = 16
       Top = 5
@@ -10856,7 +10855,7 @@ object Form1: TForm1
     object lbl1: TLabel
       Left = 248
       Top = 8
-      Width = 445
+      Width = 429
       Height = 25
       Caption = #26412#31243#24207#20165#29992#26469#35775#38382#26412#22320#30041#35328#32593#31449'.'#35831#21247#36827#34892#20854#20182#25805#20316'!'
       Font.Charset = ANSI_CHARSET

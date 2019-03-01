@@ -48,7 +48,7 @@ begin
   begin
     Form1.WindowState:=wsMaximized;
 
-    wb1.Navigate('http://192.32.9.3/lyb');
+    wb1.Navigate('https://lhzs.37.com/');
   end
   else
   begin
@@ -60,7 +60,7 @@ end;
 
 procedure TForm1.img1Click(Sender: TObject);
 begin
-  wb1.Navigate('http://192.32.9.3/lyb');
+  wb1.Navigate('https://lhzs.37.com/');
 end;
 
 procedure TForm1.img2Click(Sender: TObject);

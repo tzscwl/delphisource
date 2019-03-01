@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899-12-30 00:00:00.000.507,G:\程序源文件\Delphi\浏览器\web.dproj=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.234,G:\程序源文件\Delphi\浏览器\Unit1.dfm=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.020,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.234,G:\程序源文件\Delphi\浏览器\Unit1.pas=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.234,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas=G:\程序源文件\Delphi\浏览器\Unit1.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.749,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.020,=C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.234,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Unit1.dfm=G:\程序源文件\Delphi\浏览器\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.507,C:\Users\Administrator\Documents\Embarcadero\Studio\Projects\Project1.dproj=G:\程序源文件\Delphi\浏览器\web.dproj</Transaction>
   </Transactions>
 </BorlandProject>

@@ -264,7 +264,7 @@ end;
 procedure TFmain.btn9Click(Sender: TObject);
 begin
     scspltvw1.Opened:= not scspltvw1.Opened ;
-   call.Popup(btn9);
+  // call.Popup(btn9);    唤出菜单以后 有需要可以尝试，目前不需要。
 end;
 
 procedure TFmain.FormClose(Sender: TObject; var Action: TCloseAction);
